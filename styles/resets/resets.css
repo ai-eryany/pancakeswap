@@ -1,0 +1,28 @@
+/* 
+  it's going to have all the resets 
+  ! note that these are only resets, if you want to edit the button element for an example do it in base.css, and make sure to notify all the team if you edit a type selector :) 
+
+  ! but in genereal we will never edit the type selectors, so be carful :D .. we will only do the resets and maybe few things in the "base" folder
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: inherit;
+  background: none;
+  border: none;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}

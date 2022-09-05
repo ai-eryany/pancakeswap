@@ -1,0 +1,57 @@
+/* 
+TODO: it's going to have all the imports 
+*/
+
+/* 
+  * Before the imports we made sure to define the main selector :)
+*/
+
+main {
+  width: 100%;
+}
+
+/* reset is the first one usually */
+@import "../resets/resets.css" screen;
+
+/* then the variables, you can find all the varialbes across the project here */
+@import "../atomic/root/root.css" screen;
+
+/* The atomic design for the btns here */
+@import "../atomic/btns.css" screen;
+
+/* Then we will do the base */
+@import "../base/base.css" screen;
+
+/* ?after that we can go nuts and add everything, but in order :) */
+@import "../header/header.css" screen;
+@import "../header/header-wrapper.css" screen;
+
+@import "../header/navbar/navbar.css" screen;
+@import "../header/navbar/navbar-wrapper.css" screen;
+
+@import "../intro_slide/intro_slide.css" screen;
+@import "../intro_slide/intro_slide-wrapper.css" screen;
+
+@import "../section1/section1.css" screen;
+@import "../section1/section1-wrapper.css" screen;
+
+@import "../section2/section2.css" screen;
+@import "../section2/section2-wrapper.css" screen;
+
+@import "../section3/section3.css" screen;
+@import "../section3/section3-wrapper.css" screen;
+
+@import "../section4/section4.css" screen;
+@import "../section4/section4-wrapper.css" screen;
+
+@import "../section5/section5.css" screen;
+@import "../section5/section5-wrapper.css" screen;
+
+@import "../section6/section6.css" screen;
+@import "../section6/section6-wrapper.css" screen;
+
+@import "../section7/section7.css" screen;
+@import "../section7/section7-wrapper.css" screen;
+
+@import "../footer/footer.css" screen;
+@import "../footer/footer-wrapper.css" screen;
