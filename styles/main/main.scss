@@ -4,11 +4,6 @@
 // * Before the @use we made sure to define the main selector :)
 // TODO: main element here! <big-boss>
 // * handle it as a section
-main {
-  // !never delete this position
-  position: relative;
-  width: 100%;
-}
 
 // reset is the first one usually
 @use "../resets/_resets.scss";
@@ -28,7 +23,6 @@ main {
 @use "../header/_header-wrapper.scss";
 
 @use "../header/nav/_nav.scss";
-@use "../header/nav/_nav-wrapper.scss";
 
 @use "../intro_slide/_intro_slide.scss";
 @use "../intro_slide/_intro_slide-wrapper.scss";
@@ -56,3 +50,8 @@ main {
 
 @use "../footer/_footer.scss";
 @use "../footer/_footer-wrapper.scss";
+main {
+  // !never delete this position
+  position: relative;
+  width: 100%;
+}

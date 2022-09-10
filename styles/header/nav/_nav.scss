@@ -1,5 +1,64 @@
 // SCSS - nav.scss
 // TODO: nav element is here, it will be inside the header-wrapper class
 // * handle it as a section <nav></nav>
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 nav {
+  width: 100vw;
+  height: 55px;
+  border-bottom: 1px solid #e6e3ea;
+  @include flexCenter;
+  justify-content: space-between;
+  .navLeft {
+    @include flexCenter;
+    margin: 0 1rem;
+    div {
+      @include flexCenter();
+      .psHead {
+        display: none;
+      }
+    }
+
+    .navMenu {
+      @include flexCenter();
+      margin-left: 1rem;
+      div {
+        padding: 1.6rem;
+        color: #7c6ea9;
+        border-radius: 1.6rem;
+        &:hover {
+          background-color: #eef4f5;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .navRight {
+    @extend .navLeft;
+    gap: 1.6rem;
+    .navPrice {
+      gap: 0.5rem;
+    }
+    .navBtn {
+      margin-right: 1rem;
+      background-color: #00cad7;
+      width: 14.9rem;
+      height: 3.2rem;
+      border-radius: 1.6rem;
+      &:hover {
+        background-color: #58dbe3;
+        cursor: pointer;
+      }
+      button {
+        color: white;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
