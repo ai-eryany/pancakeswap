@@ -15,6 +15,7 @@ main {
 
 //then the variables, you can find all the varialbes across the project here
 @use "../atomic/root/_root.scss";
+@use "../utility/_utility.scss";
 
 // The atomic design for the btns here */
 @use "../atomic/_btns.scss";
