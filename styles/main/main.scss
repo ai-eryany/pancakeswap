@@ -4,16 +4,11 @@
 // * Before the @use we made sure to define the main selector :)
 // TODO: main element here! <big-boss>
 // * handle it as a section
-main {
-  // !never delete this position
-  position: relative;
-  width: 100%;
-}
 
 // reset is the first one usually
 @use "../resets/_resets.scss";
 
-//then the variables, you can find all the varialbes across the project here
+//then the variables, you can find all the variables across the project here
 @use "../atomic/root/_root.scss";
 @use "../utility/_utility.scss";
 
@@ -56,3 +51,9 @@ main {
 
 @use "../footer/_footer.scss";
 @use "../footer/_footer-wrapper.scss";
+
+main {
+  // !never delete this position
+  position: relative;
+  width: 100%;
+}
