@@ -1,57 +1,57 @@
-/* 
-TODO: it's going to have all the imports 
-*/
+// SCSS - main.scss
+//TODO: it's going to have all the @use of all the files
 
-/* 
-  * Before the imports we made sure to define the main selector :)
-*/
-
+// * Before the @use we made sure to define the main selector :)
+// TODO: main element here! <big-boss>
+// * handle it as a section
 main {
+  // !never delete this position
+  position: relative;
   width: 100%;
 }
 
-/* reset is the first one usually */
-@import "../resets/resets.css" screen;
+// reset is the first one usually
+@use "../resets/_resets.scss";
 
-/* then the variables, you can find all the varialbes across the project here */
-@import "../atomic/root/root.css" screen;
+//then the variables, you can find all the varialbes across the project here
+@use "../atomic/root/_root.scss";
 
-/* The atomic design for the btns here */
-@import "../atomic/btns.css" screen;
+// The atomic design for the btns here */
+@use "../atomic/_btns.scss";
 
-/* Then we will do the base */
-@import "../base/base.css" screen;
+// Then we will do the base */
+@use "../base/_base.scss";
 
-/* ?after that we can go nuts and add everything, but in order :) */
-@import "../header/header.css" screen;
-@import "../header/header-wrapper.css" screen;
+// ? after that we can go nuts and add everything, but with order :) */
+@use "../header/_header.scss";
+@use "../header/_header-wrapper.scss";
 
-@import "../header/navbar/navbar.css" screen;
-@import "../header/navbar/navbar-wrapper.css" screen;
+@use "../header/nav/_nav.scss";
+@use "../header/nav/_nav-wrapper.scss";
 
-@import "../intro_slide/intro_slide.css" screen;
-@import "../intro_slide/intro_slide-wrapper.css" screen;
+@use "../intro_slide/_intro_slide.scss";
+@use "../intro_slide/_intro_slide-wrapper.scss";
 
-@import "../section1/section1.css" screen;
-@import "../section1/section1-wrapper.css" screen;
+@use "../section1/_section1.scss";
+@use "../section1/_section1-wrapper.scss";
 
-@import "../section2/section2.css" screen;
-@import "../section2/section2-wrapper.css" screen;
+@use "../section2/_section2.scss";
+@use "../section2/_section2-wrapper.scss";
 
-@import "../section3/section3.css" screen;
-@import "../section3/section3-wrapper.css" screen;
+@use "../section3/_section3.scss";
+@use "../section3/_section3-wrapper.scss";
 
-@import "../section4/section4.css" screen;
-@import "../section4/section4-wrapper.css" screen;
+@use "../section4/_section4.scss";
+@use "../section4/_section4-wrapper.scss";
 
-@import "../section5/section5.css" screen;
-@import "../section5/section5-wrapper.css" screen;
+@use "../section5/_section5.scss";
+@use "../section5/_section5-wrapper.scss";
 
-@import "../section6/section6.css" screen;
-@import "../section6/section6-wrapper.css" screen;
+@use "../section6/_section6.scss";
+@use "../section6/_section6-wrapper.scss";
 
-@import "../section7/section7.css" screen;
-@import "../section7/section7-wrapper.css" screen;
+@use "../section7/_section7.scss";
+@use "../section7/_section7-wrapper.scss";
 
-@import "../footer/footer.css" screen;
-@import "../footer/footer-wrapper.css" screen;
+@use "../footer/_footer.scss";
+@use "../footer/_footer-wrapper.scss";
