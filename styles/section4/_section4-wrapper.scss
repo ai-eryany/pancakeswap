@@ -1,4 +1,5 @@
 // SCSS - section4-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
+@use "../atomic/root/_root.scss" as root;
 .section4-wrapper {
 }
