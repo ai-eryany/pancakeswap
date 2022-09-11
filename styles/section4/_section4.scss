@@ -1,5 +1,6 @@
 // SCSS - section4.scss
 // * handle it as a section <section class="section-name"></section>
+@use "../atomic/root/_root.scss" as root;
 .section4 {
   // !never delete this position
   position: relative;
