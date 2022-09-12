@@ -1,6 +1,7 @@
 // SCSS - footer.scss
 //TODO: footer element here! <big-boss>
 // * handle it as a section <footer></footer>
+@use "../atomic/root/_root.scss" as root;
 footer {
   // !never delete this position
   position: relative;
