@@ -1,7 +1,7 @@
 // SCSS - navbar-wrapper.scss
 // TODO: navbar-wrapper here, it will be inside the nav!
 // !wrapper <div class="wrapper-name"></div>
-
+@use "/styles/atomic/root/root" as *;
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -28,10 +28,10 @@
       margin-left: 1rem;
       div {
         padding: 1.6rem;
-        color: #7c6ea9;
+        color: $primary_link_color;
         border-radius: 1.6rem;
         &:hover {
-          background-color: #eef4f5;
+          background-color: $primary_link_bg_hover_color;
           cursor: pointer;
         }
       }
@@ -45,12 +45,12 @@
     }
     .navBtn {
       margin-right: 1rem;
-      background-color: #00cad7;
+      background-color: $primary_buttons_bg_color;
       width: 14.9rem;
       height: 3.2rem;
       border-radius: 1.6rem;
       &:hover {
-        background-color: #58dbe3;
+        background-color: $primary_buttons_bg_hover_color;
         cursor: pointer;
       }
       button {
