@@ -1,7 +1,11 @@
 // SCSS - section6.scss
 // * handle it as a section <section class="section-name"></section>
-@use "../atomic/root/_root.scss" as root;
+@use '../atomic/root/_root.scss' as root;
 .section6 {
   // !never delete this position
   position: relative;
+
+  div:first-of-type {
+    margin: auto;
+  }
 }
