@@ -1,4 +1,4 @@
 .DS_store
 .vscode
-main.css
-main.css.map
+*.css
+*.css.map
