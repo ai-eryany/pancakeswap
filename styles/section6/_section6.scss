@@ -1,11 +1,28 @@
 // SCSS - section6.scss
 // * handle it as a section <section class="section-name"></section>
 @use '../atomic/root/_root.scss' as root;
+@use '../utility/utility' as u;
+
 .section6 {
   // !never delete this position
   position: relative;
 
-  div:first-of-type {
+  .section6__wrap {
     margin: auto;
+
+    .section6__items-wrap {
+      display: flex;
+      max-width: u.pxToRem(968);
+    }
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .section6 {
+    div:first-of-type {
+      margin: auto;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
   }
 }
