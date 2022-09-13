@@ -6,52 +6,52 @@
 // * handle it as a section
 
 // reset is the first one usually
-@use '../resets/_resets.scss';
+@use "../resets/_resets.scss";
 
 //then the variables, you can find all the variables across the project here
-@use '../atomic/root/_root.scss';
-@use '../utility/_utility.scss';
+@use "../atomic/root/_root.scss";
+@use "../utility/_utility.scss";
 
 // The atomic design for the btns here */
-@use '../atomic/_btns.scss';
-@use '../atomic/_scrollbar.scss';
+@use "../atomic/_btns.scss";
+@use "../atomic/_scrollbar.scss";
 
 // Then we will do the base */
-@use '../base/_base.scss';
+@use "../base/_base.scss";
 
 // ? after that we can go nuts and add everything, but with order :) */
-@use '../header/_header.scss';
-@use '../header/_header-wrapper.scss';
+@use "../header/_header.scss";
+@use "../header/_header-wrapper.scss";
 
-@use '../header/nav/_nav.scss';
-@use '../header/nav/_nav-wrapper.scss';
+@use "../header/nav/_nav.scss";
+@use "../header/nav/_nav-wrapper.scss";
 
-@use '../intro_slide/_intro_slide.scss';
-@use '../intro_slide/_intro_slide-wrapper.scss';
+@use "../intro_slide/_intro_slide.scss";
+@use "../intro_slide/_intro_slide-wrapper.scss";
 
-@use '../section1/_section1.scss';
-@use '../section1/_section1-wrapper.scss';
+@use "../section1/_section1.scss";
+@use "../section1/_section1-wrapper.scss";
 
-@use '../section2/_section2.scss';
-@use '../section2/_section2-wrapper.scss';
+@use "../section2/_section2.scss";
+@use "../section2/_section2-wrapper.scss";
 
-@use '../section3/_section3.scss';
-@use '../section3/_section3-wrapper.scss';
+@use "../section3/_section3.scss";
+@use "../section3/_section3-wrapper.scss";
 
-@use '../section4/_section4.scss';
-@use '../section4/_section4-wrapper.scss';
+@use "../section4/_section4.scss";
+@use "../section4/_section4-wrapper.scss";
 
-@use '../section5/_section5.scss';
-@use '../section5/_section5-wrapper.scss';
+@use "../section5/_section5.scss";
+@use "../section5/_section5-wrapper.scss";
 
-@use '../section6/_section6.scss';
-@use '../section6/_section6-wrapper.scss';
+@use "../section6/_section6.scss";
+@use "../section6/_section6-wrapper.scss";
 
-@use '../section7/_section7.scss';
-@use '../section7/_section7-wrapper.scss';
+@use "../section7/_section7.scss";
+@use "../section7/_section7-wrapper.scss";
 
-@use '../footer/_footer.scss';
-@use '../footer/_footer-wrapper.scss';
+@use "../footer/_footer.scss";
+@use "../footer/_footer-wrapper.scss";
 
 main {
   // !never delete this position

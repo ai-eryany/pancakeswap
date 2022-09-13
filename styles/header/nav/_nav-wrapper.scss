@@ -2,7 +2,7 @@
 // TODO: navbar-wrapper here, it will be inside the nav!
 // !wrapper <div class="wrapper-name"></div>
 
-@use "/styles/atomic/root/root" as *;
+@use "../../atomic/root/root" as *;
 
 @mixin flexCenter {
   display: flex;
