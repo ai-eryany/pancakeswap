@@ -11,13 +11,19 @@
 }
 .navbar-wrapper {
   width: 100vw;
-  height: 55px;
   border-bottom: 1px solid #e6e3ea;
   @include flexCenter;
   justify-content: space-between;
   .navLeft {
     @include flexCenter;
     margin: 0 1rem;
+    .navLogoFull {
+      width: 19rem;
+      height: 5rem;
+      img {
+        object-fit: cover;
+      }
+    }
     div {
       @include flexCenter();
       .psHead {
@@ -48,9 +54,8 @@
     .navBtn {
       margin-right: 1rem;
       background-color: $primary_buttons_bg_color;
-      width: 14.9rem;
-      height: 3.2rem;
       border-radius: 1.6rem;
+      padding: 0.6rem 2rem;
       &:hover {
         background-color: $primary_buttons_bg_hover_color;
         cursor: pointer;
