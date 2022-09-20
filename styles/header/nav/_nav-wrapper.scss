@@ -65,8 +65,8 @@
       }
     }
     .navGlobe {
-      width: 25px;
-      img {
+      svg {
+        fill: $primary_link_color;
         &:hover {
           opacity: 0.5;
           cursor: pointer !important;
