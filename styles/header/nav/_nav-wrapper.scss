@@ -64,13 +64,8 @@
         font-weight: 500;
       }
     }
-    .navIcons {
-      display: flex;
-      gap: 1.5rem;
-    }
     .navGlobe {
       width: 25px;
-      cursor: pointer !important;
       img {
         &:hover {
           opacity: 0.5;
