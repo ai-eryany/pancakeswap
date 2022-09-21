@@ -78,6 +78,7 @@
 
 <!-- Behaves like a section-wrapper -->
   <nav>
+  <!-- code here -->
   </nav>
 
 </header>
@@ -91,7 +92,7 @@
   </section>
 
   <section class= "...section7">
-    <div class=".section7-wrapper">
+    <div class="...section7-wrapper">
       <!-- code here -->
     </div>
   </section>
@@ -102,6 +103,7 @@
 <footer>
 
   <section class="footer-wrapper">
+  <!-- code here -->
   </section>
 
 </footer>
@@ -113,9 +115,25 @@
   2. `header.scss` & `footer.scss` are considered `section.scss`
   3. Inside `header` Folder the `nav/nav.scss` is considered `section-wrapper.scss`
   4. Write your code inside the `section-wrapper.scss` files.
-  5. Nesting
+  5. Nesting:
 
      - Maximum 2 deep layers
+
+       ```
+       .card {
+         &__specs {
+           // don't go deeper than this
+         }
+       }
+
+       // if you want to go deeper write another class:
+       .card__specs {
+         card__specs-button {
+
+         }
+       }
+       ```
+
      - Clean, simple code.
 
   6. Put all mixins in: `./styles/atomic/root/root_mixins.scss`
@@ -124,12 +142,15 @@
 
      - If you add vars, make sure to state that in the description of your Pull Request
 
-  9. Put All resets in: `./styles/resets/resets.scss`
+  9. Put all resets in: `./styles/resets/resets.scss`
   10. Put all utility classes in: `./styles/utility/utility.scss`
   11. Put all type selectors in: `./styles/base.scss`
-  12. Put all imports and @use in: `./styles/main/main.scss`
-  13. Handle `header.scss` & `footer.scss` as sections.
-  14. Maintain the same folder structure. Don't add any new files excluding ICO/JPG/PNG/SVG
+  12. Maintain the same folder structure. Don't add any new files excluding ICO/JPG/PNG/SVG
+  13. Put all imports and @use in: `./styles/main/main.scss`
+  14. Writing imports:
+      - Write imports like this: `@use "./folder/file" as file;`
+      - Not like this: `@use "./folder/file" as *;`
+      - Call Vars like this: `file.var;`
 
 ## Testing Code
 
