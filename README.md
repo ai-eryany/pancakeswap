@@ -1,4 +1,4 @@
-# Pancake Swap App
+# PancakeSwap App
 
 ## Design principles
 
@@ -58,7 +58,7 @@
 - `icons` Folder contains all the ICO images.
 - `images` Folder contains all the JPG/PNG/SVG images.
 - `logos` Folder contains the website logo/brand and all the other logos.
-  - Always write section names when writing names of images. Ex. `section1-card.png`
+  - Always write specific names that describes images. E.g. `section1-card.png`
 - `scripts` Folder contains all the JAVASCRIPT files.
 - `styles` Folder contains all the CSS/SASS/SCSS files.
   - `section.scss` File contains the section class.
@@ -109,7 +109,7 @@
 </footer>
 ```
 
-- ### SCSS/SASS
+- ### CSS/SCSS/SASS
 
   1. Write the code for the parent section class inside `section.scss`.
   2. `header.scss` & `footer.scss` are considered `section.scss`
@@ -148,9 +148,10 @@
   12. Maintain the same folder structure. Don't add any new files excluding ICO/JPG/PNG/SVG
   13. Put all imports and @use in: `./styles/main/main.scss`
   14. Writing imports:
-      - Write imports like this: `@use "./folder/file" as file;`
+      - Write imports like this: `@use "./folder/file" as f;`
       - Not like this: `@use "./folder/file" as *;`
       - Call Vars like this: `file.var;`
+  15. Always use `rem` instead of `px`, if you want to use `px` use the function `ConvertPxToRem()`
 
 ## Testing Code
 
