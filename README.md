@@ -1,58 +1,140 @@
-# Design approach
+# Pancake Swap App
 
-- Start mobile first
-- Media queries will contain the desktop design
-- Write your code inside the section-wrapper.SCSS file, but don't nest to much code, try to make maximum 2 deep layers, not more than that.. don't complicate the code.
-- Write all the mixins and functions inside the folder `./styles/atomic/root`, there you will find: `root_functions.SCSS` for functions and `root.mixin.SCSS` for mixins.
+## Design principles
 
-- You can find all the variables inside the `root.SCSS` file, you can also add variables here, but make sure to state that when writing the commits.
+1. Mobile First Design & Atomic Design.
+2. The sections:
 
-- Inside `./styles/base` folder you will find the `base.SCSS` which contains only the type selectors, write all the type selectors in this file.
+   - `header` & `footer`: **will be '`position: relative`' & '`display: flex`' & '`background: background-color`'**
+   - `section1` to `section7`: **will be '`position: relative`' & '`display: flex`'**
 
-- Inside `./styles/header` folder you will find the `header.SCSS` handle with it as the `section.SCSS`, and same goes to the `./styles/footer` folder and file as well
+3. The wrappers are `flex-items`.
 
-- You can see the folders from `./styles/section1` to `./styles/section7` and all of them contain the same folder structure. same goes for `./styles/header` and `./styles/footer` and `intro_slide`
+## Naming convention
 
-- You can find all the resets inside the folder `./styles/resets` which contains the file `resets.SCSS`
+- ### CSS/SASS/SCSS
 
-- You can find all the utility small classes inside the folder `./styles/utility`.
+  - Use BEM naming convention (Block-Element-Modifier)
+    - Block -> `card`
+    - Block\_\_Element -> `card__specs`
+    - Block-Modifier -> `card--light` or `card--dark`
 
-- all these sections will be imported inside the `main.SCSS` inside the `./styles/main` folder, and all the sections will be compiled in there.
+  ```
+  .card {
+    width: 100px;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 
-- I added the `.gitignore` to remove all the other files that can be created without noticing, like the `*.css.map` that gets created from the sass compiler.
 
-- You can test your code normally by running the `./styles/main/main.SCSS`
+    &__specs {
+      // here are the elements inside the card
+    }
 
-- So far there will be 3 media queries per section.
+    &__specs {
+      // other elements
+    }
 
-- Always write a meaningful commit messages, don't write "codes add" :) explain what you did briefly.
+    &--light {
+      // color of the card itself. it effects the card class
+      background-color: white;
+    }
 
-- The folder `./icons` will contain only icons and when you name them make sure to write the section name on the icon name like `section2-face-icon.ico`
+    &--dark {
+      // color of the card itself. it effects the card class
+      background-color: black;
+    }
 
-- The folder `./images` will contain only images and when you name them make sure to write the section name on the image name like `section2-card.jpg`
+  }
 
-- The folder `./logos` will contain the logo of the website and also make sure to create a unique name for the logo
 
-- The folder `./scripts` will contain the javascript later on in the project
+  ```
 
-- The `index.html` will contain your the html codes like this
+- ### JAVASCRIPT (when we get there)
+
+## Folder & files structure
+
+- `icons` Folder contains all the ICO images.
+- `images` Folder contains all the JPG/PNG/SVG images.
+- `logos` Folder contains the website logo/brand and all the other logos.
+  - Always write section names when writing names of images. Ex. `section1-card.png`
+- `scripts` Folder contains all the JAVASCRIPT files.
+- `styles` Folder contains all the CSS/SASS/SCSS files.
+  - `section.scss` File contains the section class.
+  - `section-wrapper.scss` File contains the wrapper inside that section.
+  - `section-wrapper-media.scss` File contains the desktop design.
+- `.gitignore` File contains all the ignored files.
+- `index.html` File contains all the HTML code for the landing page.
+- `other.html` File contains 1 more single page besides the landing page, will be built after finishing the landing page.
+
+## Code guidelines
+
+- ### HTML
 
 ```
+<!-- Behaves like a section -->
 <header>
+
+<!-- Behaves like a section-wrapper -->
+  <nav>
+  </nav>
+
 </header>
 
 <main>
 
   <section class="section1">
-    <div class="section1-wrapper"> </div>
+    <div class="section1-wrapper">
+      <!-- code here -->
+    </div>
   </section>
 
   <section class= "...section7">
-    <div class=".section7-wrapper"> </div>
+    <div class=".section7-wrapper">
+      <!-- code here -->
+    </div>
   </section>
 
 </main>
 
+<!-- Behaves as a section -->
 <footer>
+
+  <section class="footer-wrapper">
+  </section>
+
 </footer>
 ```
+
+- ### SCSS/SASS
+
+  1. Write the code for the parent section class inside `section.scss`.
+  2. `header.scss` & `footer.scss` are considered `section.scss`
+  3. Inside `header` Folder the `nav/nav.scss` is considered `section-wrapper.scss`
+  4. Write your code inside the `section-wrapper.scss` files.
+  5. Nesting
+
+     - Maximum 2 deep layers
+     - Clean, simple code.
+
+  6. Put all mixins in: `./styles/atomic/root/root_mixins.scss`
+  7. Put all functions in: `./styles/atomic/root/root_functions.scss`
+  8. Put all variables in `./styles/atomic/root/root.scss`
+
+     - If you add vars, make sure to state that in the description of your Pull Request
+
+  9. Put All resets in: `./styles/resets/resets.scss`
+  10. Put all utility classes in: `./styles/utility/utility.scss`
+  11. Put all type selectors in: `./styles/base.scss`
+  12. Put all imports and @use in: `./styles/main/main.scss`
+  13. Handle `header.scss` & `footer.scss` as sections.
+  14. Maintain the same folder structure. Don't add any new files excluding ICO/JPG/PNG/SVG
+
+## Testing Code
+
+- You can test your code by compiling only the `./styles/main/main.scss` file
+
+## Commits
+
+- **Always write meaningful commit messages, don't write '`code added`' or '`changes`':) explain what you did briefly.**
