@@ -156,6 +156,8 @@
 ## Testing Code
 
 - You can test your code by compiling only the `./styles/main/main.scss` file
+- You can test your code by compiling a specific file using the terminal by writing the command:
+    - `sass --watch ./styles/<section>/<file>.scss <file>.css`
 
 ## Commits
 
