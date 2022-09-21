@@ -138,3 +138,7 @@
 ## Commits
 
 - **Always write meaningful commit messages, don't write '`code added`' or '`changes`':) explain what you did briefly.**
+
+## Team Work
+
+- Always check Trello and update your cards.
