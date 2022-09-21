@@ -1,8 +1,72 @@
 // SCSS - nav.scss
-// TODO: nav element is here, it will be inside the header-wrapper class
+// TODO: nav element is here, it will be inside the header and will act like "header-warpper.scss" class
 // * handle it as a section <nav></nav>
 
 @use "../../atomic/root/_root.scss" as root;
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav {
+  width: 100vw;
+  border-bottom: 1px solid #e6e3ea;
+  @include flexCenter;
+  justify-content: space-between;
+  .navLeft {
+    @include flexCenter;
+    margin: 0 1rem;
+    .navLogoFull {
+      width: 19rem;
+      height: 5rem;
+      img {
+        object-fit: cover;
+      }
+    }
+    div {
+      @include flexCenter();
+      .psHead {
+        display: none;
+      }
+    }
+
+    .navMenu {
+      @include flexCenter();
+      margin-left: 1rem;
+      div {
+        padding: 1.6rem;
+        color: $primary_link_color;
+        border-radius: 1.6rem;
+        &:hover {
+          background-color: $primary_link_bg_hover_color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .navRight {
+    @extend .navLeft;
+    gap: 1.6rem;
+    .navPrice {
+      gap: 0.5rem;
+    }
+    .navBtn {
+      margin-right: 1rem;
+      background-color: $primary_buttons_bg_color;
+      border-radius: 1.6rem;
+      padding: 0.6rem 2rem;
+      &:hover {
+        background-color: $primary_buttons_bg_hover_color;
+        cursor: pointer;
+      }
+      button {
+        color: white;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
