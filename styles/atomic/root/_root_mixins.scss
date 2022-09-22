@@ -1,0 +1,12 @@
+@use "./root" as root;
+
+
+// ! might upgrade later
+@mixin flexIt() {
+  display: flex;
+}
+
+@mixin centerFlex() {
+  justify-content: center;
+  align-items: center;
+}
