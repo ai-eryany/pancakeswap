@@ -152,7 +152,7 @@
       - Not like this: `@use "./folder/file" as *;`
       - Call Vars like this: `file.var;`
   15. Always use `rem` instead of `px`, if you want to use `px` use the function `ConvertPxToRem()`
-
+  16. Use `rem` over `px`, if you want to use `px` convert it using the functions inside `./styles/atomic/root_functions.scss`
 ## Testing Code
 
 - You can test your code by compiling only the `./styles/main/main.scss` file
