@@ -1,0 +1,13 @@
+// I have noticed that all the animations are floating with same speed, same amount of space and same angle.
+
+
+
+@keyframes floating {
+  0%, 100% {
+    transform: translate();
+  } 
+
+  50% {
+    transform: translate();
+  }
+}
