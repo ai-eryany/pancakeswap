@@ -50,7 +50,7 @@
 
 // this function convert px to rem. usage: convertPxToRem(32px) -> 2rem
 // this function depends on the Number() function above.
-@function convertPxToRem($px) {
+@function toRem($px) {
   $string_px: string.quote(#{$px}); // convert it to string so we can remove the px
   $index: string.index(
     $string: $string_px,
