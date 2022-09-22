@@ -3,5 +3,9 @@
 @use "../atomic/root/_root.scss" as root;
 .section7 {
   // !never delete this position
+  height: 200rem;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

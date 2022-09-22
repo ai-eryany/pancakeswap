@@ -21,6 +21,10 @@
           max-height: root.$intro_slide-wrapper-containerMaxHeight;
           border-radius: root.$intro_slide-wrapper-containerBorderRadius;
         }
+
+        &-container2 {
+          @extend .intro_slide-wrapper-container;
+        }
 }
 
 // defined inside wrapper, don't forget

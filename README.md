@@ -10,6 +10,9 @@
 
 3. The wrappers are `flex-items`.
 
+4. Don't reinvent the Wheel.
+
+
 ## Naming convention
 
 - ### CSS/SASS/SCSS
@@ -153,6 +156,8 @@
       - Call Vars like this: `file.var;`
   15. Always use `rem` instead of `px`, if you want to use `px` use the function `ConvertPxToRem()`
   16. Use `rem` over `px`, if you want to use `px` convert it using the functions inside `./styles/atomic/root_functions.scss`
+  17. Use the provided atomic designs when it comes to buttons, links, or animation.
+  18. Don't reinvent the wheel.
 ## Testing Code
 
 - You can test your code by compiling only the `./styles/main/main.scss` file
@@ -166,3 +171,8 @@
 ## Team Work
 
 - Always check Trello and update your cards.
+- Read commits log and see what's new.
+
+## Healthy mind = Healthy code
+
+- Make sure to take a break after 2-3 hours of coding.

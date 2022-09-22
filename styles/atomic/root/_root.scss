@@ -52,6 +52,10 @@ $secondary_link_decoration_hover_color: #f5eeff;
 $primary_link_bg_hover_color: #eef4f5;
 
 
+// * links specs
+$linkLineHeight: func.toRem(24px);
+$linkFontWeight: 600;
+$linkUnderLine: underline;
 
 // * website background colors
 $first_background_color: #e2fcff;

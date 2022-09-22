@@ -10,3 +10,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin centerFlexItems() {
+  align-items: center;
+}
+
+@mixin centerFlexContent() {
+  justify-content: center;
+}
