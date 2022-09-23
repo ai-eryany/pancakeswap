@@ -5,6 +5,11 @@
 @use "../base/resets";
 @use "../base/base";
 
+@use "../atomic/animations/key_frames";
+@use "../atomic/buttons/buttons";
+@use "../atomic/links/links";
+@use "../atomic/scrollbar/scrollbar";
+
 @use "../header/header";
 @use "../header/nav/nav";
 @use "../header/nav/nav-media";
