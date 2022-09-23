@@ -1,3 +1,4 @@
+// Don't import root.scss here
 @use "sass:string" as string;
 @use "sass:list" as list;
 
@@ -14,28 +15,21 @@
     $character: string.slice($string, $i, $i);
     $index: list.index($strings, $character);
 
-    
     @if $character == "-" {
       $minus: true;
-    } 
-    
-    @else if $character == "." {
+    } @else if $character == "." {
       $divider: 1;
-    } 
-    
-    @else {
+    } @else {
       @if not $index {
         @warn "Unknown character #{$character}.";
         @return false;
       } // this is here to make sure that there is no sneaky character pass in
 
       $number: list.nth($numbers, $index);
-      
+
       @if $divider == 0 {
         $result: calc($result * 10);
-      } 
-      
-      @else {
+      } @else {
         $divider: calc($divider * 10);
         $number: calc($number / $divider);
       }
@@ -44,14 +38,17 @@
     }
   }
 
-  @return if($minus, $result * -1, $result); // return second arg if $minus true.
+  @return if(
+    $minus,
+    $result * -1,
+    $result
+  ); // return second arg if $minus true.
 }
-
 
 // this function convert px to rem. usage: convertPxToRem(32px) -> 2rem
 // this function depends on the Number() function above.
-@function convertPxToRem($px) {
-  $string_px: string.quote(#{$px}); // convert it to string so we can remove the px
+@function toRem($px) {
+  $string_px: #{$px}; // convert it to string so we can remove the px
   $index: string.index(
     $string: $string_px,
     $substring: "px",
@@ -63,15 +60,16 @@
       $start-at: 1,
       $end-at: $index - 1,
     ); // getting only the string-number
-  }
-
-  @else {
+  } @else {
     @warn "#{$index} is not a px";
     @return false;
   }
-  $number_px: Number($string_px); // converting the string-number from string to number
-  @debug type-of($number_px); // making sure it's a number in order to calculate later
+  $number_px: Number(
+    $string_px
+  ); // converting the string-number from string to number
+  @debug type-of(
+    $number_px
+  ); // making sure it's a number in order to calculate later
   $number_rem: calc($number_px / 16) + rem;
   @return $number_rem;
 }
-
