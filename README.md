@@ -78,7 +78,7 @@
   1. If the code is not clear, write comments.
   2. Functions Are your Friends :)
      - Use them all the time.
-     - Create function for small processes, each function should do only 1 thing.
+     - Create functions for small processes, each function should do only 1 thing.
   3. Use class name and then Camel-Case naming convention with vars. something like this: `$section-wrapperPadding`.
      - check the `root.scss` file, you can see many examples.
   4. Atomic design vars have only Camel-Case naming convention.
