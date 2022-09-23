@@ -66,6 +66,7 @@
   - `section.scss` File contains the section class.
   - `section-wrapper.scss` File contains the wrapper inside that section.
   - `section-wrapper-media.scss` File contains the desktop design.
+  - `atomic` Folder contains the dynamic Modules that can be used across the website.
 - `.gitignore` File contains all the ignored files.
 - `index.html` File contains all the HTML code for the landing page.
 - `other.html` File contains 1 more single page besides the landing page, will be built after finishing the landing page.
