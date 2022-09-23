@@ -1,18 +1,16 @@
 // SCSS - intro_slide.scss
 // * handle it as a section <section class="section-name"></section>
-@use "../atomic/root/_root.scss" as root;
+@use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
 
-
 .intro_slide {
   // !never delete this position
+  width: 100%;
   height: 200rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: root.$first_background_color;
-  
 }
-

@@ -1,10 +1,8 @@
-// SCSS - .intro_slide-wrapper.scss
+// SCSS - intro_slide-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
-
-
 
 .intro_slide-wrapper {
   @include mixin.flexIt();
@@ -13,56 +11,43 @@
   max-width: root.$intro_slide-wrapperMaxWidth;
   max-height: root.$intro_slide-wrapperMaxHeight;
 
+  &-container {
+    @include mixin.flexIt();
+    padding: root.$intro_slide-wrapper-containerPadding;
+    max-width: root.$intro_slide-wrapper-containerMaxWidth;
+    max-height: root.$intro_slide-wrapper-containerMaxHeight;
+    border-radius: root.$intro_slide-wrapper-containerBorderRadius;
+  }
 
-        &-container {
-          @include mixin.flexIt();
-          padding: root.$intro_slide-wrapper-containerPadding;
-          max-width: root.$intro_slide-wrapper-containerMaxWidth;
-          max-height: root.$intro_slide-wrapper-containerMaxHeight;
-          border-radius: root.$intro_slide-wrapper-containerBorderRadius;
-        }
-
-        &-container2 {
-          @extend .intro_slide-wrapper-container;
-        }
+  &-container2 {
+    @extend .intro_slide-wrapper-container;
+  }
 }
 
 // defined inside wrapper, don't forget
 .intro_slide-wrapper-container {
-  
-    // flex item, and a container
-    &__text {
-      @include mixin.flexIt();
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-  
-    //flex item, and a container
-    &__img {
+  // flex item, and a container
+  &__text {
+    @include mixin.flexIt();
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-    }
+  //flex item, and a container
+  &__img {
+  }
 }
-
 
 .intro_slide-wrapper-container__text {
-  
-    &-title {
+  &-title {
+  }
 
-   }
+  &-description {
+  }
 
-   &-description {
-
-   }
-
-   &-button {
-
-   }
+  &-button {
+  }
 }
-
-
 
 .intro_slide-wrapper-container__img {
-
 }
-
-

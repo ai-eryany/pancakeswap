@@ -1,4 +1,6 @@
 @use "../root/root" as root;
+@use "../root/root_functions" as func;
+@use "../root/root_mixins" as mixin;
 /* width */
 ::-webkit-scrollbar {
   width: 0.8rem;
@@ -19,7 +21,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: root.$colors-textSubtle;
+  background: root.$colors_textSubtle;
 }
 
 // ::-webkit-scrollbar-button {

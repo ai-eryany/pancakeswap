@@ -1,4 +1,8 @@
-// SCSS - main-media.scss
+// SCSS - footer-wrapper.scss
+// !wrapper <div class="wrapper-name"></div>
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
+
+.footer-wrapper {
+}

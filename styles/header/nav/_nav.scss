@@ -1,8 +1,10 @@
 // SCSS - nav.scss
-// TODO: nav element is here, it will be inside the header and will act like "header-warpper.scss" class
+// TODO: nav element is here, it will be inside the header and will act like "header-wrapper.scss" class
 // * handle it as a section <nav></nav>
 
-@use "../../atomic/root/_root.scss" as root;
+@use "../../atomic/root/root" as root;
+@use "../../atomic/root/root_functions" as func;
+@use "../../atomic/root/root_mixins" as mixin;
 
 @mixin flexCenter {
   display: flex;
@@ -37,10 +39,10 @@ nav {
       margin-left: 1rem;
       div {
         padding: 1.6rem;
-        color: $primary_link_color;
+        color: root.$primary_link_color;
         border-radius: 1.6rem;
         &:hover {
-          background-color: $primary_link_bg_hover_color;
+          background-color: root.$primary_link_bg_hover_color;
           cursor: pointer;
         }
       }
@@ -54,11 +56,11 @@ nav {
     }
     .navBtn {
       margin-right: 1rem;
-      background-color: $primary_buttons_bg_color;
+      background-color: root.$primary_buttons_bg_color;
       border-radius: 1.6rem;
       padding: 0.6rem 2rem;
       &:hover {
-        background-color: $primary_buttons_bg_hover_color;
+        background-color: root.$primary_buttons_bg_hover_color;
         cursor: pointer;
       }
       button {

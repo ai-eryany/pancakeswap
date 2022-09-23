@@ -1,6 +1,9 @@
 // SCSS - section7.scss
 // * handle it as a section <section class="section-name"></section>
-@use "../atomic/root/_root.scss" as root;
+@use "../atomic/root/root" as root;
+@use "../atomic/root/root_functions" as func;
+@use "../atomic/root/root_mixins" as mixin;
+
 .section7 {
   // !never delete this position
   height: 200rem;
@@ -8,4 +11,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: root.$seventh_background_color;
 }

@@ -1,11 +1,15 @@
-// I have noticed that all the animations are floating with same speed, same amount of space and same angle.
+// SCSS - key_frames.scss
+// All the animations are floating with same speed, same amount of space and same angle.
 
-
+@use "../root/root" as root;
+@use "../root/root_functions" as func;
+@use "../root/root_mixins" as mixin;
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate();
-  } 
+  }
 
   50% {
     transform: translate();

@@ -1,7 +1,7 @@
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
-$midScreen: 575px;
-@media only screen and (min-width: $midScreen) {
+$midScreen: 575px; // will be moved to root
 
+@media only screen and (min-width: $midScreen) {
 }
