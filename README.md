@@ -158,20 +158,19 @@
      - If you add vars, make sure to state that in the description of your Pull Request.
 
   9. Put all resets in: `./styles/base/resets.scss`.
-  10. Put all utility classes in: `./styles/utility/utility.scss`.
-  11. Put all type selectors in: `./styles/base.scss`.
-  12. Maintain the same folder structure. Don't add any new files excluding ICO/JPG/PNG/SVG.
+  10. Put all type selectors in: `./styles/base.scss`.
+  11. Maintain the same folder structure. Don't add any new files excluding ICO/JPG/PNG/SVG.
       - If you add a new file other than images, make sure to state that in the group chat in discord, and don't forget to import it in `./styles/main/main.scss`.
-  13. Writing imports:
+  12. Writing imports:
 
       - Write imports like this: `@use "./folder/file" as f;`.
       - Not like this: `@use "./folder/file" as *;`.
       - Call Vars like this: `file.var;`.
 
-  14. Use `rem` over `px`, if you want to use `px` convert it using the functions inside `./styles/atomic/root_functions.scss`.
-  15. Use the provided atomic designs when it comes to buttons, links, or animation.
-  16. Never use the keyword `!important`.
-  17. Never use inline CSS.
+  13. Use `rem` over `px`, if you want to use `px` convert it using the functions inside `./styles/atomic/root_functions.scss`.
+  14. Use the provided atomic designs when it comes to buttons, links, or animation.
+  15. Never use the keyword `!important`.
+  16. Never use inline CSS.
 
 ## Testing Code
 
