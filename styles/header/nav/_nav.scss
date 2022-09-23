@@ -1,11 +1,9 @@
 // SCSS - nav.scss
 // TODO: nav element is here, it will be inside the header and will act like "header-wrapper.scss" class
 // * handle it as a section <nav></nav>
-
 @use "../../atomic/root/root" as root;
 @use "../../atomic/root/root_functions" as func;
 @use "../../atomic/root/root_mixins" as mixin;
-
 @mixin flexCenter {
   display: flex;
   justify-content: center;

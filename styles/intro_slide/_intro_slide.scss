@@ -3,11 +3,10 @@
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
-
 .intro_slide {
   // !never delete this position
   width: 100%;
-  height: 200rem;
+  height: 100rem;
   position: relative;
   display: flex;
   justify-content: center;

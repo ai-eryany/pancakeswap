@@ -1,11 +1,13 @@
 // SCSS - main.scss
 
+@use "../atomic/root/root" as root;
+
 @use "../base/resets";
 @use "../base/base";
 
 @use "../header/header";
 @use "../header/nav/nav";
-@use "../header/nav/nav-wrapper-media";
+@use "../header/nav/nav-media";
 
 @use "../intro_slide/intro_slide";
 @use "../intro_slide/intro_slide-wrapper";

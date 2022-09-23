@@ -2,13 +2,10 @@
 // TODO: Here we will have the <html> element, <body> element and all the type selectors <input>, <button>, <a> etc.
 
 // ! This one won't contain the <header>, <main> or <footer> there are other SCSS files for them!
+
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
-
-:root {
-  font-size: root.$font_size_reset;
-}
 
 body {
   font-family: root.$font_family;

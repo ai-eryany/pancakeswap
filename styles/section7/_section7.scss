@@ -3,10 +3,9 @@
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
-
 .section7 {
   // !never delete this position
-  height: 200rem;
+  height: 100rem;
   position: relative;
   display: flex;
   justify-content: center;
