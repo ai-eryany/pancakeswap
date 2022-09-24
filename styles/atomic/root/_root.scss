@@ -21,6 +21,13 @@ $font_size_reset: 62.5%;
 $parentSectionPos: relative;
 $parentSectionWidth: 100%;
 
+// -----------Media Query----------
+$sizes: (
+  "medium": "576px",
+  "large": "852px",
+  "larger": "968px",
+);
+
 /* 
             ..######...#######..##........#######..########...######.
             .##....##.##.....##.##.......##.....##.##.....##.##....##

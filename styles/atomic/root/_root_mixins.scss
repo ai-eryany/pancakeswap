@@ -1,3 +1,5 @@
+@use "./root" as *;
+
 // Don't import root.scss here
 
 @mixin reset() {
@@ -38,4 +40,22 @@
 
 @mixin centerFlexContent() {
   justify-content: center;
+}
+
+// ------------ Media Query ------------
+
+@mixin medium {
+  @media (min-width: map-get($sizes, medium)) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: map-get($sizes, large)) {
+    @content;
+  }
+}
+@mixin larger {
+  @media (min-width: map-get($sizes, larger)) {
+    @content;
+  }
 }

@@ -4,7 +4,6 @@
 @use "../../atomic/root/root" as root;
 @use "../../atomic/root/root_functions" as func;
 @use "../../atomic/root/root_mixins" as mixin;
-@import "./nav-media";
 
 @mixin flexCenter {
   display: flex;
@@ -24,7 +23,7 @@ nav {
       width: 19rem;
       height: 5rem;
       display: none;
-      @include larger {
+      @include mixin.larger {
         display: inline;
       }
       &:hover {
@@ -39,7 +38,7 @@ nav {
     }
     .psHead {
       padding: 1.2rem;
-      @include larger {
+      @include mixin.larger {
         display: none;
       }
     }
@@ -58,7 +57,7 @@ nav {
           cursor: pointer;
         }
       }
-      @include medium {
+      @include mixin.medium {
         display: flex;
       }
     }
@@ -80,7 +79,7 @@ nav {
         color: root.$primary_link_color;
         font-weight: 500;
       }
-      @include large {
+      @include mixin.large {
         display: flex;
       }
     }
@@ -117,7 +116,7 @@ nav {
       span {
         &:nth-of-type(2) {
           display: none;
-          @include large {
+          @include mixin.large {
             display: inline;
           }
         }

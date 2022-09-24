@@ -2,25 +2,3 @@
 @use "../../atomic/root/root" as root;
 @use "../../atomic/root/root_functions" as func;
 @use "../../atomic/root/root_mixins" as mixin;
-
-$sizes: (
-  "medium": "576px",
-  "large": "852px",
-  "larger": "968px",
-);
-
-@mixin medium {
-  @media (min-width: map-get($sizes, medium)) {
-    @content;
-  }
-}
-@mixin large {
-  @media (min-width: map-get($sizes, large)) {
-    @content;
-  }
-}
-@mixin larger {
-  @media (min-width: map-get($sizes, larger)) {
-    @content;
-  }
-}
