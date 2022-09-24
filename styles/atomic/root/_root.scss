@@ -18,6 +18,8 @@
 $font_family: "Kanit";
 $font_size: func.toRem(16px);
 $font_size_reset: 62.5%;
+$parentSectionPos: relative;
+$parentSectionWidth: 100%;
 
 /* 
             ..######...#######..##........#######..########...######.
@@ -69,7 +71,7 @@ $fourth_background_color: #edeff4;
 $fifth_background_color: #58bdf2;
 $fifth_background_color_inner: #c5e8fa;
 $sixth_background_color: #faf9fa;
-$seventh_background_color: #6830c2;
+$seventh_background_color: #7009c5;
 $eighth_background_color: #27262c;
 
 // * sidebar color and icons of navbar and footer
@@ -230,6 +232,56 @@ $intro_slide-wrapper-containerBorderRadius: func.toRem(15px); // ! test
 */
 
 // * write vars here
+$section7-wrapperBackgroundLight: rgb(132, 44, 214, 0.2);
+$section7-wrapperBackgroundDark: $seventh_background_color;
+$section7-wrapperBackgroundCombo: conic-gradient(
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight,
+  $section7-wrapperBackgroundDark,
+  $section7-wrapperBackgroundLight
+);
+$section7Height: func.toRem(378px);
 
 //
 
