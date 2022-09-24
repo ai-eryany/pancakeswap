@@ -21,6 +21,12 @@
   display: flex;
 }
 
+@mixin flexItCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin centerFlex() {
   justify-content: center;
   align-items: center;
