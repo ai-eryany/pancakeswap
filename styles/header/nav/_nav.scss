@@ -4,6 +4,7 @@
 @use "../../atomic/root/root" as root;
 @use "../../atomic/root/root_functions" as func;
 @use "../../atomic/root/root_mixins" as mixin;
+@import "./nav-media";
 
 @mixin flexCenter {
   display: flex;
@@ -11,16 +12,21 @@
   align-items: center;
 }
 nav {
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid #e6e3ea;
   @include flexCenter;
   justify-content: space-between;
   .navLeft {
     @include flexCenter;
     margin: 0 1rem;
+
     .navLogoFull {
       width: 19rem;
       height: 5rem;
+      display: none;
+      @include larger {
+        display: inline;
+      }
       &:hover {
         cursor: pointer;
       }
@@ -30,7 +36,10 @@ nav {
     }
     div {
       @include flexCenter();
-      .psHead {
+    }
+    .psHead {
+      padding: 1.2rem;
+      @include larger {
         display: none;
       }
     }
@@ -39,6 +48,7 @@ nav {
       @include flexCenter();
       margin-left: 1rem;
       font-size: func.toRem(25px);
+      display: none;
       div {
         padding: 1.6rem;
         color: root.$primary_link_color;
@@ -48,6 +58,9 @@ nav {
           cursor: pointer;
         }
       }
+      @include medium {
+        display: flex;
+      }
     }
   }
   .navRight {
@@ -56,6 +69,7 @@ nav {
     .navPrice {
       gap: 0.5rem;
       font-size: func.toRem(25px);
+      display: none;
       &:hover {
         cursor: pointer;
         object {
@@ -65,6 +79,9 @@ nav {
       span {
         color: root.$primary_link_color;
         font-weight: 500;
+      }
+      @include large {
+        display: flex;
       }
     }
     .navGlobe {
@@ -95,6 +112,14 @@ nav {
         font-weight: 600;
         &:hover {
           cursor: pointer;
+        }
+      }
+      span {
+        &:nth-of-type(2) {
+          display: none;
+          @include large {
+            display: inline;
+          }
         }
       }
     }
