@@ -171,6 +171,7 @@
   14. Use the provided atomic designs when it comes to buttons, links, or animation.
   15. Never use the keyword `!important`.
   16. Never use inline CSS.
+  17. All wrappers has only MaxWidth of 1152px, name of the variable with the root: `root.$wrappersMaxWidth`
 
 ## Testing Code
 
