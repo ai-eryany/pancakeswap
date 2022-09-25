@@ -1,42 +1,14 @@
 // SCSS - section6.scss
 // * handle it as a section <section class="section-name"></section>
-<<<<<<< HEAD
-@use '../atomic/root/_root.scss' as root;
-@use '../utility/utility' as u;
-
-=======
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
->>>>>>> 3802e5ab2c70b9a54fd6885117a2d3c202bee535
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 .section6 {
   // !never delete this position
   height: 100rem;
   position: relative;
-<<<<<<< HEAD
-
-  .section6__wrap {
-    margin: auto;
-
-    .section6__items-wrap {
-      display: flex;
-      max-width: u.pxToRem(968);
-    }
-  }
-}
-
-@media screen and (min-width: 968px) {
-  .section6 {
-    div:first-of-type {
-      margin: auto;
-      padding-top: 48px;
-      padding-bottom: 48px;
-    }
-  }
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: root.$sixth_background_color;
->>>>>>> 3802e5ab2c70b9a54fd6885117a2d3c202bee535
 }
