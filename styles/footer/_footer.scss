@@ -6,7 +6,6 @@
 @use "../atomic/root/root_mixins" as mixin;
 footer {
   // !never delete this position
-  height: 100rem;
   position: relative;
   display: flex;
   justify-content: center;

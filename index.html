@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/080f05f1b8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>PancakeSwap V1.0.0</title>
   </head>
   <body>
@@ -141,8 +145,6 @@
 
       <!---------------------------Section7 start----------------------------->
       <section class="section7">
-        <!-- ! This div for background purpose only  -->
-        <div class="section7-wrapper-background"></div>
         <div class="section7-wrapper">
           <div class="section7-wrapper-title">
             <h1 class="section7-wrapper-title__h2">Start in seconds.</h1>
@@ -169,22 +171,48 @@
     <footer>
       <div class="footer-wrapper">
         <div class="footer-wrapper-head">
-          <div class="footer-wrapper-head__img">
-            <img src="" alt="PancakeSwap logo" />
+          <div class="footer-wrapper-head-img">
+            <img
+              class="footer-wrapper-head-img__logo"
+              src="./images/psFull.svg"
+              alt="PancakeSwap logo"
+            />
           </div>
         </div>
         <div class="footer-wrapper-specs">
           <div class="footer-wrapper-specs-b1">
-            <div class="footer-wrapper-specs-b1__price"></div>
-            <div class="footer-wrapper-specs-b1__button"></div>
+            <div class="footer-wrapper-specs-b1-price">
+              <img
+                class="footer-wrapper-specs-b1-price__img"
+                src="./images/psBlueWp.svg"
+                alt=""
+              />
+              <a class="footer-wrapper-specs-b1-price__num" href="">$4.526</a>
+            </div>
+            <div class="footer-wrapper-specs-b1-button">
+              <button class="footer-wrapper-specs-b1-button__button buttonIt">
+                Buy CAKE ->
+              </button>
+            </div>
           </div>
           <div class="footer-wrapper-specs-b2">
-            <div class="footer-wrapper-specs-b2__switch"></div>
-            <div class="footer-wrapper-specs-b2__lg"></div>
+            <div class="footer-wrapper-specs-b2-switch">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="footer-wrapper-specs-b2-lg">
+              <img
+                src="./images/navGlobe.svg"
+                alt=""
+                class="footer-wrapper-specs-b2-lg__glb"
+              />
+              EN
+            </div>
           </div>
         </div>
         <div class="footer-wrapper-anchors">
           <ul class="footer-wrapper-anchors__about">
+            <li>ABOUT</li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Brand</a></li>
             <li><a href="#">Blog</a></li>
@@ -194,11 +222,13 @@
             <li><a href="#">Online Store</a></li>
           </ul>
           <ul class="footer-wrapper-anchors__help">
+            <li>HELP</li>
             <li><a href="#">Customer Support</a></li>
             <li><a href="#">Troubleshooting</a></li>
             <li><a href="#">Guides</a></li>
           </ul>
           <ul class="footer-wrapper-anchors__developers">
+            <li>DEVELOPERS</li>
             <li><a href="#">Github</a></li>
             <li><a href="#">Documentation</a></li>
             <li><a href="#">Bug Bounty</a></li>
@@ -207,7 +237,7 @@
           </ul>
         </div>
         <div class="footer-wrapper-icons">
-          <ul class="footer-wrapper-icons__container">
+          <ul class="footer-wrapper-icons-container">
             <!-- TODO: Connect the repo to font awesome and import the icons of social media -->
           </ul>
         </div>
