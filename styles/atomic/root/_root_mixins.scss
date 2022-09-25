@@ -21,8 +21,20 @@
   display: flex;
 }
 
+@mixin flexItCol() {
+  display: flex;
+  flex-direction: column;
+}
+
 @mixin flexItCenter() {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexItColCenter() {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
