@@ -10,24 +10,4 @@
   position: root.$parentSectionPos;
   @include mixin.flexItCenter();
   background-color: root.$seventh_background_color;
-
-  &-wrapper-background {
-    position: absolute;
-    z-index: 0;
-    // TODO: make sure to change this value later "width"
-    @include mixin.flexItCenter();
-    width: 60rem;
-    height: 100%;
-    background: root.$section7-wrapperBackgroundCombo;
-    box-shadow: 0 0 -50px -10px root.$section7-wrapperBackgroundDark;
-  }
-}
-
-.section7-wrapper-background::before {
-  content: "";
-  width: func.toRem(90px);
-  height: func.toRem(90px);
-  border-radius: 100%;
-  background-color: root.$section7-wrapperBackgroundDark;
-  box-shadow: 0 0 50px 100px root.$section7-wrapperBackgroundDark;
 }
