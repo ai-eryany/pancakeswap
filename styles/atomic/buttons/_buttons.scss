@@ -1,0 +1,21 @@
+// SCSS - buttons.scss
+//TODO: Will contain a reusable style for the buttons across the website.
+@use "../root/root" as root;
+@use "../root/root_functions" as func;
+@use "../root/root_mixins" as mixin;
+
+.buttonIt {
+  @include mixin.flexIt();
+  @include mixin.centerFlex();
+  padding: root.$btnPadding;
+  box-shadow: root.$btnBoxShadow;
+  font-weight: root.$btnFontWeight;
+  line-height: root.$btnLineHeight;
+  color: root.$primary_button_color;
+  background-color: root.$primary_buttons_bg_color;
+  text-align: root.$btnTextAlign;
+
+  &:hover {
+    background-color: root.$primary_buttons_bg_hover_color;
+  }
+}

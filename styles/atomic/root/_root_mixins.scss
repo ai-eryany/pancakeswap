@@ -1,0 +1,64 @@
+// Don't import root.scss here
+
+@mixin reset() {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+.########.##.......########.##.....##.########...#######..##.....##
+.##.......##.......##........##...##..##.....##.##.....##..##...##.
+.##.......##.......##.........##.##...##.....##.##.....##...##.##..
+.######...##.......######......###....########..##.....##....###...
+.##.......##.......##.........##.##...##.....##.##.....##...##.##..
+.##.......##.......##........##...##..##.....##.##.....##..##...##.
+.##.......########.########.##.....##.########...#######..##.....##
+*/
+
+// ! might upgrade later
+@mixin flexIt() {
+  display: flex;
+}
+
+@mixin flexItCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerFlex() {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerFlexItems() {
+  align-items: center;
+}
+
+@mixin centerFlexContent() {
+  justify-content: center;
+}
+
+// ------------ Media Query ------------
+
+$sizes: (
+  "medium": "576px",
+  "large": "852px",
+  "larger": "968px",
+);
+@mixin medium {
+  @media (min-width: map-get($sizes, medium)) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: map-get($sizes, large)) {
+    @content;
+  }
+}
+@mixin larger {
+  @media (min-width: map-get($sizes, larger)) {
+    @content;
+  }
+}
