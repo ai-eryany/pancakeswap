@@ -4,4 +4,82 @@
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
 .section1-wrapper {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: func.toRem(10px);
+  @include mixin.large {
+    margin: func.toRem(100px);
+  }
+  @include mixin.larger {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin: func.toRem(150px);
+  }
+  .sec1-right {
+    img {
+      width: func.toRem(350px);
+      margin-left: auto;
+      @include mixin.large {
+        width: func.toRem(650px);
+      }
+      @include mixin.larger {
+        width: func.toRem(950px);
+      }
+    }
+  }
+  .sec1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    p {
+      font-size: 1.9rem;
+      font-weight: 550;
+      line-height: 2.5rem;
+      color: root.$secondary_title_color;
+    }
+    h2 {
+      color: root.$primary_title_color;
+      font-size: 5rem;
+      line-height: 5.5rem;
+      font-weight: 600;
+      @include mixin.larger {
+        font-size: 6.5rem;
+      }
+    }
+    .sec1-btns {
+      display: flex;
+      gap: 1rem;
+      button {
+        font-size: 1.45rem;
+        font-weight: 600;
+        &:nth-of-type(1) {
+          background-color: root.$primary_buttons_bg_color;
+          color: white;
+          padding: func.toRem(20px) func.toRem(35px);
+          border-radius: func.toRem(20px);
+          box-shadow: 0 1px root.$primary_black_color;
+          &:hover {
+            background-color: root.$primary_buttons_bg_hover_color;
+            transition: 0.5s;
+          }
+        }
+        &:nth-of-type(2) {
+          background-color: transparent;
+          color: root.$primary_buttons_bg_color;
+          border: 2px solid root.$primary_buttons_bg_color;
+          padding: func.toRem(20px) func.toRem(35px);
+          border-radius: func.toRem(20px);
+          &:hover {
+            color: root.$primary_buttons_bg_hover_color;
+            border: 2px solid root.$primary_buttons_bg_hover_color;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
 }
