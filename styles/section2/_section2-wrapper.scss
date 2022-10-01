@@ -20,6 +20,8 @@
       font-size: 32px;
       font-weight: 550;
       line-height: 4rem;
+      color: root.$secondary_title_color;
+      margin-top: 1.5rem;
       @include mixin.large {
         font-size: 40px;
       }
@@ -47,11 +49,45 @@
       border-radius: 10%;
       display: flex;
       flex-direction: row-reverse;
+      border: 1px solid #e6e3ea;
+      box-shadow: 0 3px #e6e3ea;
+      &:nth-of-type(1) {
+        svg {
+          fill: root.$primary_title_color;
+        }
+        span {
+          color: root.$primary_title_color;
+        }
+      }
+      &:nth-of-type(2) {
+        svg {
+          fill: root.$primary_buttons_bg_color;
+        }
+        span {
+          color: root.$primary_buttons_bg_color;
+        }
+      }
+      &:nth-of-type(3) {
+        svg {
+          fill: root.$secondary_description_color;
+        }
+        span {
+          color: root.$secondary_description_color;
+        }
+      }
+
       @include mixin.large {
         height: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
       }
+
       .sec2-cards-icon {
         display: inline;
+        @include mixin.large {
+          margin-left: auto;
+        }
       }
       .sec2-card-text {
         text-align: start;
@@ -59,6 +95,20 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        h1 {
+          line-height: 3.5rem;
+          font-size: 32px;
+          font-weight: 600;
+          color: root.$secondary_title_color;
+          @include mixin.large {
+            font-size: 40px;
+            line-height: 4rem;
+          }
+        }
+        p {
+          color: root.$primary_description_color;
+          margin-top: 30px;
+        }
       }
     }
   }
