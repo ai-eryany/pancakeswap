@@ -8,15 +8,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
   padding: 0 5rem;
-  gap: 32px;
   .sec2-texts {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 32px;
+    text-align: center;
     h2 {
       font-size: 32px;
+      font-weight: 550;
+      line-height: 4rem;
+      @include mixin.large {
+        font-size: 40px;
+      }
     }
     p {
       font-size: 16px;
@@ -39,8 +45,20 @@
       padding: 24px;
       background-color: white;
       border-radius: 10%;
+      display: flex;
+      flex-direction: row-reverse;
       @include mixin.large {
         height: 280px;
+      }
+      .sec2-cards-icon {
+        display: inline;
+      }
+      .sec2-card-text {
+        text-align: start;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
   }
