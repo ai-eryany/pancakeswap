@@ -14,7 +14,7 @@
   color: root.$primary_button_color;
   background-color: root.$primary_buttons_bg_color;
   text-align: root.$btnTextAlign;
-
+  border-radius: root.$btnBorderRadius;
   &:hover {
     background-color: root.$primary_buttons_bg_hover_color;
   }

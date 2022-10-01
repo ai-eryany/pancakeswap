@@ -15,12 +15,18 @@
 */
 
 // * Global Vars
+<<<<<<< HEAD
 $font_family: 'Kanit';
 $font_size: func.toRem(16px);
+=======
+$font_family: "Kanit";
+$font_size: 16px;
+>>>>>>> 765398dc00400f56cd4e9ef27be8bbaa27f9e34f
 $font_size_reset: 62.5%;
 $parentSectionPos: relative;
 $parentSectionWidth: 100%;
 $wrappersMaxWidth: func.toRem(1152px);
+$parentSpecs: 100%;
 
 /* 
             ..######...#######..##........#######..########...######.
@@ -105,6 +111,7 @@ $btnLetterSpacing: func.toRem(0.48px);
 $btnLineHeight: func.toRem(16px);
 $btnPadding: func.toRem(24px);
 $btnTextAlign: center;
+$btnBorderRadius: func.toRem(25px);
 
 /*
       .##.....##.########....###....########..########.########.
@@ -235,56 +242,55 @@ $intro_slide-wrapper-containerBorderRadius: func.toRem(15px); // ! test
 */
 
 // * write vars here
-$section7-wrapperBackgroundLight: rgb(132, 44, 214, 0.2);
-$section7-wrapperBackgroundDark: $seventh_background_color;
+$section7-wrapperBackgroundLight: rgb(132, 44, 214, 0.5);
 $section7-wrapperBackgroundCombo: conic-gradient(
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight,
-  $section7-wrapperBackgroundDark,
+  transparent,
   $section7-wrapperBackgroundLight
 );
-$section7Height: func.toRem(378px);
+$section7Height: func.toRem(500px);
 
 //
 
@@ -297,3 +303,7 @@ $section7Height: func.toRem(378px);
 .##.......##.....##.##.....##....##....##.......##....##.
 .##........#######...#######.....##....########.##.....##
 */
+
+$footer-wrapper-specs-b1-button__buttonPadding: func.toRem(10px)
+  func.toRem(20px);
+$footer-wrapperPadding: func.toRem(20px);
