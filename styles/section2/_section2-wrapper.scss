@@ -4,4 +4,44 @@
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
 .section2-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5rem;
+  gap: 32px;
+  .sec2-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+      color: root.$primary_description_color;
+      &:nth-of-type(2) {
+        font-weight: 600;
+      }
+    }
+  }
+  .sec2-cards {
+    display: flex;
+    flex-direction: column;
+    @include mixin.large {
+      flex-direction: row;
+    }
+    gap: 16px;
+    .sec2-crd {
+      width: 280px;
+      height: 166.39px;
+      padding: 24px;
+      background-color: white;
+      border-radius: 10%;
+      @include mixin.large {
+        height: 280px;
+      }
+    }
+  }
 }
