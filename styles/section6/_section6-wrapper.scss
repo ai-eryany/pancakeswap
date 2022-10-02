@@ -13,13 +13,18 @@
   &__cake {
     display: flex;
     &__h2 {
-      color: root.$text_color;
+      color: root.$primary_title_color;
       font-size: func.toRem(60px);
       font-weight: 600;
       line-height: 1.1;
       span {
-        color: root.$colors_secondary;
+        color: root.$secondary_title_color;
       }
+    }
+    &__img picture img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
   }
 }
