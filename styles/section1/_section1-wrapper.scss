@@ -3,6 +3,7 @@
 @use "../atomic/root/root" as root;
 @use "../atomic/root/root_functions" as func;
 @use "../atomic/root/root_mixins" as mixin;
+
 .section1-wrapper {
   padding: 16px 24px;
   display: flex;
@@ -19,7 +20,11 @@
     justify-content: space-around;
     margin: func.toRem(170px);
   }
+
   .sec1-right {
+    animation: floating 5s infinite;
+    position: relative;
+    z-index: 2;
     img {
       width: func.toRem(350px);
       margin-left: auto;
@@ -28,6 +33,14 @@
       }
       @include mixin.larger {
         width: func.toRem(950px);
+      }
+      .sec1-star {
+        position: absolute;
+        z-index: 1;
+        img {
+          &:nth-of-type(1) {
+          }
+        }
       }
     }
   }
@@ -84,5 +97,22 @@
         }
       }
     }
+  }
+}
+@keyframes floating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 10px;
   }
 }
