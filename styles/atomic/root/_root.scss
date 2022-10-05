@@ -2,8 +2,8 @@
 // ? what is this file?
 // * you can find all the variables here
 // * This is not all the variables, we will add more along the way.
-@use "./root_functions" as func;
-@use "./root_mixins" as mixin;
+@use './root_functions' as func;
+@use './root_mixins' as mixin;
 /*
               ..######...##........#######..########.....###....##......
               .##....##..##.......##.....##.##.....##...##.##...##......
@@ -15,7 +15,7 @@
 */
 
 // * Global Vars
-$font_family: "Kanit";
+$font_family: 'Kanit';
 $font_size: 16px;
 $font_size_reset: 62.5%;
 $parentSectionPos: relative;
