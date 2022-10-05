@@ -1,26 +1,27 @@
 // SCSS - section6-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
-
-
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 .sect6__main {
-  display: flex;
-  max-width: func.toRem(968px);
-
-  &__cake {
     display: flex;
-    &__h2 {
-      color: root.$primary_title_color;
-      font-size: func.toRem(60px);
-      font-weight: 600;
-      line-height: 1.1;
-      span {
-        color: root.$secondary_title_color;
-      }
+    max-width: func.toRem(968px);
+
+    &__cake {
+        display: flex;
+        &__h2 {
+            color: root.$primary_title_color;
+            font-size: func.toRem(60px);
+            font-weight: 600;
+            line-height: 1.1;
+            span {
+                color: root.$secondary_title_color;
+            }
+        }
+        &__img picture img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     }
-    &__img picture img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-  }
 }
