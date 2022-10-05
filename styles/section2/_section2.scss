@@ -10,5 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: root.$second_background_color;
+  background-image: linear-gradient(white, root.$second_background_color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
