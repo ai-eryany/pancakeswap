@@ -1,57 +1,57 @@
 // SCSS - main.scss
 
-@use "../atomic/root/root" as root;
+@use '../atomic/root/root' as root;
 
-@use "../base/resets";
-@use "../base/base";
+@use '../base/resets';
+@use '../base/base';
 
-@use "../atomic/animations/key_frames";
-@use "../atomic/buttons/buttons";
-@use "../atomic/links/links";
-@use "../atomic/scrollbar/scrollbar";
+@use '../atomic/animations/key_frames';
+@use '../atomic/buttons/buttons';
+@use '../atomic/links/links';
+@use '../atomic/scrollbar/scrollbar';
 
-@use "../header/header";
-@use "../header/nav/nav";
-@use "../header/nav/nav-media";
+@use '../header/header';
+@use '../header/nav/nav';
+@use '../header/nav/nav-media';
 
-@use "../intro_slide/intro_slide";
-@use "../intro_slide/intro_slide-wrapper";
-@use "../intro_slide/intro_slide-wrapper-media";
+@use '../intro_slide/intro_slide';
+@use '../intro_slide/intro_slide-wrapper';
+@use '../intro_slide/intro_slide-wrapper-media';
 
-@use "../section1/section1";
-@use "../section1/section1-wrapper";
-@use "../section1/section1-wrapper-media";
+@use '../section1/section1';
+@use '../section1/section1-wrapper';
+@use '../section1/section1-wrapper-media';
 
-@use "../section2/section2";
-@use "../section2/section2-wrapper";
-@use "../section2/section2-wrapper-media";
+@use '../section2/section2';
+@use '../section2/section2-wrapper';
+@use '../section2/section2-wrapper-media';
 
-@use "../section3/section3";
-@use "../section3/section3-wrapper";
-@use "../section3/section3-wrapper-media";
+@use '../section3/section3';
+@use '../section3/section3-wrapper';
+@use '../section3/section3-wrapper-media';
 
-@use "../section4/section4";
-@use "../section4/section4-wrapper";
-@use "../section4/section4-wrapper-media";
+@use '../section4/section4';
+@use '../section4/section4-wrapper';
+@use '../section4/section4-wrapper-media';
 
-@use "../section5/section5";
-@use "../section5/section5-wrapper";
-@use "../section5/section5-wrapper-media";
+@use '../section5/section5';
+@use '../section5/section5-wrapper';
+@use '../section5/section5-wrapper-media';
 
-@use "../section6/section6";
-@use "../section6/section6-wrapper";
-@use "../section6/section6-wrapper-media";
+@use '../section6/section6';
+@use '../section6/section6-wrapper';
+@use '../section6/section6-wrapper-media';
 
-@use "../section7/section7";
-@use "../section7/section7-wrapper";
-@use "../section7/section7-wrapper-media";
+@use '../section7/section7';
+@use '../section7/section7-wrapper';
+@use '../section7/section7-wrapper-media';
 
-@use "../footer/footer";
-@use "../footer/footer-wrapper";
-@use "../footer/footer-wrapper-media";
+@use '../footer/footer';
+@use '../footer/footer-wrapper';
+@use '../footer/footer-wrapper-media';
 
 main {
-  // !never delete this position
-  position: relative;
-  width: 100%;
+    // !never delete this position
+    position: relative;
+    width: 100%;
 }

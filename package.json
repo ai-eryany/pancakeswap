@@ -1,0 +1,26 @@
+{
+    "name": "project",
+    "version": "1.0.0",
+    "description": "1. Mobile First Design\r 1. Atomic Design\r 1. Sections:",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aiman99aleryany/pancakeswap_V1.0.0.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/aiman99aleryany/pancakeswap_V1.0.0/issues"
+    },
+    "homepage": "https://github.com/aiman99aleryany/pancakeswap_V1.0.0#readme",
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true
+    }
+}
