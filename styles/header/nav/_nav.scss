@@ -13,6 +13,12 @@
 nav {
   width: 100%;
   border-bottom: 1px solid #e6e3ea;
+  overflow: hidden;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: white;
   @include flexCenter;
   justify-content: space-between;
   .navLeft {
@@ -94,6 +100,41 @@ nav {
     }
     .navGear {
       @extend .navGlobe;
+    }
+    .networkSelect {
+      display: flex;
+      margin-right: 1rem;
+      background-color: root.$fourth_background_color;
+      box-shadow: 0 2px lightgray;
+      border-radius: 1.6rem;
+      padding: 0 1.5rem 0 0;
+      gap: func.toRem(10px);
+      margin: func.toRem(-10px);
+
+      p {
+        font-weight: 500;
+        color: root.$secondary_title_color;
+        display: none;
+        @include mixin.medium {
+          display: flex;
+        }
+        span {
+          @include mixin.medium {
+            display: none;
+          }
+          @include mixin.larger {
+            display: flex;
+          }
+        }
+      }
+
+      .bnbImage {
+        width: func.toRem(50px);
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
     }
     .navBtn {
       margin-right: 1rem;
