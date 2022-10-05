@@ -10,6 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ecf6ff;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-color: root.$first_background_color;
 }

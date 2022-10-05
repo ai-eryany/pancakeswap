@@ -1,8 +1,8 @@
 // SCSS - section6.scss
 // * handle it as a section <section class="section-name"></section>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 .section6 {
   // !never delete this position
   height: 100rem;

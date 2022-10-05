@@ -1,8 +1,6 @@
 // SCSS - section6-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+
 
 .sect6__main {
   display: flex;
