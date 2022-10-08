@@ -1,7 +1,0 @@
-// SASS - utility.scss
-// !use bootstrap naming conventions here.
-@use '../atomic/root/_root.scss' as root;
-
-@function pxToRem($px) {
-  @return calc($px / 16) + rem;
-}

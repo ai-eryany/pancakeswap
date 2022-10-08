@@ -82,8 +82,6 @@ $icons_hover_color: #aaa1c7;
 
 $side_bar_color: #7c6ea9;
 $colors_textSubtle: #7a6eaa;
-$colors_secondary: #7645d9;
-$text_color: #280d5f;
 
 /*
               ....###....########..#######..##.....##.####..######.
@@ -299,6 +297,6 @@ $section7Height: func.toRem(500px);
 .##........#######...#######.....##....########.##.....##
 */
 
+$footer-wrapperPadding: func.toRem(20px);
 $footer-wrapper-specs-b1-button__buttonPadding: func.toRem(10px)
   func.toRem(20px);
-$footer-wrapperPadding: func.toRem(20px);
