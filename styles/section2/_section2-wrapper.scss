@@ -13,18 +13,18 @@
     .sec2-texts {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        margin-bottom: 32px;
+        gap: func.toRem(40px);
+        margin-bottom: func.toRem(64px);
         text-align: center;
         h2 {
-            font-size: 32px;
+            font-size: func.toRem(64px);
             font-weight: 550;
             line-height: 4rem;
             color: root.$secondary_title_color;
             margin-top: 1.5rem;
         }
         p {
-            font-size: 16px;
+            font-size: func.toRem(25px);
             color: root.$primary_description_color;
             &:nth-of-type(2) {
                 font-weight: 600;
@@ -35,11 +35,11 @@
         display: flex;
         flex-direction: column;
 
-        gap: 16px;
+        gap: func.toRem(32px);
         .sec2-crd {
-            width: 280px;
-            height: 166.39px;
-            padding: 24px;
+            width: func.toRem(440px);
+            height: func.toRem(320px);
+            padding: func.toRem(24px);
             background-color: white;
             border-radius: 10%;
             display: flex;
@@ -72,10 +72,10 @@
             }
 
             @include mixin.large {
-                height: 280px;
+                height: func.toRem(280px);
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
+                gap: func.toRem(50px);
             }
 
             .sec2-cards-icon {
@@ -92,13 +92,13 @@
                 justify-content: space-between;
                 h1 {
                     line-height: 3.5rem;
-                    font-size: 32px;
+                    font-size: func.toRem(64px);
                     font-weight: 600;
                     color: root.$secondary_title_color;
                 }
                 p {
                     color: root.$primary_description_color;
-                    margin-top: 30px;
+                    margin-top: func.toRem(60px);
                 }
             }
         }
