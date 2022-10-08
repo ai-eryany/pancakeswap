@@ -1,167 +1,137 @@
 // SCSS - nav.scss
 // TODO: nav element is here, it will be inside the header and will act like "header-wrapper.scss" class
 // * handle it as a section <nav></nav>
-@use "../../atomic/root/root" as root;
-@use "../../atomic/root/root_functions" as func;
-@use "../../atomic/root/root_mixins" as mixin;
+@use '../../atomic/root/root' as root;
+@use '../../atomic/root/root_functions' as func;
+@use '../../atomic/root/root_mixins' as mixin;
 
 @mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav {
-  width: 100%;
-  border-bottom: 1px solid #e6e3ea;
-  overflow: hidden;
-  top: 0;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  @include flexCenter;
-  justify-content: space-between;
-  .navLeft {
+    width: 100%;
+    border-bottom: 1px solid #e6e3ea;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: white;
     @include flexCenter;
-    margin: 0 1rem;
+    justify-content: space-between;
+    .navLeft {
+        @include flexCenter;
+        margin: 0 1rem;
 
-    .navLogoFull {
-      width: 19rem;
-      height: 5rem;
-      display: none;
-      @include mixin.larger {
-        display: inline;
-      }
-      &:hover {
-        cursor: pointer;
-      }
-      img {
-        object-fit: cover;
-      }
-    }
-    div {
-      @include flexCenter();
-    }
-    .psHead {
-      padding: 1.2rem;
-      @include mixin.larger {
-        display: none;
-      }
-    }
-
-    .navMenu {
-      @include flexCenter();
-      margin-left: 1rem;
-      font-size: func.toRem(25px);
-      display: none;
-      div {
-        padding: 1.6rem;
-        color: root.$primary_link_color;
-        border-radius: 1.6rem;
-        &:hover {
-          background-color: root.$primary_link_bg_hover_color;
-          cursor: pointer;
-        }
-      }
-      @include mixin.medium {
-        display: flex;
-      }
-    }
-  }
-  .navRight {
-    @extend .navLeft;
-    gap: 1.6rem;
-    .navPrice {
-      gap: 0.5rem;
-      font-size: func.toRem(25px);
-      display: none;
-      &:hover {
-        cursor: pointer;
-        object {
-          width: toRem(33px);
-        }
-      }
-      span {
-        color: root.$primary_link_color;
-        font-weight: 500;
-      }
-      @include mixin.large {
-        display: flex;
-      }
-    }
-    .navGlobe {
-      svg {
-        fill: root.$primary_link_color;
-        &:hover {
-          opacity: 0.5;
-          cursor: pointer !important;
-        }
-      }
-    }
-    .navGear {
-      @extend .navGlobe;
-    }
-    .networkSelect {
-      display: flex;
-      margin-right: 1rem;
-      background-color: root.$fourth_background_color;
-      box-shadow: 0 2px lightgray;
-      border-radius: 1.6rem;
-      padding: 0 1.5rem 0 0;
-      gap: func.toRem(10px);
-      margin: func.toRem(-10px);
-
-      p {
-        font-weight: 500;
-        color: root.$secondary_title_color;
-        display: none;
-        @include mixin.medium {
-          display: flex;
-        }
-        span {
-          @include mixin.medium {
+        .navLogoFull {
+            width: 19rem;
+            height: 5rem;
             display: none;
-          }
-          @include mixin.larger {
-            display: flex;
-          }
-        }
-      }
 
-      .bnbImage {
-        width: func.toRem(50px);
-      }
-      &:hover {
-        cursor: pointer;
-        opacity: 0.7;
-      }
-    }
-    .navBtn {
-      margin-right: 1rem;
-      background-color: root.$primary_buttons_bg_color;
-      box-shadow: 0 1px root.$primary_black_color;
-      border-radius: 1.6rem;
-      padding: 0.7rem 1.5rem;
-      &:hover {
-        background-color: root.$primary_buttons_bg_hover_color;
-        cursor: pointer;
-      }
-      button {
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 600;
-        &:hover {
-          cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+            img {
+                object-fit: cover;
+            }
         }
-      }
-      span {
-        &:nth-of-type(2) {
-          display: none;
-          @include mixin.large {
-            display: inline;
-          }
+        div {
+            @include flexCenter();
         }
-      }
+        .psHead {
+            padding: 1.2rem;
+        }
+
+        .navMenu {
+            @include flexCenter();
+            margin-left: 1rem;
+            font-size: func.toRem(25px);
+            display: none;
+            div {
+                padding: 1.6rem;
+                color: root.$primary_link_color;
+                border-radius: 1.6rem;
+                &:hover {
+                    background-color: root.$primary_link_bg_hover_color;
+                    cursor: pointer;
+                }
+            }
+        }
     }
-  }
+    .navRight {
+        @extend .navLeft;
+        gap: 1.6rem;
+        .navPrice {
+            gap: 0.5rem;
+            font-size: func.toRem(25px);
+            display: none;
+            &:hover {
+                cursor: pointer;
+                object {
+                    width: toRem(33px);
+                }
+            }
+            span {
+                color: root.$primary_link_color;
+                font-weight: 500;
+            }
+        }
+        .navGlobe {
+            svg {
+                fill: root.$primary_link_color;
+                &:hover {
+                    opacity: 0.5;
+                    cursor: pointer !important;
+                }
+            }
+        }
+        .navGear {
+            @extend .navGlobe;
+        }
+        .networkSelect {
+            display: flex;
+            margin-right: 1rem;
+            background-color: root.$fourth_background_color;
+            box-shadow: 0 2px lightgray;
+            border-radius: 1.6rem;
+            padding: 0 1.5rem 0 0;
+            gap: func.toRem(10px);
+            margin: func.toRem(-10px);
+
+            p {
+                font-weight: 500;
+                color: root.$secondary_title_color;
+                display: none;
+            }
+
+            .bnbImage {
+                width: func.toRem(50px);
+            }
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+        .navBtn {
+            margin-right: 1rem;
+            background-color: root.$primary_buttons_bg_color;
+            box-shadow: 0 1px root.$primary_black_color;
+            border-radius: 1.6rem;
+            padding: 0.7rem 1.5rem;
+            &:hover {
+                background-color: root.$primary_buttons_bg_hover_color;
+                cursor: pointer;
+            }
+            button {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 600;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

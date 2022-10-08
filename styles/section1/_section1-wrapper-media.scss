@@ -1,4 +1,37 @@
 // SCSS - section1-wrapper-media.scss
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
+
+.section1-wrapper {
+    @include mixin.large {
+        margin: func.toRem(70px);
+    }
+    @include mixin.larger {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: func.toRem(170px);
+    }
+    .sec1-right {
+        img {
+            @include mixin.large {
+                width: func.toRem(400px);
+            }
+            @include mixin.larger {
+                width: func.toRem(870px);
+            }
+        }
+    }
+    .sec1-left {
+        @include mixin.large {
+            width: 60rem;
+        }
+        h2 {
+            @include mixin.larger {
+                font-size: 6.5rem;
+            }
+        }
+    }
+}

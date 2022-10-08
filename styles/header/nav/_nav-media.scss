@@ -1,4 +1,56 @@
 // SCSS - nav-media.scss
-@use "../../atomic/root/root" as root;
-@use "../../atomic/root/root_functions" as func;
-@use "../../atomic/root/root_mixins" as mixin;
+@use '../../atomic/root/root' as root;
+@use '../../atomic/root/root_functions' as func;
+@use '../../atomic/root/root_mixins' as mixin;
+
+nav {
+    .navLeft {
+        .navLogoFull {
+            @include mixin.larger {
+                display: inline;
+            }
+        }
+        .psHead {
+            @include mixin.larger {
+                display: none;
+            }
+        }
+        .navMenu {
+            @include mixin.medium {
+                display: flex;
+            }
+        }
+    }
+    .navRight {
+        .navPrice {
+            @include mixin.large {
+                display: flex;
+            }
+        }
+        .networkSelect {
+            p {
+                @include mixin.medium {
+                    display: flex;
+                }
+                span {
+                    @include mixin.medium {
+                        display: none;
+                    }
+                    @include mixin.larger {
+                        display: flex;
+                    }
+                }
+            }
+        }
+        .navBtn {
+            span {
+                &:nth-of-type(2) {
+                    display: none;
+                    @include mixin.large {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
