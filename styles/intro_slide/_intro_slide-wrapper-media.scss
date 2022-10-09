@@ -1,6 +1,6 @@
 $midScreen: 575px; // will be moved to root
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 @media only screen and (min-width: $midScreen) {
 }

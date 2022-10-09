@@ -4,11 +4,11 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .section6 {
-  // !never delete this position
-  height: 100rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: root.$sixth_background_color;
+    // !never delete this position
+    height: 100rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: root.$sixth_background_color;
 }
