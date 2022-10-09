@@ -1,17 +1,17 @@
 //SCSS - links.scss
-@use "../root/root" as root;
-@use "../root/root_functions" as func;
-@use "../root/root_mixins" as mixin;
+@use '../root/root' as root;
+@use '../root/root_functions' as func;
+@use '../root/root_mixins' as mixin;
 
 .linkIt {
-  @include mixin.flexIt();
-  @include mixin.centerFlexItems();
-  color: root.$secondary_link_color;
-  line-height: root.$linkLineHeight;
-  font-weight: root.$linkFontWeight;
+    @include mixin.flexIt();
+    @include mixin.centerFlexItems();
+    color: root.$secondary_link_color;
+    line-height: root.$linkLineHeight;
+    font-weight: root.$linkFontWeight;
 
-  &:hover {
-    text-decoration: root.$linkUnderLine
-      root.$primary_link_decoration_hover_color;
-  }
+    &:hover {
+        text-decoration: root.$linkUnderLine
+            root.$primary_link_decoration_hover_color;
+    }
 }

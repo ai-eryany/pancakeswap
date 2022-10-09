@@ -1,14 +1,14 @@
 // SCSS - section5.scss
 // * handle it as a section <section class="section-name"></section>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 .section5 {
-  // !never delete this position
-  height: 100rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: root.$fifth_background_color;
+    // !never delete this position
+    height: 100rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: root.$fifth_background_color;
 }

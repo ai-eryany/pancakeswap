@@ -3,10 +3,10 @@
 
 // ! This one won't contain the <header>, <main> or <footer> there are other SCSS files for them!
 
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 
 body {
-  font-family: root.$font_family;
+    font-family: root.$font_family;
 }

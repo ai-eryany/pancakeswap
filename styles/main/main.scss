@@ -50,13 +50,13 @@
 @use '../footer/footer-wrapper';
 @use '../footer/footer-wrapper-media';
 
-@use "../swap/section1/section1.scss";
-@use "../swap/section1/section1-wrapper.scss";
-@use "../swap/section1/section1-wrapper-media.scss";
+@use '../swap/section1/section1.scss';
+@use '../swap/section1/section1-wrapper.scss';
+@use '../swap/section1/section1-wrapper-media.scss';
 
-@use "../swap/section2/section2.scss";
-@use "../swap/section2/section2-wrapper.scss";
-@use "../swap/section2/section2-wrapper-media.scss";
+@use '../swap/section2/section2.scss';
+@use '../swap/section2/section2-wrapper.scss';
+@use '../swap/section2/section2-wrapper-media.scss';
 
 main {
     // !never delete this position

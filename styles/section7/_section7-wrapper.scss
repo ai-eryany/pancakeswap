@@ -1,65 +1,65 @@
 // SCSS - section7-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 
 .section7-wrapper {
-  color: root.$primary_white_color;
-  @include mixin.flexItCol();
-  justify-content: space-evenly;
-  flex-basis: root.$wrappersMaxWidth;
-  height: root.$parentSpecs;
-  background: root.$section7-wrapperBackgroundCombo;
-  z-index: 1;
+    color: root.$primary_white_color;
+    @include mixin.flexItCol();
+    justify-content: space-evenly;
+    flex-basis: root.$wrappersMaxWidth;
+    height: root.$parentSpecs;
+    background: root.$section7-wrapperBackgroundCombo;
+    z-index: 1;
 
-  &::before {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    width: func.toRem(90px);
-    height: func.toRem(90px);
-    align-self: center;
-    border-radius: 100%;
-    background-color: root.$seventh_background_color;
-    box-shadow: 0 0 50px 100px root.$seventh_background_color;
-  }
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        width: func.toRem(90px);
+        height: func.toRem(90px);
+        align-self: center;
+        border-radius: 100%;
+        background-color: root.$seventh_background_color;
+        box-shadow: 0 0 50px 100px root.$seventh_background_color;
+    }
 
-  &-title {
-    font-size: func.toRem(40px);
-    text-align: center;
-    @include mixin.flexItCenter();
-  }
+    &-title {
+        font-size: func.toRem(40px);
+        text-align: center;
+        @include mixin.flexItCenter();
+    }
 
-  &-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 30%;
-  }
+    &-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 30%;
+    }
 
-  &-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    line-height: func.toRem(24px);
-  }
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        line-height: func.toRem(24px);
+    }
 
-  &-button {
-    @include mixin.flexItCenter();
-  }
+    &-button {
+        @include mixin.flexItCenter();
+    }
 }
 
 .section7-wrapper-description {
-  &__text {
-    text-align: center;
-  }
+    &__text {
+        text-align: center;
+    }
 
-  &__text2 {
-    text-align: center;
-    font-weight: 600;
-  }
+    &__text2 {
+        text-align: center;
+        font-weight: 600;
+    }
 }
 
 .section7-wrapper-link {

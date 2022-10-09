@@ -1,14 +1,14 @@
 // SCSS - footer.scss
 //TODO: footer element here! <big-boss>
 // * handle it as a section <footer></footer>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 footer {
-  // !never delete this position
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: root.$eighth_background_color;
+    // !never delete this position
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: root.$eighth_background_color;
 }
