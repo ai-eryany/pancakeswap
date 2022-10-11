@@ -5,7 +5,7 @@
 @use '../atomic/root/root_mixins' as mixin;
 
 .section3-wrapper {
-    padding: func.toRem(32px) func.toRem(20px);
+    padding: 2rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             img {
-                width: func.toRem(320px);
+                width: 20rem;
                 &:nth-of-type(1) {
                     margin-bottom: -20rem;
                     z-index: 2;
@@ -43,14 +43,14 @@
 
         p {
             padding-right: 1rem;
-            font-size: func.toRem(26px);
-            font-weight: func.toRem(400px);
+            font-size: 1.62rem;
+            font-weight: 25rem;
             line-height: 2.5rem;
             color: root.$primary_description_color;
         }
         h2 {
             color: root.$secondary_title_color;
-            font-size: func.toRem(50px);
+            font-size: 3.12rem;
             line-height: 3.8rem;
             font-weight: 500;
 
@@ -67,8 +67,8 @@
                 &:nth-of-type(1) {
                     background-color: root.$primary_buttons_bg_color;
                     color: white;
-                    padding: func.toRem(20px) func.toRem(35px);
-                    border-radius: func.toRem(20px);
+                    padding: 1.25rem 2.18rem;
+                    border-radius: 1.25rem;
                     box-shadow: 0 1px root.$primary_black_color;
                     &:hover {
                         background-color: root.$primary_buttons_bg_hover_color;
@@ -78,8 +78,8 @@
                 &:nth-of-type(2) {
                     background-color: transparent;
                     color: root.$primary_buttons_bg_color;
-                    padding: func.toRem(20px) func.toRem(35px);
-                    border-radius: func.toRem(20px);
+                    padding: 1.25rem 2.187rem;
+                    border-radius: 1.25rem;
                     &:hover {
                         color: root.$primary_buttons_bg_hover_color;
                         transition: 0.3s;

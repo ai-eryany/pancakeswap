@@ -13,18 +13,18 @@
     .sec2-texts {
         display: flex;
         flex-direction: column;
-        gap: func.toRem(40px);
-        margin-bottom: func.toRem(64px);
+        gap: 2.5rem;
+        margin-bottom: 4rem;
         text-align: center;
         h2 {
-            font-size: func.toRem(64px);
+            font-size: 4rem;
             font-weight: 550;
             line-height: 4rem;
             color: root.$secondary_title_color;
             margin-top: 1.5rem;
         }
         p {
-            font-size: func.toRem(25px);
+            font-size: 1.56rem;
             color: root.$primary_description_color;
             &:nth-of-type(2) {
                 font-weight: 600;
@@ -35,11 +35,11 @@
         display: flex;
         flex-direction: column;
 
-        gap: func.toRem(32px);
+        gap: 2rem;
         .sec2-crd {
-            width: func.toRem(440px);
-            height: func.toRem(320px);
-            padding: func.toRem(24px);
+            width: 27.5rem;
+            height: 20rem;
+            padding: 1.5rem;
             background-color: white;
             border-radius: 10%;
             display: flex;
@@ -72,10 +72,10 @@
             }
 
             @include mixin.large {
-                height: func.toRem(280px);
+                height: 17.5rem;
                 display: flex;
                 flex-direction: column;
-                gap: func.toRem(50px);
+                gap: 3.1rem;
             }
 
             .sec2-cards-icon {
@@ -92,13 +92,13 @@
                 justify-content: space-between;
                 h1 {
                     line-height: 3.5rem;
-                    font-size: func.toRem(64px);
+                    font-size: 4rem;
                     font-weight: 600;
                     color: root.$secondary_title_color;
                 }
                 p {
                     color: root.$primary_description_color;
-                    margin-top: func.toRem(60px);
+                    margin-top: 3.75rem;
                 }
             }
         }

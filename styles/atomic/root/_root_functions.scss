@@ -47,6 +47,7 @@
 
 // this function convert px to rem. usage: convertPxToRem(32px) -> 2rem
 // this function depends on the Number() function above.
+
 @function toRem($px) {
     $string_px: #{$px}; // convert it to string so we can remove the px
     $index: string.index(
@@ -70,6 +71,6 @@
     @debug type-of(
         $number_px
     ); // making sure it's a number in order to calculate later
-    $number_rem: calc($number_px / 16) + rem;
+    $number_rem: calc($number_px / 10) + rem;
     @return $number_rem;
 }

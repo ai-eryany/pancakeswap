@@ -13,7 +13,7 @@
     }
 
     &-specs {
-        padding: func.toRem(20px) 0;
+        padding: 20px 0;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -33,8 +33,8 @@
 //
 .footer-wrapper-head {
     &-img {
-        width: func.toRem(200px);
-        height: func.toRem(100px);
+        width: 200px;
+        height: 100px;
     }
 }
 
@@ -69,8 +69,8 @@
 
 .footer-wrapper-specs-b1-price {
     &__img {
-        width: func.toRem(30px);
-        height: func.toRem(30px);
+        width: 30px;
+        height: 30px;
     }
 
     &__num {
@@ -89,12 +89,12 @@
         justify-content: center;
         align-items: center;
         background-color: root.$icons_color;
-        width: func.toRem(60px);
-        height: func.toRem(30px);
+        width: 60px;
+        height: 30px;
         display: flex;
         gap: 0.5rem;
         align-items: center;
-        border-radius: func.toRem(20px);
+        border-radius: 20px;
     }
 
     &-lg {
@@ -110,8 +110,8 @@
 
 .footer-wrapper-specs-b2-lg {
     &__glb {
-        width: func.toRem(30px);
-        height: func.toRem(30px);
+        width: 30px;
+        height: 30px;
     }
 }
 //

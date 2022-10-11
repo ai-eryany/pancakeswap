@@ -5,22 +5,22 @@
 
 .section1-wrapper {
     @include mixin.large {
-        margin: func.toRem(70px);
+        margin: 4.37rem;
     }
     @include mixin.larger {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-around;
-        margin: func.toRem(170px);
+        margin: 10.6rem;
     }
     .sec1-right {
         img {
             @include mixin.large {
-                width: func.toRem(400px);
+                width: 25rem;
             }
             @include mixin.larger {
-                width: func.toRem(870px);
+                width: 54.37rem;
             }
         }
     }

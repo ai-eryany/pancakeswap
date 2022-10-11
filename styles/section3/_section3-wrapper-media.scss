@@ -5,69 +5,70 @@
 
 .section3-wrapper {
     @include mixin.large {
-        margin: func.toRem(70px);
+        margin: 4.37rem;
     }
     @include mixin.larger {
-        width: 1020px;
-        height: 500px;
+        width: 102rem;
+        height: 50rem;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-around;
-        margin: func.toRem(170px);
-    }
-    .sec3-right {
-        .sec3-img {
-            @include mixin.larger {
-                margin-top: -20rem;
-            }
-            img {
-                @include mixin.large {
-                    width: 250px;
-                }
+        margin: 17rem;
+
+        .sec3-right {
+            .sec3-img {
                 @include mixin.larger {
-                    width: 428px;
-                    height: 428px;
-                    &:nth-of-type(1) {
-                        margin-bottom: -42rem;
-                        z-index: 2;
-                        animation: floating 5s infinite;
-                        position: relative;
+                    margin-top: -20rem;
+                }
+                img {
+                    @include mixin.large {
+                        width: 25rem;
                     }
-                    &:nth-of-type(2) {
-                        margin-bottom: -42rem;
-                        z-index: 1;
-                        animation: floating 5s infinite;
-                        position: relative;
-                    }
-                    &:nth-of-type(3) {
-                        margin-bottom: -42rem;
-                        z-index: 0;
-                        animation: floating 5s infinite;
-                        position: relative;
+                    @include mixin.larger {
+                        width: 42.8rem;
+                        height: 42.8rem;
+                        &:nth-of-type(1) {
+                            margin-bottom: -42rem;
+                            z-index: 2;
+                            animation: floating 5s infinite;
+                            position: relative;
+                        }
+                        &:nth-of-type(2) {
+                            margin-bottom: -42rem;
+                            z-index: 1;
+                            animation: floating 5s infinite;
+                            position: relative;
+                        }
+                        &:nth-of-type(3) {
+                            margin-bottom: -42rem;
+                            z-index: 0;
+                            animation: floating 5s infinite;
+                            position: relative;
+                        }
                     }
                 }
             }
         }
-    }
-    .sec3-left {
-        @include mixin.large {
-            width: 60rem;
-        }
-        @include mixin.larger {
-            width: 350rem;
-            padding: 2rem;
-        }
-        p {
-            @include mixin.larger {
-                padding-right: 10rem;
+        .sec3-left {
+            @include mixin.large {
+                width: 60rem;
             }
-        }
-        h2 {
             @include mixin.larger {
-                font-size: 45px;
-                line-height: 4.5rem;
-                padding-right: 2rem;
+                width: 350rem;
+                padding: 2rem;
+            }
+            p {
+                @include mixin.larger {
+                    padding-right: 10rem;
+                }
+            }
+            h2 {
+                @include mixin.larger {
+                    font-size: 4.5rem;
+                    line-height: 4.5rem;
+                    padding-right: 2rem;
+                }
             }
         }
     }
