@@ -104,7 +104,7 @@ $btnLetterSpacing: 0.48px;
 $btnLineHeight: 16px;
 $btnPadding: 20px;
 $btnTextAlign: center;
-$btnBorderRadius: 25px;
+$btnBorderRadius: 15px;
 // * cards specs
 $cardMaxWidth: 453px;
 $cardMinHeight: 550px;
@@ -136,11 +136,11 @@ $cardBorderRadius: 30px;
 
 // * intro_slide vars
 $intro_slide-wrapperPadding: 2rem;
-$intro_slide-wrapperMaxWidth: 175.2rem;
-$intro_slide-wrapperMinHeight: 33.2rem;
+$intro_slide-wrapperMaxWidth: 115.2rem;
+$intro_slide-wrapperHeight: 22.2rem;
 
 $intro_slide-wrapper-containerMaxWidth: 111.2rem;
-$intro_slide-wrapper-containerBorderRadius: 5rem; // ! test
+$intro_slide-wrapper-containerBorderRadius: 3rem; // ! test
 $intro_slide-wrapper-containerBackgroundColor: #6523a7;
 
 /*
