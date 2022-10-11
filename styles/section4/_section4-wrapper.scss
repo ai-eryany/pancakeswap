@@ -4,4 +4,68 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .section4-wrapper {
+    max-width: root.$section4-wrapperMaxwidth;
+
+    &-floating-img {
+    }
+
+    &-text {
+        &__title {
+        }
+
+        &__description {
+        }
+
+        &__button {
+        }
+    }
+
+    &-details {
+        &-title {
+        }
+
+        &__title {
+        }
+
+        &__title-switch1 {
+        }
+
+        &__title-switch2 {
+            display: none;
+        }
+
+        &-switcher {
+        }
+
+        &__title-switch1-data {
+            display: flex;
+            gap: 1rem;
+            &-block {
+            }
+
+            &__head {
+            }
+
+            &__percent {
+            }
+
+            &__date {
+            }
+        }
+
+        &__title-switch2-data {
+            display: none;
+            &-block {
+            }
+
+            &__head {
+            }
+
+            &__percent {
+            }
+
+            &__date {
+            }
+        }
+    }
 }

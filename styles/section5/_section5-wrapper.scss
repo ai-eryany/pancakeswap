@@ -4,4 +4,31 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .section5-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    max-width: root.$section5-wrapperMaxWidth;
+    gap: 4rem;
+    &-title {
+        &__title {
+        }
+    }
+
+    &-description {
+        &__description {
+        }
+    }
+
+    &-card1 {
+        .card {
+            background-color: orange;
+        }
+    }
+
+    &-card2 {
+        .card {
+            background-color: purple;
+        }
+    }
 }

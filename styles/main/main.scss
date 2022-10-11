@@ -9,6 +9,7 @@
 @use '../atomic/buttons/buttons';
 @use '../atomic/links/links';
 @use '../atomic/scrollbar/scrollbar';
+@use '../atomic/cards/cards';
 
 @use '../header/header';
 @use '../header/nav/nav';
@@ -50,13 +51,13 @@
 @use '../footer/footer-wrapper';
 @use '../footer/footer-wrapper-media';
 
-@use '../swap/section1/section1.scss';
-@use '../swap/section1/section1-wrapper.scss';
-@use '../swap/section1/section1-wrapper-media.scss';
+@use '../swap/section1/swap1.scss';
+@use '../swap/section1/swap1-wrapper.scss';
+@use '../swap/section1/swap1-wrapper-media.scss';
 
-@use '../swap/section2/section2.scss';
-@use '../swap/section2/section2-wrapper.scss';
-@use '../swap/section2/section2-wrapper-media.scss';
+@use '../swap/section2/swap2.scss';
+@use '../swap/section2/swap2-wrapper.scss';
+@use '../swap/section2/swap2-wrapper-media.scss';
 
 main {
     // !never delete this position

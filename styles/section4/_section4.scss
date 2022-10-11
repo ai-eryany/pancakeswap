@@ -5,6 +5,7 @@
 @use '../atomic/root/root_mixins' as mixin;
 .section4 {
     // !never delete this position
+    width: 100%;
     height: 100rem;
     position: relative;
     display: flex;
