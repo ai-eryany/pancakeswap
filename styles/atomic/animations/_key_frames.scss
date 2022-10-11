@@ -5,13 +5,24 @@
 @use '../root/root_functions' as func;
 @use '../root/root_mixins' as mixin;
 
-@keyframes floating {
-    0%,
-    100% {
-        transform: translate();
+.floatIt {
+    animation-name: floatIt;
+    animation-iteration-count: infinite;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes floatIt {
+    0% {
+        translate: 0 0;
     }
 
     50% {
-        transform: translate();
+        translate: 5% 5%;
+    }
+
+    100% {
+        translate: 0 0;
     }
 }

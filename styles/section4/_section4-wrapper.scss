@@ -3,69 +3,131 @@
 @use '../atomic/root/root' as root;
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
-.section4-wrapper {
-    max-width: root.$section4-wrapperMaxwidth;
 
+.section4-wrapper {
+    padding: 2rem;
+    max-width: root.$section4-wrapperMaxwidth;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     &-floating-img {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 20rem;
+    }
+
+    &__img1 {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        animation-delay: 1000ms;
+    }
+
+    &__img2 {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        animation-delay: 2000ms;
+    }
+
+    &__img3 {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        animation-delay: 5500ms;
     }
 
     &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         &__title {
+            font-size: 3rem;
+            color: root.$secondary_title_color;
+            span {
+                color: root.$primary_title_color;
+            }
         }
 
         &__description {
+            color: root.$primary_description_color;
         }
 
         &__button {
+            display: flex;
+            gap: 2rem;
         }
     }
 
     &-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         &-title {
+            font-size: 2rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         &__title {
+            color: root.$secondary_title_color;
         }
 
-        &__title-switch1 {
+        &__switch1 {
+            color: root.$primary_title_color;
         }
 
-        &__title-switch2 {
+        &__switch2 {
             display: none;
+            color: root.$primary_title_color;
         }
 
-        &-switcher {
+        &__switcher {
+            margin-left: 2rem;
+            width: 3rem;
+            height: 3rem;
+            background-color: grey;
         }
+    }
 
-        &__title-switch1-data {
+    &-data1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &-data2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &-data1,
+    &-data2 {
+        &-block {
             display: flex;
-            gap: 1rem;
-            &-block {
-            }
-
-            &__head {
-            }
-
-            &__percent {
-            }
-
-            &__date {
-            }
+            flex-direction: column;
         }
 
-        &__title-switch2-data {
-            display: none;
-            &-block {
-            }
+        &__head {
+            color: root.$primary_title_color;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
 
-            &__head {
-            }
+        &__percent {
+            color: root.$secondary_title_color;
+            font-size: 2rem;
+            font-weight: 500;
+        }
 
-            &__percent {
-            }
-
-            &__date {
-            }
+        &__date {
+            color: root.$primary_description_color;
+            font-weight: 400;
         }
     }
 }
