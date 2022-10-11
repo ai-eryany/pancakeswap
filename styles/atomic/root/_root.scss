@@ -20,7 +20,7 @@ $font_size: 16px;
 $font_size_reset: 62.5%;
 $parentSectionPos: relative;
 $parentSectionWidth: 100%;
-$wrappersMaxWidth: func.toRem(1752px);
+$wrappersMaxWidth: 175.2rem;
 $parentSpecs: 100%;
 
 /* 
@@ -94,21 +94,21 @@ $colors_textSubtle: #7a6eaa;
 */
 
 // * links specs
-$linkLineHeight: func.toRem(24px);
+$linkLineHeight: 2.4rem;
 $linkFontWeight: 600;
 $linkUnderLine: underline;
 // * buttons specs
 $btnBoxShadow: #0e0e2c 0px -1px 0px 0px;
 $btnFontWeight: 600;
-$btnLetterSpacing: func.toRem(0.48px);
-$btnLineHeight: func.toRem(16px);
-$btnPadding: func.toRem(24px);
+$btnLetterSpacing: 0.48px;
+$btnLineHeight: 16px;
+$btnPadding: 20px;
 $btnTextAlign: center;
-$btnBorderRadius: func.toRem(25px);
+$btnBorderRadius: 25px;
 // * cards specs
-$cardMaxWidth: func.toRem(453px);
-$cardMinHeight: func.toRem(550px);
-$cardBorderRadius: func.toRem(30px);
+$cardMaxWidth: 453px;
+$cardMinHeight: 550px;
+$cardBorderRadius: 30px;
 
 /*
       .##.....##.########....###....########..########.########.
@@ -135,14 +135,12 @@ $cardBorderRadius: func.toRem(30px);
 */
 
 // * intro_slide vars
-$intro_slide-wrapperPadding: func.toRem(20px);
-$intro_slide-wrapperMaxWidth: func.toRem(1752px);
-$intro_slide-wrapperHeight: func.toRem(332px);
+$intro_slide-wrapperPadding: 2rem;
+$intro_slide-wrapperMaxWidth: 175.2rem;
+$intro_slide-wrapperMinHeight: 33.2rem;
 
-$intro_slide-wrapper-containerPadding: func.toRem(40px);
-$intro_slide-wrapper-containerMaxWidth: func.toRem(1112px);
-$intro_slide-wrapper-containerMaxHeight: func.toRem(192px);
-$intro_slide-wrapper-containerBorderRadius: func.toRem(30px); // ! test
+$intro_slide-wrapper-containerMaxWidth: 111.2rem;
+$intro_slide-wrapper-containerBorderRadius: 5rem; // ! test
 $intro_slide-wrapper-containerBackgroundColor: #6523a7;
 
 /*
@@ -156,7 +154,7 @@ $intro_slide-wrapper-containerBackgroundColor: #6523a7;
 */
 
 // * write vars here
-$section5-wrapperMaxWidth: func.toRem(1752px);
+$section5-wrapperMaxWidth: 175.2rem;
 
 //
 
@@ -290,7 +288,7 @@ $section7-wrapperBackgroundCombo: conic-gradient(
     transparent,
     $section7-wrapperBackgroundLight
 );
-$section7Height: func.toRem(500px);
+$section7Height: 50rem;
 
 //
 
@@ -304,6 +302,5 @@ $section7Height: func.toRem(500px);
 .##........#######...#######.....##....########.##.....##
 */
 
-$footer-wrapperPadding: func.toRem(20px);
-$footer-wrapper-specs-b1-button__buttonPadding: func.toRem(10px)
-    func.toRem(20px);
+$footer-wrapperPadding: 2rem;
+$footer-wrapper-specs-b1-button__buttonPadding: 1rem 2rem;

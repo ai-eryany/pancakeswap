@@ -7,7 +7,7 @@
     .sec2-texts {
         h2 {
             @include mixin.large {
-                font-size: 40px;
+                font-size: 4rem;
             }
         }
     }
@@ -17,15 +17,15 @@
         }
         .sec2-crd {
             @include mixin.large {
-                height: 280px;
+                height: 28rem;
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
+                gap: 5rem;
             }
             .sec2-cards-icon {
                 h1 {
                     @include mixin.large {
-                        font-size: 40px;
+                        font-size: 4rem;
                         line-height: 4rem;
                     }
                 }

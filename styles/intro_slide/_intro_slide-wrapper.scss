@@ -3,40 +3,54 @@
 @use '../atomic/root/root' as root;
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
+
 .intro_slide-wrapper {
     flex-grow: 1;
     @include mixin.flexItCenter();
     padding: root.$intro_slide-wrapperPadding;
     max-width: root.$intro_slide-wrapperMaxWidth;
-    height: root.$intro_slide-wrapperHeight;
-
+    min-height: root.$intro_slide-wrapperMinHeight;
     &-container1 {
         @include mixin.flexIt();
         justify-content: space-between;
+        align-items: center;
         flex-grow: 1;
-        padding: root.$intro_slide-wrapper-containerPadding;
         width: 100%;
-        height: 100%;
+        height: root.$intro_slide-wrapperMinHeight;
         border-radius: root.$intro_slide-wrapper-containerBorderRadius;
         background-color: root.$intro_slide-wrapper-containerBackgroundColor;
 
         &-text {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            line-height: 0.8;
         }
 
         &__title {
             color: root.$quaternary_link_color;
+            font-size: 4rem;
         }
 
         &__description {
+            margin-top: auto;
             color: root.$primary_white_color;
-            font-size: func.toRem(60px);
+            font-size: 4rem;
             font-weight: 700;
+            max-width: 60%;
         }
 
         &__button {
+            margin-top: auto;
+            .buttonIt {
+                padding: 20px 40px;
+            }
         }
 
         &-img {
+            flex-basis: 200px;
+            height: 120%;
+            flex-grow: 1;
             img {
             }
         }
@@ -44,10 +58,6 @@
 
     &-container2 {
         @include mixin.flexIt();
-        padding: root.$intro_slide-wrapper-containerPadding;
-        max-width: root.$intro_slide-wrapper-containerMaxWidth;
-        max-height: root.$intro_slide-wrapper-containerMaxHeight;
-        border-radius: root.$intro_slide-wrapper-containerBorderRadius;
         display: none;
 
         &-text {
@@ -70,10 +80,6 @@
 
     &-container3 {
         @include mixin.flexIt();
-        padding: root.$intro_slide-wrapper-containerPadding;
-        max-width: root.$intro_slide-wrapper-containerMaxWidth;
-        max-height: root.$intro_slide-wrapper-containerMaxHeight;
-        border-radius: root.$intro_slide-wrapper-containerBorderRadius;
         display: none;
 
         &-text {

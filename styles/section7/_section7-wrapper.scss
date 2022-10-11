@@ -17,8 +17,8 @@
         position: absolute;
         z-index: -1;
         content: '';
-        width: func.toRem(90px);
-        height: func.toRem(90px);
+        width: 5.62rem;
+        height: 5.62rem;
         align-self: center;
         border-radius: 100%;
         background-color: root.$seventh_background_color;
@@ -26,7 +26,7 @@
     }
 
     &-title {
-        font-size: func.toRem(40px);
+        font-size: 2.5rem;
         text-align: center;
         @include mixin.flexItCenter();
     }
@@ -43,7 +43,7 @@
         align-items: center;
         justify-content: center;
         font-weight: 600;
-        line-height: func.toRem(24px);
+        line-height: 1.5rem;
     }
 
     &-button {
