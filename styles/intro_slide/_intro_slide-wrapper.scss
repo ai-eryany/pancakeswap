@@ -4,49 +4,93 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .intro_slide-wrapper {
-    @include mixin.flexIt();
-    @include mixin.centerFlex();
+    flex-grow: 1;
+    @include mixin.flexItCenter();
     padding: root.$intro_slide-wrapperPadding;
     max-width: root.$intro_slide-wrapperMaxWidth;
-    max-height: root.$intro_slide-wrapperMaxHeight;
+    height: root.$intro_slide-wrapperHeight;
 
-    &-container {
+    &-container1 {
+        @include mixin.flexIt();
+        justify-content: space-between;
+        flex-grow: 1;
+        padding: root.$intro_slide-wrapper-containerPadding;
+        width: 100%;
+        height: 100%;
+        border-radius: root.$intro_slide-wrapper-containerBorderRadius;
+        background-color: root.$intro_slide-wrapper-containerBackgroundColor;
+
+        &-text {
+        }
+
+        &__title {
+            color: root.$quaternary_link_color;
+        }
+
+        &__description {
+            color: root.$primary_white_color;
+            font-size: func.toRem(60px);
+            font-weight: 700;
+        }
+
+        &__button {
+        }
+
+        &-img {
+            img {
+            }
+        }
+    }
+
+    &-container2 {
         @include mixin.flexIt();
         padding: root.$intro_slide-wrapper-containerPadding;
         max-width: root.$intro_slide-wrapper-containerMaxWidth;
         max-height: root.$intro_slide-wrapper-containerMaxHeight;
         border-radius: root.$intro_slide-wrapper-containerBorderRadius;
+        display: none;
+
+        &-text {
+        }
+
+        &__title {
+        }
+
+        &__timing {
+        }
+
+        &__button {
+        }
+
+        &-img {
+            img {
+            }
+        }
     }
 
-    &-container2 {
-        @extend .intro_slide-wrapper-container;
-    }
-}
-
-// defined inside wrapper, don't forget
-.intro_slide-wrapper-container {
-    // flex item, and a container
-    &__text {
+    &-container3 {
         @include mixin.flexIt();
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+        padding: root.$intro_slide-wrapper-containerPadding;
+        max-width: root.$intro_slide-wrapper-containerMaxWidth;
+        max-height: root.$intro_slide-wrapper-containerMaxHeight;
+        border-radius: root.$intro_slide-wrapper-containerBorderRadius;
+        display: none;
 
-    //flex item, and a container
-    &__img {
-    }
-}
+        &-text {
+        }
 
-.intro_slide-wrapper-container__text {
-    &-title {
-    }
+        &__title {
+        }
 
-    &-description {
-    }
+        &__description {
+        }
 
-    &-button {
-    }
-}
+        &__button {
+        }
 
-.intro_slide-wrapper-container__img {
+        &-img {
+            img {
+            }
+        }
+    }
 }

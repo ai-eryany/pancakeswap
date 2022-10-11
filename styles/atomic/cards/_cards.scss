@@ -1,0 +1,34 @@
+@use '../root/root' as root;
+@use '../root/root_functions' as func;
+@use '../root/root_mixins' as mixin;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    //     justify-content: space-around;
+    gap: 1rem;
+    max-width: root.$cardMaxWidth;
+    min-height: root.$cardMinHeight;
+    border-radius: root.$cardBorderRadius;
+    &-icon {
+        &__ico {
+        }
+    }
+
+    &__title {
+    }
+
+    &__price {
+    }
+
+    &__note {
+    }
+
+    &__description {
+    }
+
+    .buttonIt {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}

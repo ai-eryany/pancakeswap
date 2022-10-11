@@ -6,7 +6,7 @@
 .intro_slide {
     // !never delete this position
     width: 100%;
-    height: 100rem;
+    height: func.toRem(700px);
     position: relative;
     display: flex;
     justify-content: center;
