@@ -12,4 +12,59 @@
     justify-content: center;
     align-items: center;
     background-color: root.$fifth_background_color;
+    overflow: hidden;
+    // ? cards
+
+    .lot-card {
+        position: absolute;
+        width: 50rem;
+        height: 50rem;
+        left: 0;
+        bottom: 0;
+    }
+
+    .lot-card1 {
+        animation-delay: 1000ms;
+    }
+
+    .lot-card2 {
+        animation-delay: 2000ms;
+    }
+
+    .lot-card3 {
+        animation-delay: 3000ms;
+    }
+
+    .lot-card4 {
+        animation-delay: 5000ms;
+    }
+
+    .ball {
+        position: absolute;
+        z-index: 1;
+        width: 50rem;
+        height: 50rem;
+        right: 0;
+        top: 0;
+    }
+
+    .ball1 {
+        animation-delay: 1000ms;
+    }
+
+    .ball2 {
+        animation-delay: 2000ms;
+    }
+
+    .ball3 {
+        animation-delay: 3000ms;
+    }
+
+    .ball4 {
+        animation-delay: 4000ms;
+    }
+
+    .ball5 {
+        animation-delay: 5000ms;
+    }
 }

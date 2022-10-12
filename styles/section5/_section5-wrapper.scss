@@ -5,6 +5,7 @@
 @use '../atomic/root/root_mixins' as mixin;
 
 .section5-wrapper {
+    z-index: 2;
     padding: 2rem;
     flex-grow: 1;
     max-width: root.$section5-wrapperMaxWidth;
@@ -13,7 +14,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: root.$fifth_background_color_inner;
+    background-color: rgba(197, 232, 250, 0.9);
     gap: 2rem;
 
     &-title {
