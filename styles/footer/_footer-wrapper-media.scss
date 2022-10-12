@@ -2,3 +2,15 @@
 @use '../atomic/root/root' as root;
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
+
+@media only screen and (min-width: 700px) {
+    .footer-wrapper {
+        // .footer-wrapper-specs {
+        //     order: 10;
+        //     flex-direction: row;
+        // }
+        &-anchors {
+            flex-direction: row;
+        }
+    }
+}
