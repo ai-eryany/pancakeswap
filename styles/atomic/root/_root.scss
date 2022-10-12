@@ -20,7 +20,7 @@ $font_size: 16px;
 $font_size_reset: 62.5%;
 $parentSectionPos: relative;
 $parentSectionWidth: 100%;
-$wrappersMaxWidth: func.toRem(1152px);
+$wrappersMaxWidth: 175.2rem;
 $parentSpecs: 100%;
 
 /* 
@@ -94,17 +94,20 @@ $colors_textSubtle: #7a6eaa;
 */
 
 // * links specs
-$linkLineHeight: func.toRem(24px);
+$linkLineHeight: 2.4rem;
 $linkFontWeight: 600;
 $linkUnderLine: underline;
 // * buttons specs
 $btnBoxShadow: #0e0e2c 0px -1px 0px 0px;
 $btnFontWeight: 600;
-$btnLetterSpacing: func.toRem(0.48px);
-$btnLineHeight: func.toRem(16px);
-$btnPadding: func.toRem(24px);
+$btnLetterSpacing: 0.48px;
+$btnLineHeight: 16px;
+$btnPadding: 1.5rem 3rem;
 $btnTextAlign: center;
-$btnBorderRadius: func.toRem(25px);
+$btnBorderRadius: 15px;
+// * cards specs
+$cardMaxWidth: 453px;
+$cardBorderRadius: 30px;
 
 /*
       .##.....##.########....###....########..########.########.
@@ -131,14 +134,13 @@ $btnBorderRadius: func.toRem(25px);
 */
 
 // * intro_slide vars
-$intro_slide-wrapperPadding: func.toRem(20px);
-$intro_slide-wrapperMaxWidth: func.toRem(1152px);
-$intro_slide-wrapperMaxHeight: func.toRem(232px);
+$intro_slide-wrapperPadding: 2rem;
+$intro_slide-wrapperMaxWidth: 115.2rem;
+$intro_slide-wrapperHeight: 22.2rem;
 
-$intro_slide-wrapper-containerPadding: func.toRem(20px);
-$intro_slide-wrapper-containerMaxWidth: func.toRem(1112px);
-$intro_slide-wrapper-containerMaxHeight: func.toRem(192px);
-$intro_slide-wrapper-containerBorderRadius: func.toRem(15px); // ! test
+$intro_slide-wrapper-containerMaxWidth: 111.2rem;
+$intro_slide-wrapper-containerBorderRadius: 3rem; // ! test
+$intro_slide-wrapper-containerBackgroundColor: #6523a7;
 
 /*
 ..######..########..######..########.####..#######..##....##.......##..
@@ -193,6 +195,7 @@ $intro_slide-wrapper-containerBorderRadius: func.toRem(15px); // ! test
 */
 
 // * write vars here
+$section4-wrapperMaxwidth: $wrappersMaxWidth;
 
 //
 
@@ -207,6 +210,8 @@ $intro_slide-wrapper-containerBorderRadius: func.toRem(15px); // ! test
 */
 
 // * write vars here
+$section5-wrapperMaxWidth: 100rem;
+$section5-wrapperBorderRadius: 10rem;
 
 //
 
@@ -237,53 +242,53 @@ $intro_slide-wrapper-containerBorderRadius: func.toRem(15px); // ! test
 // * write vars here
 $section7-wrapperBackgroundLight: rgb(132, 44, 214, 0.5);
 $section7-wrapperBackgroundCombo: conic-gradient(
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight,
-  transparent,
-  $section7-wrapperBackgroundLight
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight,
+    transparent,
+    $section7-wrapperBackgroundLight
 );
-$section7Height: func.toRem(500px);
+$section7Height: 50rem;
 
 //
 
@@ -297,6 +302,5 @@ $section7Height: func.toRem(500px);
 .##........#######...#######.....##....########.##.....##
 */
 
-$footer-wrapperPadding: func.toRem(20px);
-$footer-wrapper-specs-b1-button__buttonPadding: func.toRem(10px)
-  func.toRem(20px);
+$footer-wrapperPadding: 2rem;
+$footer-wrapper-specs-b1-button__buttonPadding: 1rem 2rem;

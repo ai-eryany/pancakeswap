@@ -1,118 +1,93 @@
 // SCSS - section1-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 
 .section1-wrapper {
-  padding: 16px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: func.toRem(10px);
-  @include mixin.large {
-    margin: func.toRem(70px);
-  }
-  @include mixin.larger {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
-    margin: func.toRem(170px);
-  }
-
-  .sec1-right {
-    animation: floating 5s infinite;
-    position: relative;
-    z-index: 2;
-    img {
-      width: func.toRem(350px);
-      margin-left: auto;
-      @include mixin.large {
-        width: func.toRem(400px);
-      }
-      @include mixin.larger {
-        width: func.toRem(950px);
-      }
-      .sec1-star {
-        position: absolute;
-        z-index: 1;
-        img {
-          &:nth-of-type(1) {
-          }
-        }
-      }
-    }
-  }
-  .sec1-left {
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    @include mixin.large {
-      width: 60rem;
-    }
-    p {
-      font-size: 1.9rem;
-      font-weight: 550;
-      line-height: 2.5rem;
-      color: root.$secondary_title_color;
-    }
-    h2 {
-      color: root.$primary_title_color;
-      font-size: 5rem;
-      line-height: 6rem;
-      font-weight: 600;
-      @include mixin.larger {
-        font-size: 6.5rem;
-      }
-    }
-    .sec1-btns {
-      display: flex;
-      gap: 1rem;
-      button {
-        font-size: 1.45rem;
-        font-weight: 600;
-        &:nth-of-type(1) {
-          background-color: root.$primary_buttons_bg_color;
-          color: white;
-          padding: func.toRem(20px) func.toRem(35px);
-          border-radius: func.toRem(20px);
-          box-shadow: 0 1px root.$primary_black_color;
-          &:hover {
-            background-color: root.$primary_buttons_bg_hover_color;
-            transition: 0.3s;
-          }
+    align-items: flex-end;
+    margin: 0.6rem;
+
+    .sec1-right {
+        animation: floating 5s infinite;
+        position: relative;
+        z-index: 2;
+        img {
+            width: 21.87rem;
+            margin-left: auto;
+            .sec1-star {
+                position: absolute;
+                z-index: 1;
+            }
         }
-        &:nth-of-type(2) {
-          background-color: transparent;
-          color: root.$primary_buttons_bg_color;
-          border: 2px solid root.$primary_buttons_bg_color;
-          padding: func.toRem(20px) func.toRem(35px);
-          border-radius: func.toRem(20px);
-          &:hover {
-            color: root.$primary_buttons_bg_hover_color;
-            border: 2px solid root.$primary_buttons_bg_hover_color;
-            transition: 0.3s;
-          }
-        }
-      }
     }
-  }
+    .sec1-left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+            font-size: 1.9rem;
+            font-weight: 550;
+            line-height: 2.5rem;
+            color: root.$secondary_title_color;
+        }
+        h2 {
+            color: root.$primary_title_color;
+            font-size: 5rem;
+            line-height: 6rem;
+            font-weight: 600;
+        }
+        .sec1-btns {
+            display: flex;
+            gap: 1rem;
+            button {
+                font-size: 1.45rem;
+                font-weight: 600;
+                &:nth-of-type(1) {
+                    background-color: root.$primary_buttons_bg_color;
+                    color: white;
+                    padding: 1.25rem 2.18rem;
+                    border-radius: 1.25rem;
+                    box-shadow: 0 1px root.$primary_black_color;
+                    &:hover {
+                        background-color: root.$primary_buttons_bg_hover_color;
+                        transition: 0.3s;
+                    }
+                }
+                &:nth-of-type(2) {
+                    background-color: transparent;
+                    color: root.$primary_buttons_bg_color;
+                    border: 2px solid root.$primary_buttons_bg_color;
+                    padding: 1.25rem 2.18rem;
+                    border-radius: 1.25rem;
+                    &:hover {
+                        color: root.$primary_buttons_bg_hover_color;
+                        border: 2px solid root.$primary_buttons_bg_hover_color;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
 }
 @keyframes floating {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.03);
-  }
-  100% {
-    transform: scale(1);
-  }
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: 10px;
-  }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 10px;
+    }
 }

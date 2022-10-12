@@ -6,41 +6,42 @@
 @use '../atomic/root/root' as root;
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
+
 :root {
-  font-size: root.$font_size_reset;
+    font-size: root.$font_size_reset;
 }
 
 body {
-  font-size: root.$font_size;
+    font-size: root.$font_size;
 }
 
 * {
-  @include mixin.reset();
+    @include mixin.reset();
 }
 
 input {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 button {
-  cursor: pointer;
-  font-size: inherit;
-  background: none;
-  border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background: none;
+    border: none;
 }
 
 a {
-  font-size: inherit;
-  text-decoration: none;
+    font-size: inherit;
+    text-decoration: none;
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }

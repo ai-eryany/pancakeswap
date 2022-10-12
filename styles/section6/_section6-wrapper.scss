@@ -5,13 +5,13 @@
 @use '../atomic/root/root_mixins' as mixin;
 .sect6__main {
     display: flex;
-    max-width: func.toRem(968px);
+    max-width: 60.5rem;
 
     &__cake {
         display: flex;
         &__h2 {
             color: root.$primary_title_color;
-            font-size: func.toRem(60px);
+            font-size: 3.75rem;
             font-weight: 600;
             line-height: 1.1;
             span {

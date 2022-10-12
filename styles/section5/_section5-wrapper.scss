@@ -1,7 +1,93 @@
 // SCSS - section-wrapper.scss
 // !wrapper <div class="wrapper-name"></div>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
+
 .section5-wrapper {
+    z-index: 2;
+    padding: 2rem;
+    flex-grow: 1;
+    max-width: root.$section5-wrapperMaxWidth;
+    height: fit-content;
+    border-radius: root.$section5-wrapperBorderRadius;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(197, 232, 250, 0.9);
+    gap: 2rem;
+
+    &-title {
+        font-size: 3rem;
+        color: root.$secondary_title_color;
+        span {
+            color: root.$primary_title_color;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+    }
+
+    &-description {
+        color: root.$primary_description_color;
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &-card1 {
+        .card {
+            background: linear-gradient(#ffb12e, #edd09d);
+            &-icon {
+                .c1 {
+                    fill: root.$secondary_title_color;
+                }
+            }
+
+            &__title {
+                color: root.$secondary_title_color;
+            }
+
+            &__price {
+                color: root.$secondary_title_color;
+            }
+
+            &__note {
+                color: root.$secondary_title_color;
+            }
+
+            &__description {
+                color: root.$secondary_title_color;
+            }
+        }
+    }
+
+    &-card2 {
+        .card {
+            background: #5916be;
+            &-icon {
+                .c2 {
+                    fill: white;
+                }
+            }
+
+            &__title {
+                color: white;
+            }
+
+            &__price {
+                color: root.$tertiary_description_color;
+            }
+
+            &__note {
+                color: white;
+            }
+
+            &__description {
+                color: white;
+            }
+        }
+    }
 }

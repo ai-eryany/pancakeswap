@@ -1,10 +1,10 @@
 // SCSS - header.scss
 // TODO: header element here! <big-boss>
 // * handle it as a section <header></header>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 header {
-  // !never delete this position
-  position: relative;
+    // !never delete this position
+    position: relative;
 }

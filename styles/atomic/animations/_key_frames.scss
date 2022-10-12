@@ -1,17 +1,28 @@
 // SCSS - key_frames.scss
 // All the animations are floating with same speed, same amount of space and same angle.
 
-@use "../root/root" as root;
-@use "../root/root_functions" as func;
-@use "../root/root_mixins" as mixin;
+@use '../root/root' as root;
+@use '../root/root_functions' as func;
+@use '../root/root_mixins' as mixin;
 
-@keyframes floating {
-  0%,
-  100% {
-    transform: translate();
-  }
+.floatIt {
+    animation-name: floatIt;
+    animation-iteration-count: infinite;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
 
-  50% {
-    transform: translate();
-  }
+@keyframes floatIt {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 5% 5%;
+    }
+
+    100% {
+        translate: 0 0;
+    }
 }

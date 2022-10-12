@@ -1,13 +1,13 @@
 // SCSS - section7.scss
 // * handle it as a section <section class="section-name"></section>
-@use "../atomic/root/root" as root;
-@use "../atomic/root/root_functions" as func;
-@use "../atomic/root/root_mixins" as mixin;
+@use '../atomic/root/root' as root;
+@use '../atomic/root/root_functions' as func;
+@use '../atomic/root/root_mixins' as mixin;
 .section7 {
-  // !never delete this position
-  width: root.$parentSectionWidth;
-  height: root.$section7Height;
-  position: root.$parentSectionPos;
-  @include mixin.flexItCenter();
-  background-color: root.$seventh_background_color;
+    // !never delete this position
+    width: root.$parentSectionWidth;
+    height: root.$section7Height;
+    position: root.$parentSectionPos;
+    @include mixin.flexItCenter();
+    background-color: root.$seventh_background_color;
 }
