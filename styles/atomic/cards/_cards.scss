@@ -3,32 +3,41 @@
 @use '../root/root_mixins' as mixin;
 
 .card {
+    padding: 3rem 2rem;
+    max-width: 30rem;
     display: flex;
+    gap: 2rem;
     flex-direction: column;
-    //     justify-content: space-around;
-    gap: 1rem;
-    max-width: root.$cardMaxWidth;
-    min-height: root.$cardMinHeight;
-    border-radius: root.$cardBorderRadius;
+    align-items: flex-start;
+    background-color: purple;
+    border-radius: 2rem;
+    min-height: 37rem;
+
     &-icon {
-        &__ico {
-        }
+        align-self: flex-end;
     }
 
     &__title {
+        font-size: 1.5rem;
     }
 
     &__price {
+        font-size: 4rem;
+        line-height: 0.5;
     }
 
     &__note {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 0.5;
     }
 
     &__description {
+        font-size: 1.7rem;
     }
 
     .buttonIt {
         margin-top: auto;
-        margin-bottom: auto;
+        align-self: stretch;
     }
 }
