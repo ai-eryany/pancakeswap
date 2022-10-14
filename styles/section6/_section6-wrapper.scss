@@ -89,5 +89,8 @@
     .section6 {
         align-items: start;
         margin-bottom: func.toRem(48px);
+        .sect6__main__cake__img {
+            margin-top: func.toRem(48px);
+        }
     }
 }
