@@ -4,24 +4,89 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .sect6__main {
-    display: flex;
-    max-width: 60.5rem;
+    max-width: 77.5rem;
+    padding: func.toRem(48px) 0;
 
     &__cake {
         display: flex;
+        align-items: center;
+        &__text {
+            display: flex;
+            flex-flow: row wrap;
+            gap: func.toRem(20px);
+        }
+        &__text {
+        }
         &__h2 {
-            color: root.$primary_title_color;
+            color: root.$secondary_title_color;
             font-size: 3.75rem;
             font-weight: 600;
             line-height: 1.1;
             span {
-                color: root.$secondary_title_color;
+                color: root.$primary_title_color;
             }
         }
-        &__img picture img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+
+        &__desc p {
+            color: root.$primary_description_color;
         }
+    }
+
+    @media only screen and (max-width: func.toRem(600px)) {
+        padding: 0 func.toRem(20px);
+        &__cake {
+            flex-flow: column-reverse;
+            &__img {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: func.toRem(32px);
+
+        &__para {
+            p:first-of-type {
+                color: root.$icons_color;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            :last-child {
+                color: root.$secondary_title_color;
+                font-size: func.toRem(24px);
+                font-weight: 600;
+                line-height: 1.1;
+            }
+        }
+
+        &__para:not(:nth-child(3n)) {
+            border-right: 1px solid root.$icons_color;
+        }
+        &__para:not(:first-of-type) {
+        }
+    }
+
+    @media only screen and (max-width: func.toRem(600px)) {
+        &__details {
+            grid-template-columns: repeat(2, 1fr);
+            gap: func.toRem(16px) func.toRem(8px);
+            margin-top: func.toRem(50px);
+
+            &__para:not(:last-of-type) {
+                border-right: initial;
+            }
+            &__para:nth-child(odd) {
+                border-right: 1px solid root.$icons_color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: func.toRem(600px)) {
+    .section6 {
+        align-items: start;
     }
 }
