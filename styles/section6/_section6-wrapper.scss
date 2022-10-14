@@ -32,8 +32,26 @@
             justify-content: end;
             width: 100%;
             &__picture {
-                width: 200px;
-                height: 200px;
+                position: relative;
+                width: func.toRem(200px);
+                height: func.toRem(200px);
+
+                & img {
+                    position: absolute;
+                }
+                .cake-img {
+                    top: 25px;
+                    right: 15px;
+                    z-index: 3;
+                }
+
+                .cake-right-img {
+                    z-index: 4;
+                }
+
+                .cake-buttom-img {
+                    top: -20px;
+                }
             }
         }
 
@@ -73,14 +91,12 @@
     .section6 {
         align-items: start;
         margin-bottom: func.toRem(48px);
-        .sect6__main__cake__img {
-            margin-top: func.toRem(48px);
-        }
     }
     .sect6__main {
         padding: 0 func.toRem(20px);
         &__cake {
             flex-flow: column-reverse;
+            margin-top: func.toRem(48px);
             &__img {
                 display: flex;
                 align-items: flex-end;
