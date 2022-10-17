@@ -2,3 +2,17 @@
 @use '../atomic/root/root' as root;
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
+
+@media only screen and (min-width: 700px) {
+    .section5-wrapper-cards {
+        flex-direction: row;
+    }
+
+    .section5-wrapper-card1 {
+        transform: rotate(-2deg);
+    }
+
+    .section5-wrapper-card2 {
+        transform: rotate(2deg);
+    }
+}
