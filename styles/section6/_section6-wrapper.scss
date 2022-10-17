@@ -4,24 +4,133 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .sect6__main {
-    display: flex;
-    max-width: 60.5rem;
+    max-width: 102rem;
+    padding: func.toRem(48px) 0;
 
     &__cake {
         display: flex;
+        align-items: center;
+        &__text {
+            display: flex;
+            flex-flow: row wrap;
+            gap: func.toRem(20px);
+
+            .sect6__btn {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                a {
+                    color: root.$primary_buttons_bg_color;
+                }
+            }
+        }
+        &__text {
+            width: 100%;
+        }
         &__h2 {
-            color: root.$primary_title_color;
-            font-size: 3.75rem;
+            color: root.$secondary_title_color;
+            font-size: 4rem;
             font-weight: 600;
             line-height: 1.1;
             span {
-                color: root.$secondary_title_color;
+                color: root.$primary_title_color;
             }
         }
-        &__img picture img {
+
+        &__img-wrap {
+            display: flex;
+            justify-content: end;
             width: 100%;
-            height: auto;
-            object-fit: cover;
+            &__picture {
+                position: relative;
+                width: 48rem;
+                height: 48rem;
+
+                & img {
+                    position: absolute;
+                    animation: floating 5s infinite;
+                }
+                .cake-img {
+                    z-index: 3;
+                }
+
+                .cake-right-img {
+                    z-index: 4;
+                }
+
+                .cake-buttom-img {
+                }
+            }
+        }
+
+        &__desc p {
+            color: root.$primary_description_color;
+        }
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: func.toRem(32px);
+
+        &__para {
+            p:first-of-type {
+                color: root.$icons_color;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+            :last-child {
+                color: root.$secondary_title_color;
+                font-size: func.toRem(24px);
+                font-weight: 600;
+                line-height: 1.1;
+            }
+        }
+
+        &__para:not(:nth-child(3n)) {
+            border-right: 1px solid root.$icons_color;
+        }
+        &__para:not(:first-of-type) {
+        }
+    }
+}
+
+@media only screen and (max-width: func.toRem(600px)) {
+    .section6 {
+        align-items: start;
+        margin-bottom: func.toRem(48px);
+    }
+    .sect6__main {
+        padding: 0 func.toRem(20px);
+        &__cake {
+            flex-flow: column-reverse;
+            margin-top: func.toRem(48px);
+            &__img-wrap {
+                display: flex;
+                align-items: flex-end;
+
+                &__picture {
+                    position: relative;
+                    width: func.toRem(200px);
+                    height: func.toRem(200px);
+                }
+            }
+            &__h2 {
+                font-size: func.toRem(35px);
+            }
+        }
+        &__details {
+            grid-template-columns: repeat(2, 1fr);
+            gap: func.toRem(16px) func.toRem(8px);
+            margin-top: func.toRem(50px);
+
+            &__para:not(:last-of-type) {
+                border-right: initial;
+            }
+            &__para:nth-child(odd) {
+                border-right: 1px solid root.$icons_color;
+            }
         }
     }
 }
