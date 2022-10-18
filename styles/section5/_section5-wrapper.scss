@@ -37,6 +37,12 @@
         text-align: center;
     }
 
+    &-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     &-card1 {
         .card {
             background: linear-gradient(#ffb12e, #edd09d);

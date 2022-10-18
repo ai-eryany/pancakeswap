@@ -4,129 +4,143 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 .footer-wrapper {
-    flex-basis: root.$wrappersMaxWidth;
+    flex-grow: 1;
+    max-width: 100rem;
     padding: root.$footer-wrapperPadding;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 3rem;
+
     &-head {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+    }
+
+    &__logo {
+        width: 18rem;
     }
 
     &-specs {
-        padding: 20px 0;
         display: flex;
-        justify-content: center;
         flex-direction: column;
         gap: 2rem;
     }
 
-    &-anchors {
-        display: flex;
-        gap: 3rem;
-        flex-direction: column;
-    }
-
-    &-icons {
-        display: flex;
-    }
-}
-//
-.footer-wrapper-head {
-    &-img {
-        width: 200px;
-        height: 100px;
-    }
-}
-
-.footer-wrapper-head-img {
-    &__logo {
-        object-fit: cover;
-    }
-}
-//
-.footer-wrapper-specs {
     &-b1 {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        &-price {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &__logo {
+                width: 2.5rem;
+            }
+
+            &__num {
+                font-weight: 700;
+                color: root.$primary_description_color;
+            }
+        }
+
+        &__button {
+        }
     }
 
     &-b2 {
         display: flex;
         gap: 2rem;
-    }
-}
 
-.footer-wrapper-specs-b1 {
-    &-price {
+        &-switch {
+            padding: 0.5rem;
+            display: flex;
+            gap: 0.4rem;
+            background-color: root.$primary_description_color;
+            border-radius: 2rem;
+        }
+
+        &__sun {
+            fill: root.$tertiary_description_color;
+        }
+
+        &__moon {
+        }
+
+        &-lg {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__globe {
+            fill: root.$primary_description_color;
+        }
+
+        &__lg {
+            color: root.$primary_description_color;
+        }
+    }
+
+    &-anchors {
         display: flex;
-        align-items: center;
-        gap: 0.5rem;
+        flex-direction: column;
+        gap: 3rem;
     }
 
-    &-button {
-    }
-}
-
-.footer-wrapper-specs-b1-price {
-    &__img {
-        width: 30px;
-        height: 30px;
-    }
-
-    &__num {
-    }
-}
-
-.footer-wrapper-specs-b1-button {
-    &__button {
-        padding: root.$footer-wrapper-specs-b1-button__buttonPadding;
-    }
-}
-
-.footer-wrapper-specs-b2 {
-    &-switch {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: root.$icons_color;
-        width: 60px;
-        height: 30px;
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        border-radius: 20px;
-    }
-
-    &-lg {
-        display: flex;
-        gap: 0.5rem;
-    }
-}
-
-.footer-wrapper-specs-b2-switch {
-    &__tgl {
-    }
-}
-
-.footer-wrapper-specs-b2-lg {
-    &__glb {
-        width: 30px;
-        height: 30px;
-    }
-}
-//
-.footer-wrapper-anchors {
     &__about {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li:first-child {
+            color: root.$primary_title_color;
+        }
+
+        li > a {
+            color: root.$tertiary_link_color;
+        }
+
+        li:nth-child(2) > a {
+            color: root.$quaternary_link_color;
+        }
     }
 
     &__help {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li:first-child {
+            color: root.$primary_title_color;
+        }
+
+        li > a {
+            color: root.$tertiary_link_color;
+        }
     }
 
     &__developers {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li:first-child {
+            color: root.$primary_title_color;
+        }
+        li > a {
+            color: root.$tertiary_link_color;
+        }
     }
-}
 
-.footer-wrapper-icons {
-    &-container {
+    &-icons {
+        display: flex;
+        gap: 1rem;
+
+        > li > svg {
+            fill: root.$icons_color;
+        }
+
+        > li > svg:hover {
+            fill: root.$icons_hover_color;
+        }
     }
 }
