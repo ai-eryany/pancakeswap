@@ -18,3 +18,5 @@ const pairButtonEvent = (modelBackground, walletModal) => {
     switcher(modelBackground);
     walletModalBlocker(walletModal);
 };
+
+export { qs, qsa, switcher, walletModalBlocker, pairButtonEvent };
