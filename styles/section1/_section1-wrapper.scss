@@ -12,12 +12,12 @@
     margin: 0.6rem;
 
     .sec1-right {
-        animation: floating 5s infinite;
         position: relative;
         z-index: 2;
         img {
             width: 21.87rem;
             margin-left: auto;
+            animation-delay: 2000ms;
             .sec1-star {
                 position: absolute;
                 z-index: 1;
@@ -72,22 +72,5 @@
                 }
             }
         }
-    }
-}
-@keyframes floating {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.03);
-    }
-    100% {
-        transform: scale(1);
-    }
-    from {
-        bottom: 0;
-    }
-    to {
-        bottom: 10px;
     }
 }
