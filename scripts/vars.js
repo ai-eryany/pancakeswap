@@ -1,4 +1,4 @@
-import { qs } from './functions.js';
+import { qs, qsa } from './functions.js';
 
 
 const walletModelBackground = qs('.walletModelBackground--flex');

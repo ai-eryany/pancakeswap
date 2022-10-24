@@ -9,7 +9,9 @@
     z-index: 99;
 
     .walletModal {
-        // max-width: 79rem;
+
+        max-width: 79rem;
+
         width: 20rem;
         height: 20rem;
         flex-grow: 1;
@@ -19,6 +21,3 @@
     }
 }
 
-.walletModelBackground--none {
-    display: none;
-}

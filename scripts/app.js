@@ -1,9 +1,8 @@
-import * as func from './functions.js';
 import * as vars from './vars.js';
+import * as func from './functions.js';
 
 const run = () => {
-
-    func.pairButtonEvent(vars.walletModelBackground, vars.walletModal);
+    func.connectWalletBtnEvent(vars.walletModelBackground, vars.walletModal);
     func.navMenuDropDownApply(
         vars.navTrade,
         vars.tradePop,
