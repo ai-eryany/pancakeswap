@@ -7,7 +7,9 @@ const run = () => {
         vars.navTrade,
         vars.tradePop,
         vars.earnPop,
-        vars.navEarn
+        vars.navEarn,
+        vars.navWin,
+        vars.winPop
     );
 };
 
