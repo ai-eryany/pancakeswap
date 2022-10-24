@@ -4,8 +4,8 @@ const qsa = (selector) => document.querySelectorAll(selector);
 
 // MODAL FUNCTIONS ------------------------------------------------
 // this function is used to toggle a given class on a given element.
-const switcher = (domElement, domToBeControled, classToBeToggled) =>
-    domElement.addEventListener('click', (evt) =>
+const switcher = (domToBePressed, domToBeControled, classToBeToggled) =>
+    domToBePressed.addEventListener('click', (evt) =>
         domToBeControled.classList.toggle(classToBeToggled)
     );
 
