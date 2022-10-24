@@ -17,6 +17,10 @@
 
     <body>
         <!-- -------------------Header start----------------- -->
+        <div class="modelBackground--flex">
+            <div class="connectWalletModal"></div>
+        </div>
+
         <header>
             <nav>
                 <div class="navLeft">
@@ -180,7 +184,11 @@
                 <div class="section1-wrapper">
                     <div class="sec1-right">
                         <div class="sec1-img">
-                            <img src="./images/sec1-rabbit.png" alt="Rabbit" />
+                            <img
+                                class="floatIt"
+                                src="./images/sec1-rabbit.png"
+                                alt="Rabbit"
+                            />
                             <!-- <div class="sec1-star">
                 <img src="./images/star-top-r@2x.webp" alt="star-top" />
                 <img src="./images/star-r@2x.webp" alt="star-right" />
@@ -354,9 +362,21 @@
                 <div class="section3-wrapper">
                     <div class="sec3-right">
                         <div class="sec3-img">
-                            <img src="./images/CAKE@2x.webp" alt="" />
-                            <img src="./images/BTC@2x.webp" alt="" />
-                            <img src="./images/BNB@2x.webp" alt="" />
+                            <img
+                                class="floatIt"
+                                src="./images/CAKE@2x.webp"
+                                alt=""
+                            />
+                            <img
+                                class="floatIt"
+                                src="./images/BTC@2x.webp"
+                                alt=""
+                            />
+                            <img
+                                class="floatIt"
+                                src="./images/BNB@2x.webp"
+                                alt=""
+                            />
                         </div>
                     </div>
                     <div class="sec3-left">
@@ -1142,5 +1162,11 @@
             </div>
         </footer>
         <!---------------------------footer end--------------------------------->
+
+        <!---------------------------JAVASCRIPT MODULES---------------------- -->
+        <script type="module" src="./scripts/app.js"></script>
+
+        <script type="module" src="./scripts/vars.js"></script>
+        <script type="module" src="./scripts/functions.js"></script>
     </body>
 </html>

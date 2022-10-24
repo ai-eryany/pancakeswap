@@ -18,18 +18,18 @@
                 &:nth-of-type(1) {
                     margin-bottom: -20rem;
                     z-index: 2;
-                    animation: floating 5s infinite;
+                    animation-delay: 1000ms;
                     position: relative;
                 }
                 &:nth-of-type(2) {
                     margin-bottom: -20rem;
                     z-index: 1;
-                    animation: floating 5s infinite;
+                    animation-delay: 2000ms;
                     position: relative;
                 }
                 &:nth-of-type(3) {
                     z-index: 0;
-                    animation: floating 5s infinite;
+                    animation-delay: 3000ms;
                     position: relative;
                 }
             }
