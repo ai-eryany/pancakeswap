@@ -58,6 +58,9 @@ nav {
                     cursor: pointer;
                 }
             }
+            a {
+                color: root.$primary_link_color;
+            }
         }
     }
     .navRight {
