@@ -36,11 +36,83 @@
                         </div>
                     </div>
                     <div class="navMenu">
-                        <div><a href="./swap.html">Trade</a></div>
-                        <div><p>Earn</p></div>
-                        <div><p>Win</p></div>
-                        <div><p>NFT</p></div>
-                        <div><p>...</p></div>
+                        <div class="navTrade">Trade</div>
+                        <div class="tradePop">
+                            <ul>
+                                <a href="./swap.html"><li>Swap</li></a>
+                                <li>Limit</li>
+                                <li>Liquidity</li>
+                                <li>
+                                    Perpetual
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-arrow-right-from-bracket"
+                                        ></i
+                                    ></span>
+                                </li>
+                                <li>
+                                    Bridge
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-arrow-right-from-bracket"
+                                        ></i
+                                    ></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navEarn"><p>Earn</p></div>
+                        <div class="earnPop">
+                            <ul>
+                                <li>Farms</li>
+                                <li>Pools</li>
+                            </ul>
+                        </div>
+                        <div class="navWin"><p>Win</p></div>
+                        <div class="winPop">
+                            <ul>
+                                <li>Trading Competition</li>
+                                <li>Prediction (BETA)</li>
+                                <li>Lottery</li>
+                                <li>Pottery (BETA)</li>
+                            </ul>
+                        </div>
+                        <div class="navNft"><p>NFT</p></div>
+                        <div class="nftPop">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Collections</li>
+                                <li>Activity</li>
+                            </ul>
+                        </div>
+                        <div class="navPoints">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="pointsPop">
+                            <ul>
+                                <li>Info</li>
+                                <li>IFO</li>
+                                <li>Voting</li>
+                                <hr />
+                                <li>Leaderboard</li>
+                                <hr />
+                                <li>
+                                    Blog
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-arrow-right-from-bracket"
+                                        ></i
+                                    ></span>
+                                </li>
+                                <li>
+                                    Docs
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-arrow-right-from-bracket"
+                                        ></i
+                                    ></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="navRight">
@@ -49,7 +121,7 @@
                             data="./images/psBlueWp.svg"
                             width="30px"
                         ></object>
-                        <span>$4.319</span>
+                        <span id="pPrice">$4.319</span>
                     </div>
 
                     <div class="navGlobe">
@@ -1161,8 +1233,13 @@
             </div>
         </footer>
         <!---------------------------footer end--------------------------------->
-
+        <!---------------------------fontAwesome Scripts--------------------------------->
+        <script
+            src="https://kit.fontawesome.com/5c5c357d24.js"
+            crossorigin="anonymous"
+        ></script>
         <!---------------------------JAVASCRIPT MODULES---------------------- -->
+
         <script type="module" src="./scripts/app.js"></script>
 
         <script type="module" src="./scripts/vars.js"></script>
