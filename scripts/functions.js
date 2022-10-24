@@ -34,8 +34,9 @@ const navMenuDropDown = (element, dropDown) => {
     });
 };
 
-const navMenuDropDownApply = (navTrade, tradePop) => {
+const navMenuDropDownApply = (navTrade, tradePop, earnPop, navEarn) => {
     navMenuDropDown(navTrade, tradePop);
+    navMenuDropDown(navEarn, earnPop);
 };
 
 export {
