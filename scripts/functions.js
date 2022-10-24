@@ -1,5 +1,7 @@
+// HELPER FUNCTIONS
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => document.querySelectorAll(selector);
+
 
 // MODAL FUNCTIONS ------------------------------------------------
 // this function is used to toggle a given class on a given element.
@@ -18,6 +20,7 @@ const connectWalletBtnEvent = (walletModelBackgroundDOM, walletModalDOM) => {
     buffer(walletModalDOM);
 };
 // MODAL FUNCTION ENDS ---------------------------------------------
+
 
 const navMenuDropDown = (element, dropDown) => {
     element.addEventListener('mouseover', () => {
@@ -70,3 +73,4 @@ export {
     navMenuDropDownApply,
     pancakePriceApi,
 };
+
