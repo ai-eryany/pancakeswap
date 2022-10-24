@@ -99,6 +99,10 @@ nav {
                         &:hover {
                             background-color: root.$primary_link_bg_hover_color;
                         }
+                        span {
+                            margin-left: auto;
+                            margin-right: 1rem;
+                        }
                     }
                 }
                 &:hover {
