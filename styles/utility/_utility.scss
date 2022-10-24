@@ -1,4 +1,4 @@
-.modelBackground--flex {
+.walletModelBackground--flex {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -8,7 +8,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 99;
 
-    .connectWalletModal {
+    .walletModal {
         // max-width: 79rem;
         width: 20rem;
         height: 20rem;
@@ -19,6 +19,6 @@
     }
 }
 
-.ModelBackground--none {
+.walletModelBackground--none {
     display: none;
 }

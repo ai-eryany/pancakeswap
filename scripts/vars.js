@@ -1,7 +1,8 @@
 import { qs } from './functions.js';
 
-const modelBackground = qs('.modelBackground--flex');
-const walletModal = qs('.connectWalletModal');
+
+const walletModelBackground = qs('.walletModelBackground--flex');
+const walletModal = qs('.walletModal');
 const navTrade = qs('.navTrade');
 const tradePop = qs('.tradePop');
 const navEarn = qs('.navEarn');
@@ -14,7 +15,7 @@ const navPoints = qs('.navPoints');
 const pointsPop = qs('.pointsPop');
 
 export {
-    modelBackground,
+    walletModelBackground,
     walletModal,
     tradePop,
     navTrade,
@@ -27,3 +28,4 @@ export {
     navPoints,
     pointsPop,
 };
+
