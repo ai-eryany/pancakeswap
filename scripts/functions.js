@@ -19,4 +19,31 @@ const pairButtonEvent = (modelBackground, walletModal) => {
     walletModalBlocker(walletModal);
 };
 
-export { qs, qsa, switcher, walletModalBlocker, pairButtonEvent };
+const navMenuDropDown = (element, dropDown) => {
+    element.addEventListener('mouseover', () => {
+        dropDown.style.display = 'flex';
+    });
+    dropDown.addEventListener('mouseover', () => {
+        dropDown.style.display = 'flex';
+    });
+    dropDown.addEventListener('mouseout', () => {
+        dropDown.style.display = 'none';
+    });
+    element.addEventListener('mouseout', () => {
+        dropDown.style.display = 'none';
+    });
+};
+
+const navMenuDropDownApply = (navTrade, tradePop) => {
+    navMenuDropDown(navTrade, tradePop);
+};
+
+export {
+    qs,
+    qsa,
+    switcher,
+    walletModalBlocker,
+    pairButtonEvent,
+    navMenuDropDown,
+    navMenuDropDownApply,
+};
