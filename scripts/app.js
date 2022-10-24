@@ -36,4 +36,5 @@ const run = () => {
     func.pancakePriceApi();
 };
 
+// RUN APP
 run();
