@@ -1,6 +1,6 @@
 import { qs } from './functions.js';
 
-const modelBackground = qs('.modelBackground--flex');
-const walletModal = qs('.connectWalletModal');
+const walletModelBackground = qs('.walletModelBackground--flex');
+const walletModal = qs('.walletModal');
 
-export { modelBackground, walletModal };
+export { walletModelBackground, walletModal };
