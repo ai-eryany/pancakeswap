@@ -63,7 +63,7 @@ nav {
             }
             .tradePop {
                 display: none;
-                margin-left: 0.5rem;
+                // margin-left: 0.5rem;
                 width: 25rem;
                 height: 25rem;
                 padding: 1.5rem 0;
@@ -120,6 +120,20 @@ nav {
                 height: 15rem;
                 transform: translate3d(394.5px, 55.5px, 0px);
             }
+            .pointsPop {
+                @extend .tradePop;
+                height: 30rem;
+                transform: translate3d(420px, 55.5px, 0px);
+                ul {
+                    gap: 0.3rem;
+                }
+                hr {
+                    border-top: 0.5px solid #e6e3ea;
+                }
+            }
+        }
+        .navPoints {
+            padding: 2rem !important;
         }
     }
     .navRight {

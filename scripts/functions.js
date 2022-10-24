@@ -42,12 +42,15 @@ const navMenuDropDownApply = (
     navWin,
     winPop,
     navNft,
-    nftPop
+    nftPop,
+    navPoints,
+    pointsPop
 ) => {
     navMenuDropDown(navTrade, tradePop);
     navMenuDropDown(navEarn, earnPop);
     navMenuDropDown(navWin, winPop);
     navMenuDropDown(navNft, nftPop);
+    navMenuDropDown(navPoints, pointsPop);
 };
 
 export {

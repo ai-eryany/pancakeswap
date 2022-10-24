@@ -11,7 +11,9 @@ const run = () => {
         vars.navWin,
         vars.winPop,
         vars.navNft,
-        vars.nftPop
+        vars.nftPop,
+        vars.navPoints,
+        vars.pointsPop
     );
 };
 
