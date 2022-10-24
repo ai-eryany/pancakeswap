@@ -8,6 +8,8 @@ const navEarn = qs('.navEarn');
 const earnPop = qs('.earnPop');
 const navWin = qs('.navWin');
 const winPop = qs('.winPop');
+const navNft = qs('.navNft');
+const nftPop = qs('.nftPop');
 
 export {
     modelBackground,
@@ -18,4 +20,6 @@ export {
     navEarn,
     navWin,
     winPop,
+    navNft,
+    nftPop,
 };

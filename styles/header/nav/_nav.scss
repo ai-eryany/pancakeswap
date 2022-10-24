@@ -63,7 +63,7 @@ nav {
             }
             .tradePop {
                 display: none;
-                margin-left: 1rem;
+                margin-left: 0.5rem;
                 width: 25rem;
                 height: 25rem;
                 padding: 1.5rem 0;
@@ -114,6 +114,11 @@ nav {
                 @extend .tradePop;
                 height: 20rem;
                 transform: translate3d(335.5px, 55.5px, 0px);
+            }
+            .nftPop {
+                @extend .tradePop;
+                height: 15rem;
+                transform: translate3d(394.5px, 55.5px, 0px);
             }
         }
     }

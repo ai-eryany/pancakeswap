@@ -9,7 +9,9 @@ const run = () => {
         vars.earnPop,
         vars.navEarn,
         vars.navWin,
-        vars.winPop
+        vars.winPop,
+        vars.navNft,
+        vars.nftPop
     );
 };
 
