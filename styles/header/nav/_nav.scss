@@ -47,7 +47,7 @@ nav {
         .navMenu {
             @include flexCenter();
             margin-left: 1rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             display: none;
             div {
                 padding: 1.6rem;
@@ -58,6 +58,86 @@ nav {
                     cursor: pointer;
                 }
             }
+            a {
+                color: root.$primary_link_color;
+            }
+            .tradePop {
+                display: none;
+                // margin-left: 0.5rem;
+                width: 25rem;
+                height: 25rem;
+                padding: 1.5rem 0;
+                position: fixed;
+                inset: 0px auto auto 0px;
+                transform: translate3d(200px, 55.5px, 0px);
+                background-color: white;
+                border-radius: 2rem;
+                z-index: 102;
+                flex-direction: column;
+                align-items: flex-start;
+                border: 1px solid #e6e3ea;
+                ul {
+                    width: 100%;
+                    height: func.toRem(44);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    li {
+                        width: 100%;
+                        height: 44px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 1.5rem;
+                        &:first-of-type {
+                            border-top-left-radius: 1.2rem;
+                            border-top-right-radius: 1.2rem;
+                        }
+                        &:last-of-type {
+                            border-bottom-left-radius: 1.2rem;
+                            border-bottom-right-radius: 1.2rem;
+                        }
+                        &:hover {
+                            background-color: root.$primary_link_bg_hover_color;
+                        }
+                        span {
+                            margin-left: auto;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: white;
+                }
+            }
+            .earnPop {
+                @extend .tradePop;
+                height: 10rem;
+                transform: translate3d(271.5px, 55.5px, 0px);
+            }
+            .winPop {
+                @extend .tradePop;
+                height: 20rem;
+                transform: translate3d(335.5px, 55.5px, 0px);
+            }
+            .nftPop {
+                @extend .tradePop;
+                height: 15rem;
+                transform: translate3d(394.5px, 55.5px, 0px);
+            }
+            .pointsPop {
+                @extend .tradePop;
+                height: 30rem;
+                transform: translate3d(420px, 55.5px, 0px);
+                ul {
+                    gap: 0.3rem;
+                }
+                hr {
+                    border-top: 0.5px solid #e6e3ea;
+                }
+            }
+        }
+        .navPoints {
+            padding: 2rem !important;
         }
     }
     .navRight {
