@@ -1,23 +1,23 @@
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => document.querySelectorAll(selector);
 
-const switcher = (htmlClass) => {
-    console.log(1);
-    htmlClass.addEventListener('click', (evt) => {
-        htmlClass.classList.toggle('modelBackground--flex');
-    });
-};
+// MODAL FUNCTIONS ------------------------------------------------
+// this function is used to toggle a given class on a given element.
+const switcher = (domElement, classToBeToggled) =>
+    domElement.addEventListener('click', (evt) =>
+        evt.target.classList.toggle(classToBeToggled)
+    );
 
-const walletModalBlocker = (htmlClass) => {
-    htmlClass.addEventListener('click', (evt) => {
-        evt.stopPropagation();
-    });
-};
+// This function goes along with switcher, you can implement this function with the child. MODAL box
+const buffer = (domElement) =>
+    domElement.addEventListener('click', (evt) => evt.stopPropagation());
 
-const pairButtonEvent = (modelBackground, walletModal) => {
-    switcher(modelBackground);
-    walletModalBlocker(walletModal);
+// EXPORT FUNCTION
+const connectWalletBtnEvent = (walletModelBackgroundDOM, walletModalDOM) => {
+    switcher(walletModelBackgroundDOM, walletModelBackgroundDOM.className);
+    buffer(walletModalDOM);
 };
+// MODAL FUNCTION ENDS ---------------------------------------------
 
 const navMenuDropDown = (element, dropDown) => {
     element.addEventListener('mouseover', () => {
@@ -65,9 +65,7 @@ async function pancakePriceApi() {
 export {
     qs,
     qsa,
-    switcher,
-    walletModalBlocker,
-    pairButtonEvent,
+    connectWalletBtnEvent,
     navMenuDropDown,
     navMenuDropDownApply,
     pancakePriceApi,
