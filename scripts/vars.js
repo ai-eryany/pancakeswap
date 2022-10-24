@@ -1,7 +1,6 @@
 import { qs, qsa } from './functions.js';
 
-
-const walletModelBackground = qs('.walletModelBackground--flex');
+const walletModelBackground = qs('.walletModalBackground');
 const walletModal = qs('.walletModal');
 const navTrade = qs('.navTrade');
 const tradePop = qs('.tradePop');
@@ -13,8 +12,13 @@ const navNft = qs('.navNft');
 const nftPop = qs('.nftPop');
 const navPoints = qs('.navPoints');
 const pointsPop = qs('.pointsPop');
+const buttonIt = qs('.buttonIt');
+
+const displayFlexClass = 'display--flex';
 
 export {
+    displayFlexClass,
+    buttonIt,
     walletModelBackground,
     walletModal,
     tradePop,
@@ -28,4 +32,3 @@ export {
     navPoints,
     pointsPop,
 };
-
