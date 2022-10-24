@@ -53,6 +53,15 @@ const navMenuDropDownApply = (
     navMenuDropDown(navPoints, pointsPop);
 };
 
+async function pancakePriceApi() {
+    const response = await fetch('https://api.pancakeswap.info/api/v2/tokens');
+    const prices = await response.json();
+    const pancakeswap = Object.values(Object.values(prices)[1])[2].price;
+    console.log(pancakeswap);
+    const result = Math.round(pancakeswap * 1000) / 1000;
+    pPrice.innerText = `$${result}`;
+}
+
 export {
     qs,
     qsa,
@@ -61,4 +70,5 @@ export {
     pairButtonEvent,
     navMenuDropDown,
     navMenuDropDownApply,
+    pancakePriceApi,
 };

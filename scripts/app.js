@@ -15,6 +15,7 @@ const run = () => {
         vars.navPoints,
         vars.pointsPop
     );
+    func.pancakePriceApi();
 };
 
 run();
