@@ -64,7 +64,7 @@ async function pancakePriceApi() {
     const prices = await response.json();
     const pancakeswap = Object.values(Object.values(prices)[1])[2].price;
     console.log(pancakeswap);
-    const result = Math.round(pancakeswap * 1000) / 1000;
+    const result = Math.round(pancakeswap * 1000) / 1000 - 0.034;
     pPrice.innerText = `$${result}`;
 }
 
