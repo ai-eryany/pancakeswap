@@ -13,6 +13,8 @@ const nftPop = qs('.nftPop');
 const navPoints = qs('.navPoints');
 const pointsPop = qs('.pointsPop');
 const buttonIt = qs('.buttonIt');
+const navGlobe = qs('.navGlobe');
+const globePop = qs('.globePop');
 
 const displayFlexClass = 'display--flex';
 
@@ -31,4 +33,6 @@ export {
     nftPop,
     navPoints,
     pointsPop,
+    navGlobe,
+    globePop,
 };

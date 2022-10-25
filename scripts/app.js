@@ -33,6 +33,7 @@ const run = () => {
         vars.navPoints,
         vars.pointsPop
     );
+    func.globeDropDownApply(vars.navGlobe, vars.globePop);
     func.pancakePriceApi();
 };
 
