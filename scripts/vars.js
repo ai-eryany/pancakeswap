@@ -12,9 +12,9 @@ const navNft = qs('.navNft');
 const nftPop = qs('.nftPop');
 const navPoints = qs('.navPoints');
 const pointsPop = qs('.pointsPop');
-const buttonIt = qs('.buttonIt');
 const navGlobe = qs('.navGlobe');
 const globePop = qs('.globePop');
+const buttonIt = qs('.buttonIt');
 
 const displayFlexClass = 'display--flex';
 
