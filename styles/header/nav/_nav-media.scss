@@ -65,3 +65,8 @@ nav {
         }
     }
 }
+.subMenu {
+    @include mixin.large {
+        display: none;
+    }
+}
