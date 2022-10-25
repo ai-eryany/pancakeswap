@@ -15,12 +15,14 @@ const buffer = (domElement) =>
 
 // EXPORT FUNCTION
 const createModal = (
-    domToBePressed,
-    domToBeControled,
-    classToBeToggled,
-    innerDOMbuffer
+    domFireEvent, // DOM to be pressed to enter Modal
+    domReleaseEvent, // DOM To be pressed to exit the Modal.
+    domToBeControled, // DOM to be controlled.
+    classToBeToggled, // Class to be toggled.
+    innerDOMbuffer // inner DOM to act as a buffer.
 ) => {
-    switcher(domToBePressed, domToBeControled, classToBeToggled);
+    switcher(domFireEvent, domToBeControled, classToBeToggled);
+    switcher(domReleaseEvent, domToBeControled, classToBeToggled);
     buffer(innerDOMbuffer);
 };
 // MODAL FUNCTION ENDS ---------------------------------------------

@@ -1,7 +1,7 @@
 import { qs, qsa } from './functions.js';
 
-const walletModelBackground = qs('.walletModalBackground');
-const walletModal = qs('.walletModal');
+const walletModelBackgroundDOM = qs('.walletModalBackground');
+const walletModalDOM = qs('.walletModal');
 const navTrade = qs('.navTrade');
 const tradePop = qs('.tradePop');
 const navEarn = qs('.navEarn');
@@ -12,15 +12,17 @@ const navNft = qs('.navNft');
 const nftPop = qs('.nftPop');
 const navPoints = qs('.navPoints');
 const pointsPop = qs('.pointsPop');
-const buttonIt = qs('.buttonIt');
+const buttonItDOM = qs('.buttonIt');
+const buttonModalInitDOM = qs('.buttonModalInit');
 
 const displayFlexClass = 'display--flex';
 
 export {
+    buttonModalInitDOM,
     displayFlexClass,
-    buttonIt,
-    walletModelBackground,
-    walletModal,
+    buttonItDOM,
+    walletModelBackgroundDOM,
+    walletModalDOM,
     tradePop,
     navTrade,
     earnPop,
