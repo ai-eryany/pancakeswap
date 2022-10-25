@@ -159,6 +159,8 @@ nav {
             }
         }
         .navGlobe {
+            padding-bottom: 1rem;
+            margin-top: 1rem;
             svg {
                 fill: root.$primary_link_color;
                 &:hover {
@@ -167,8 +169,42 @@ nav {
                 }
             }
         }
+        .globePop {
+            display: none;
+            background-color: white;
+            width: func.toRem(200px);
+            height: func.toRem(420px);
+            inset: 0px auto auto 0px;
+            transform: translate3d(135px, 55.5px, 0px);
+            background-color: white;
+            border-radius: 0.5rem;
+            position: fixed;
+            z-index: 2000;
+            overflow-y: scroll;
+            padding: 1rem 0;
+            margin-top: -1rem;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 1rem;
+                margin-top: 1rem;
+                li {
+                    button {
+                        color: root.$secondary_title_color;
+                        font-weight: 600;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
         .navGear {
             @extend .navGlobe;
+            padding-bottom: 0;
+            margin-top: 0;
         }
         .networkSelect {
             display: flex;

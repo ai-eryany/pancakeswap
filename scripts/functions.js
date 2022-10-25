@@ -42,6 +42,24 @@ const navMenuDropDown = (element, dropDown) => {
     });
 };
 
+const globeDropDown = (element, dropDown) => {
+    element.addEventListener('mouseover', () => {
+        dropDown.style.display = 'block';
+    });
+    dropDown.addEventListener('mouseover', () => {
+        dropDown.style.display = 'block';
+    });
+    dropDown.addEventListener('mouseout', () => {
+        dropDown.style.display = 'none';
+    });
+    element.addEventListener('mouseout', () => {
+        dropDown.style.display = 'none';
+    });
+};
+const globeDropDownApply = (navGlobe, globePop) => {
+    globeDropDown(navGlobe, globePop);
+};
+
 const navMenuDropDownApply = (
     navTrade,
     tradePop,
@@ -77,4 +95,6 @@ export {
     navMenuDropDown,
     navMenuDropDownApply,
     pancakePriceApi,
+    globeDropDown,
+    globeDropDownApply,
 };
