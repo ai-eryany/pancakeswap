@@ -1,3 +1,11 @@
 @use '../../atomic/root/root' as root;
 @use '../../atomic/root/root_functions' as func;
 @use '../../atomic/root/root_mixins' as mixin;
+
+.swap-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70rem;
+    width: 100%;
+}

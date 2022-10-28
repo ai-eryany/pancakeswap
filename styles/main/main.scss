@@ -52,13 +52,12 @@
 @use '../footer/footer-wrapper';
 @use '../footer/footer-wrapper-media';
 
-@use '../swap/section1/swap1.scss';
-@use '../swap/section1/swap1-wrapper.scss';
-@use '../swap/section1/swap1-wrapper-media.scss';
+@use '../swap/section1/swap-section1.scss';
+@use '../swap/section1/swap-wrapper1.scss';
 
-@use '../swap/section2/swap2.scss';
-@use '../swap/section2/swap2-wrapper.scss';
-@use '../swap/section2/swap2-wrapper-media.scss';
+@use '../swap/section2/swap-section2.scss';
+@use '../swap/section2/swap-wrapper2.scss';
+@use '../swap/section2/swap-wrapper2-media.scss';
 
 main {
     // !never delete this position
