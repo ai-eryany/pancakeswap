@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(197, 232, 250, 0.9);
+    background-color: root.$fifth_background_color_inner;
     gap: 2rem;
 
     &-title {

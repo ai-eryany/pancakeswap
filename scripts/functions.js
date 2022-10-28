@@ -1,12 +1,36 @@
-// HELPER FUNCTIONS
-const qs = (selector) => document.querySelector(selector);
-const qsa = (selector) => document.querySelectorAll(selector);
+const INIT_MODEL = {
+    isDarkTheme: null, // Boolean true or false or null
+};
+
+// Local Storage functions
+const setStorage = (key, item) => {
+    try {
+        const jsonItem = JSON.stringify(item);
+        localStorage.setItem(key, jsonItem);
+    } catch (e) {
+        console.log(e.message);
+    }
+};
+
+const getStorage = (key) => {
+    try {
+        return JSON.parse(localStorage.getItem(key));
+    } catch (e) {
+        console.log(e.message);
+    }
+};
+
+const initStorage = () => {
+    !getStorage('model') ? setStorage('model', INIT_MODEL) : null;
+};
+
+// ----------------------------------------------------------------
 
 // MODAL FUNCTIONS ------------------------------------------------
 // this function is used to toggle a given class on a given element.
-const switcher = (domToBePressed, domToBeControled, classToBeToggled) =>
+const toggler = (domToBePressed, domToBeControlled, classToBeToggled) =>
     domToBePressed.addEventListener('click', (evt) =>
-        domToBeControled.classList.toggle(classToBeToggled)
+        domToBeControlled.classList.toggle(classToBeToggled)
     );
 
 // This function goes along with switcher, you can implement this function with the child. MODAL box
@@ -14,18 +38,50 @@ const buffer = (domElement) =>
     domElement.addEventListener('click', (evt) => evt.stopPropagation());
 
 // EXPORT FUNCTION
+// pass a key/value pair will be better to avoid the disordering.
 const createModal = (
     domFireEvent, // DOM to be pressed to enter Modal
     domReleaseEvent, // DOM To be pressed to exit the Modal.
-    domToBeControled, // DOM to be controlled.
+    domToBeControlled, // DOM to be controlled.
     classToBeToggled, // Class to be toggled.
     innerDOMbuffer // inner DOM to act as a buffer.
 ) => {
-    switcher(domFireEvent, domToBeControled, classToBeToggled);
-    switcher(domReleaseEvent, domToBeControled, classToBeToggled);
+    toggler(domFireEvent, domToBeControlled, classToBeToggled);
+    toggler(domReleaseEvent, domToBeControlled, classToBeToggled);
     buffer(innerDOMbuffer);
 };
-// MODAL FUNCTION ENDS ---------------------------------------------
+// ---------------------------------------------------------------
+
+// THEME FUNCTIONS ------------------------------------------------
+
+const toggleTheme = (oldModel) => ({
+    ...oldModel,
+    isDarkTheme: !oldModel.isDarkTheme,
+});
+
+const renderTheme = (oldModel, htmlDOM) => {
+    if (oldModel.isDarkTheme === null) htmlDOM.dataset.theme = 'none';
+    else htmlDOM.dataset.theme = oldModel.isDarkTheme ? 'dark' : 'light';
+};
+
+// ------------------------------------------------------------------
+
+// EVENTS FUNCTIONS-----------------------------------------
+
+// m for model
+// updateM is a function updateModel
+// updateS is a function updateStorage
+const initTheme = (btnsDOM, htmlDOM) => {
+    btnsDOM.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const newModel = toggleTheme(m);
+            setStorage('model', newModel);
+            renderTheme(newModel, htmlDOM);
+        });
+    });
+};
+
+// -----------------------------------------------------------------
 
 const navMenuDropDown = (element, dropDown) => {
     element.addEventListener('mouseover', () => {
@@ -56,27 +112,27 @@ const globeDropDown = (element, dropDown) => {
         dropDown.style.display = 'none';
     });
 };
-const globeDropDownApply = (navGlobe, globePop) => {
-    globeDropDown(navGlobe, globePop);
+const globeDropDownApply = (navGlobeDOM, globePopDOM) => {
+    globeDropDown(navGlobeDOM, globePopDOM);
 };
 
 const navMenuDropDownApply = (
-    navTrade,
-    tradePop,
-    earnPop,
-    navEarn,
-    navWin,
-    winPop,
-    navNft,
-    nftPop,
-    navPoints,
-    pointsPop
+    navTradeDOM,
+    tradePopDOM,
+    earnPopDOM,
+    navEarnDOM,
+    navWinDOM,
+    winPopDOM,
+    navNftDOM,
+    nftPopDOM,
+    navPointsDOM,
+    pointsPopDOM
 ) => {
-    navMenuDropDown(navTrade, tradePop);
-    navMenuDropDown(navEarn, earnPop);
-    navMenuDropDown(navWin, winPop);
-    navMenuDropDown(navNft, nftPop);
-    navMenuDropDown(navPoints, pointsPop);
+    navMenuDropDown(navTradeDOM, tradePopDOM);
+    navMenuDropDown(navEarnDOM, earnPopDOM);
+    navMenuDropDown(navWinDOM, winPopDOM);
+    navMenuDropDown(navNftDOM, nftPopDOM);
+    navMenuDropDown(navPointsDOM, pointsPopDOM);
 };
 
 async function pancakePriceApi() {
@@ -89,12 +145,12 @@ async function pancakePriceApi() {
 }
 
 export {
-    qs,
-    qsa,
+    initStorage,
     createModal,
     navMenuDropDown,
     navMenuDropDownApply,
     pancakePriceApi,
     globeDropDown,
     globeDropDownApply,
+    initTheme,
 };
