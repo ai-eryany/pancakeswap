@@ -20,17 +20,17 @@ const getStorage = (key) => {
     }
 };
 
-const init = () => {
-    !get('model') ? set('model', INIT_MODEL) : null;
+const initStorage = () => {
+    !getStorage('model') ? setStorage('model', INIT_MODEL) : null;
 };
 
 // ----------------------------------------------------------------
 
 // MODAL FUNCTIONS ------------------------------------------------
 // this function is used to toggle a given class on a given element.
-const toggler = (domToBePressed, domToBeControled, classToBeToggled) =>
+const toggler = (domToBePressed, domToBeControlled, classToBeToggled) =>
     domToBePressed.addEventListener('click', (evt) =>
-        domToBeControled.classList.toggle(classToBeToggled)
+        domToBeControlled.classList.toggle(classToBeToggled)
     );
 
 // This function goes along with switcher, you can implement this function with the child. MODAL box
@@ -38,16 +38,16 @@ const buffer = (domElement) =>
     domElement.addEventListener('click', (evt) => evt.stopPropagation());
 
 // EXPORT FUNCTION
-// pass a key/value pair will be better to avoid the misordering.
+// pass a key/value pair will be better to avoid the disordering.
 const createModal = (
     domFireEvent, // DOM to be pressed to enter Modal
     domReleaseEvent, // DOM To be pressed to exit the Modal.
-    domToBeControled, // DOM to be controlled.
+    domToBeControlled, // DOM to be controlled.
     classToBeToggled, // Class to be toggled.
     innerDOMbuffer // inner DOM to act as a buffer.
 ) => {
-    toggler(domFireEvent, domToBeControled, classToBeToggled);
-    toggler(domReleaseEvent, domToBeControled, classToBeToggled);
+    toggler(domFireEvent, domToBeControlled, classToBeToggled);
+    toggler(domReleaseEvent, domToBeControlled, classToBeToggled);
     buffer(innerDOMbuffer);
 };
 // ---------------------------------------------------------------
@@ -112,8 +112,8 @@ const globeDropDown = (element, dropDown) => {
         dropDown.style.display = 'none';
     });
 };
-const globeDropDownApply = (navGlobe, globePop) => {
-    globeDropDown(navGlobe, globePop);
+const globeDropDownApply = (navGlobeDOM, globePopDOM) => {
+    globeDropDown(navGlobeDOM, globePopDOM);
 };
 
 const navMenuDropDownApply = (
@@ -145,15 +145,12 @@ async function pancakePriceApi() {
 }
 
 export {
-    init,
-    updateStorage,
+    initStorage,
     createModal,
     navMenuDropDown,
     navMenuDropDownApply,
     pancakePriceApi,
     globeDropDown,
     globeDropDownApply,
-    toggleTheme,
-    renderTheme,
     initTheme,
 };

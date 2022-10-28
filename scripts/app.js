@@ -17,6 +17,8 @@ const navNftDOM = qs('.navNft');
 const nftPopDOM = qs('.nftPop');
 const navPointsDOM = qs('.navPoints');
 const pointsPopDOM = qs('.pointsPop');
+const navGlobeDOM = qs('.navGlobe');
+const globePopDOM = qs('.globePop');
 const modalBtnsDOM = qsa('.buttonModalInit');
 
 const classes = { 'display-flex': 'd--flex' };
@@ -34,20 +36,20 @@ const run = () => {
         );
     });
 
-    func.navMenuDropDownApply(
-        navTradeDOM,
-        tradePopDOM,
-        navEarnDOM,
-        earnPopDOM,
-        navWinDOM,
-        winPopDOM,
-        navNftDOM,
-        nftPopDOM,
-        navPointsDOM,
-        pointsPopDOM
-    );
+    // func.navMenuDropDownApply(
+    //     navTradeDOM,
+    //     tradePopDOM,
+    //     navEarnDOM,
+    //     earnPopDOM,
+    //     navWinDOM,
+    //     winPopDOM,
+    //     navNftDOM,
+    //     nftPopDOM,
+    //     navPointsDOM,
+    //     pointsPopDOM
+    // );
 
-    func.globeDropDownApply(vars.navGlobe, vars.globePop);
+    func.globeDropDownApply(navGlobeDOM, globePopDOM);
 
     func.pancakePriceApi();
 };
