@@ -7,6 +7,21 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 
+html {
+    color-scheme: light dark;
+}
+
 body {
     font-family: root.$font_family;
+}
+
+// for default colors by the system
+@media (prefers-color-scheme: light) {
+    html {
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+    }
 }
