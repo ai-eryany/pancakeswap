@@ -1,27 +1,52 @@
-import * as vars from './vars.js';
 import * as func from './functions.js';
 
+const qs = (selector) => document.querySelector(selector);
+const qsa = (selector) => document.querySelectorAll(selector);
+
+// DOM -------------------------------------------------------------------
+const htmlElementDOM = qs('html');
+const walletModelBackgroundDOM = qs('.walletModalBackground');
+const walletModalDOM = qs('.walletModal');
+const navTradeDOM = qs('.navTrade');
+const tradePopDOM = qs('.tradePop');
+const navEarnDOM = qs('.navEarn');
+const earnPopDOM = qs('.earnPop');
+const navWinDOM = qs('.navWin');
+const winPopDOM = qs('.winPop');
+const navNftDOM = qs('.navNft');
+const nftPopDOM = qs('.nftPop');
+const navPointsDOM = qs('.navPoints');
+const pointsPopDOM = qs('.pointsPop');
+const modalBtnsDOM = qsa('.buttonModalInit');
+
+const classes = { 'display-flex': 'd--flex' };
+
+// DOM ENDS -------------------------------------------------------------
+
 const run = () => {
-    func.createModal(
-        vars.buttonModalInitDOM, // DOM To be pressed to enter
-        vars.walletModelBackgroundDOM, // DOM To be pressed to exit
-        vars.walletModelBackgroundDOM, // DOM to be controlled.
-        vars.displayFlexClass, // DOM Class to be toggled.
-        vars.walletModalDOM // inner DOM to act as a buffer
-    );
+    modalBtnsDOM.forEach((btn) => {
+        func.createModal(
+            btn,
+            walletModelBackgroundDOM,
+            walletModelBackgroundDOM,
+            classes['display-flex'],
+            walletModalDOM
+        );
+    });
 
     func.navMenuDropDownApply(
-        vars.navTrade,
-        vars.tradePop,
-        vars.earnPop,
-        vars.navEarn,
-        vars.navWin,
-        vars.winPop,
-        vars.navNft,
-        vars.nftPop,
-        vars.navPoints,
-        vars.pointsPop
+        navTradeDOM,
+        tradePopDOM,
+        navEarnDOM,
+        earnPopDOM,
+        navWinDOM,
+        winPopDOM,
+        navNftDOM,
+        nftPopDOM,
+        navPointsDOM,
+        pointsPopDOM
     );
+
     func.pancakePriceApi();
 };
 
