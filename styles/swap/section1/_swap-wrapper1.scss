@@ -1,0 +1,29 @@
+@use '../../atomic/root/root' as root;
+@use '../../atomic/root/root_functions' as func;
+@use '../../atomic/root/root_mixins' as mixin;
+
+.swap-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    background-color: root.$primary_navbar_bg_color;
+    padding: 2rem;
+    gap: 1rem;
+    .swapForm {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: root.$secondary_title_color;
+        .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-arrow-down {
+                color: root.$primary_buttons_bg_color;
+            }
+        }
+
+        .buttonIt {
+            margin-top: 3rem;
+        }
+    }
+}

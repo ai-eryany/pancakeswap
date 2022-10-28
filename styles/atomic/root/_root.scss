@@ -71,7 +71,7 @@ $parentSpecs: 100%;
     --eighth-background-color: #27262c;
     --icons-color: #7c6ea9;
     --icons-hover-color: #aaa1c7;
-    --side-bar-color: #7c6ea9;
+    --side-bar-bg-color: #eff2fe;
     --colors-textSubtle: #7a6eaa;
 }
 
@@ -113,7 +113,7 @@ $parentSpecs: 100%;
     --eighth-background-color: #27262c;
     --icons-color: #7c6ea9;
     --icons-hover-color: #aaa1c7;
-    --side-bar-color: #7c6ea9;
+    --side-bar-bg-color: #1d142a;
     --colors-textSubtle: #7a6eaa;
 }
 
@@ -177,7 +177,7 @@ $eighth_background_color: var(--eighth-background-color); //#27262c
 $icons_color: var(--icons-color); //#7c6ea9
 $icons_hover_color: var(--icons-hover-color); //#aaa1c7
 
-$side_bar_color: var(--side-bar-color); //#7c6ea9
+$side_bar_color: var(--side-bar-bg-color); //#7c6ea9
 $colors_textSubtle: var(--colors-textSubtle); //#7a6eaa
 
 /*
