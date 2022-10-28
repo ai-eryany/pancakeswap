@@ -18,7 +18,7 @@ nav {
     z-index: 98;
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: root.$primary_white_color;
     @include flexCenter;
     justify-content: space-between;
     .navLeft {
@@ -70,7 +70,7 @@ nav {
                 position: fixed;
                 inset: 0px auto auto 0px;
                 transform: translate3d(200px, 55.5px, 0px);
-                background-color: white;
+                background-color: root.$primary_white_color;
                 border-radius: 2rem;
                 z-index: 102;
                 flex-direction: column;
@@ -106,7 +106,7 @@ nav {
                     }
                 }
                 &:hover {
-                    background-color: white;
+                    background-color: root.$primary_white_color;
                 }
             }
             .earnPop {
@@ -241,7 +241,7 @@ nav {
                 cursor: pointer;
             }
             button {
-                color: white;
+                color: root.$primary_white_color;
                 font-size: 1.5rem;
                 font-weight: 600;
                 &:hover {
