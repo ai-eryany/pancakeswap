@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
 }
+
 nav {
     width: 100%;
     // border-bottom: 1px solid (root.$tertiary_link_color);
@@ -233,5 +234,35 @@ nav {
             border-radius: 2rem;
             box-shadow: 0 1px 0 0 #0e0e2c;
         }
+    }
+}
+
+.subMenu {
+    width: 100%;
+    border-bottom: 1px solid #e6e3ea;
+    overflow: hidden;
+    z-index: 2000;
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    @include flexCenter;
+    justify-content: space-between;
+    padding: 0 3rem;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        &:hover {
+            background-color: #e6e3ea;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: root.$primary_link_color;
     }
 }
