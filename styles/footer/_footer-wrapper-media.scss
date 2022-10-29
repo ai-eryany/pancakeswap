@@ -8,6 +8,11 @@
         &-head {
             display: none;
         }
+
+        &__head {
+            display: block;
+        }
+
         &-specs {
             order: 10;
             flex-direction: row;

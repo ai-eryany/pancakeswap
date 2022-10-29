@@ -17,6 +17,10 @@
         height: 4rem;
     }
 
+    &-head-2 {
+        display: none;
+    }
+
     &__logo {
         width: 18rem;
     }
@@ -147,6 +151,10 @@
             text-decoration: underline
                 root.$secondary_link_decoration_hover_color;
         }
+    }
+
+    &__head {
+        display: none;
     }
 
     &-icons {
