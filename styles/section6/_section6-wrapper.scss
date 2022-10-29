@@ -47,19 +47,25 @@
                 width: 48rem;
                 height: 48rem;
 
+                & source {
+                    position: absolute;
+                }
+
                 & img {
                     position: absolute;
-                    animation: floating 5s infinite;
                 }
                 .cake-img {
+                    animation-delay: 1000ms;
                     z-index: 3;
                 }
 
                 .cake-right-img {
+                    animation-delay: 2000ms;
                     z-index: 4;
                 }
 
-                .cake-buttom-img {
+                .cake-top-img {
+                    animation-delay: 3000ms;
                 }
             }
         }
@@ -92,45 +98,6 @@
             border-right: 1px solid root.$icons_color;
         }
         &__para:not(:first-of-type) {
-        }
-    }
-}
-
-@media only screen and (max-width: func.toRem(600px)) {
-    .section6 {
-        align-items: start;
-        margin-bottom: func.toRem(48px);
-    }
-    .sect6__main {
-        padding: 0 func.toRem(20px);
-        &__cake {
-            flex-flow: column-reverse;
-            margin-top: func.toRem(48px);
-            &__img-wrap {
-                display: flex;
-                align-items: flex-end;
-
-                &__picture {
-                    position: relative;
-                    width: func.toRem(200px);
-                    height: func.toRem(200px);
-                }
-            }
-            &__h2 {
-                font-size: func.toRem(35px);
-            }
-        }
-        &__details {
-            grid-template-columns: repeat(2, 1fr);
-            gap: func.toRem(16px) func.toRem(8px);
-            margin-top: func.toRem(50px);
-
-            &__para:not(:last-of-type) {
-                border-right: initial;
-            }
-            &__para:nth-child(odd) {
-                border-right: 1px solid root.$icons_color;
-            }
         }
     }
 }
