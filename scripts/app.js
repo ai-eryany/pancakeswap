@@ -19,6 +19,9 @@ const navPointsDOM = qs('.navPoints');
 const pointsPopDOM = qs('.pointsPop');
 const navGlobeDOM = qs('.navGlobe');
 const globePopDOM = qs('.globePop');
+const navGlobe2DOM = qs('.navGlobe2');
+const globePop2DOM = qs('.globePop2');
+
 const modalBtnsDOM = qsa('.buttonModalInit');
 
 const classes = { 'display-flex': 'd--flex' };
@@ -50,6 +53,7 @@ const run = () => {
     // );
 
     func.globeDropDownApply(navGlobeDOM, globePopDOM);
+    func.globeDropDownApply(navGlobe2DOM, globePop2DOM);
 
     func.pancakePriceApi();
 };

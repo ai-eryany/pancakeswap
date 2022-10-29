@@ -52,7 +52,7 @@
     &-b2 {
         display: flex;
         gap: 2rem;
-
+        position: relative;
         &-switch {
             padding: 0.5rem;
             display: flex;
@@ -141,6 +141,48 @@
 
         > li > svg:hover {
             fill: root.$icons_hover_color;
+        }
+    }
+    .navGlobe2 {
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        svg {
+            fill: root.$primary_link_color;
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer !important;
+            }
+        }
+    }
+    .globePop2 {
+        display: none;
+        background-color: root.$primary_navbar_bg_color;
+        width: func.toRem(200px);
+        height: func.toRem(420px);
+        inset: 0px auto auto 0px;
+        transform: translate(20px, -400px);
+        border-radius: 0.5rem;
+        position: absolute;
+        z-index: 2000;
+        overflow-y: scroll;
+        padding: 1rem 0;
+        margin-top: -1rem;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            margin-top: 1rem;
+            li {
+                button {
+                    color: root.$secondary_title_color;
+                    font-weight: 600;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
         }
     }
 }

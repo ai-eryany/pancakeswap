@@ -14,3 +14,17 @@
         }
     }
 }
+
+.footer-wrapper {
+    .globePop {
+        @include mixin.medium {
+            transform: translate3d(400px, 55.5px, 0px);
+        }
+        @include mixin.large {
+            transform: translate3d(450px, 55.5px, 0px);
+        }
+        @include mixin.larger {
+            transform: translate3d(100px, 10px, 0px);
+        }
+    }
+}
