@@ -12,6 +12,7 @@
     max-width: root.$intro_slide-wrapperMaxWidth;
     height: root.$intro_slide-wrapperHeight;
     gap: 5rem;
+    position: relative;
     &-container1 {
         position: relative;
         @include mixin.flexIt();
