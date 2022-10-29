@@ -7,18 +7,108 @@
     flex-direction: column;
     background-color: root.$primary_navbar_bg_color;
     padding: 2rem;
-    gap: 1rem;
+    width: 35rem;
+    gap: 3rem;
+    border-radius: 5rem;
+    .swapTabs {
+        display: flex;
+        gap: 5rem;
+        color: root.$secondary_title_color;
+        span {
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+    }
+    svg {
+        fill: root.$primary_description_color;
+    }
+    .swapSettings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            margin-right: 1rem;
+            &:first-of-type {
+                margin-right: auto;
+            }
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+        span {
+            color: root.$secondary_title_color;
+            margin-right: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+    .swapDesc {
+        display: flex;
+        justify-content: center;
+        margin-top: -3rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: root.$primary_description_color;
+    }
+
     .swapForm {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         color: root.$secondary_title_color;
+        border-top: 1px solid root.$tertiary_link_color;
+        .swapFormInput {
+            padding: 2rem;
+            border-radius: 1.5rem;
+            background-color: root.$primary_navbar_link_hover;
+            border: none;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            span {
+                &:nth-of-type(2) {
+                    font-weight: 500;
+                }
+            }
+            &:first-of-type {
+                margin-top: 2rem;
+            }
+        }
         .arrow {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 14rem;
             .fa-arrow-down {
+                border-radius: 50%;
+                padding: 1rem;
                 color: root.$primary_buttons_bg_color;
+                background-color: root.$primary_navbar_link_hover;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .swapSlippage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                &:nth-of-type(1) {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: root.$seventh_background_color;
+                }
+                &:nth-of-type(2) {
+                    color: root.$quaternary_description_color;
+                }
             }
         }
 
