@@ -9,6 +9,7 @@
     color: root.$secondary_link_color;
     line-height: root.$linkLineHeight;
     font-weight: root.$linkFontWeight;
+    cursor: pointer;
 
     &:hover {
         text-decoration: root.$linkUnderLine

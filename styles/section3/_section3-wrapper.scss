@@ -60,32 +60,7 @@
         }
         .sec3-btns {
             display: flex;
-            gap: 0.2rem;
-            button {
-                font-size: 1.6rem;
-                font-weight: 600;
-                &:nth-of-type(1) {
-                    background-color: root.$primary_buttons_bg_color;
-                    color: white;
-                    padding: 1.25rem 2.18rem;
-                    border-radius: 1.25rem;
-                    box-shadow: 0 1px root.$primary_black_color;
-                    &:hover {
-                        background-color: root.$primary_buttons_bg_hover_color;
-                        transition: 0.3s;
-                    }
-                }
-                &:nth-of-type(2) {
-                    background-color: transparent;
-                    color: root.$primary_buttons_bg_color;
-                    padding: 1.25rem 2.187rem;
-                    border-radius: 1.25rem;
-                    &:hover {
-                        color: root.$primary_buttons_bg_hover_color;
-                        transition: 0.3s;
-                    }
-                }
-            }
+            gap: 2rem;
         }
     }
 }
