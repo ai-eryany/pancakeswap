@@ -6,6 +6,64 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    .swap-container1 {
+        align-self: center;
+        flex-basis: 40rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+
+        &-b1 {
+            flex-basis: 14rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: root.$swap_button_link_bg;
+            border-radius: 10rem;
+            border: 0.5px root.$swap_buttons_bg_color solid;
+
+            &__button {
+                font-size: 1.5rem;
+                font-weight: bolder;
+                padding: 0.5rem 1rem;
+                background-color: root.$swap_buttons_bg_color;
+                border-radius: 10rem;
+            }
+
+            &__link {
+                color: root.$swap_buttons_bg_color;
+            }
+        }
+
+        &-b2 {
+            &__link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                color: root.$secondary_link_color;
+            }
+        }
+    }
+
+    .swap-container2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        &__button {
+            padding: 1.5rem;
+            border-radius: 10rem;
+            background-color: root.$swap_buttons_bg_color;
+        }
+
+        &__img {
+            width: 16rem;
+            height: 11.2rem;
+        }
+    }
 }

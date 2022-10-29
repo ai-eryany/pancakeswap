@@ -34,6 +34,8 @@ $parentSpecs: 100%;
 */
 
 [data-theme='light'] {
+    --swap-button-link-bg: rgb(238, 233, 244);
+    --swap-buttons-bg-color: rgb(166, 150, 195);
     --cards-bg-color: white;
     --primary-main-bg-color: linear-gradient(#e2fcfe, white);
     --primary-navbar-bg-color: white;
@@ -76,6 +78,8 @@ $parentSpecs: 100%;
 }
 
 [data-theme='dark'] {
+    --swap-button-link-bg: rgb(56, 45, 71);
+    --swap-buttons-bg-color: rgb(140, 126, 161);
     --cards-bg-color: #27262c;
     --primary-main-bg-color: linear-gradient(#1f1733, black);
     --primary-navbar-bg-color: #27262c;
@@ -143,6 +147,8 @@ $primary_buttons_bg_hover_color: var(
 ); //#58dbe3
 $primary_navbar_link_hover: var(--primary-navbar-link-hover);
 $cards_bg_color: var(--cards-bg-color);
+$swap_buttons_bg_color: var(--swap-buttons-bg-color);
+$swap_button_link_bg: var(--swap-button-link-bg);
 
 // * links colors and background-color
 $primary_link_color: var(--primary-link-color); //#7c6ea9
