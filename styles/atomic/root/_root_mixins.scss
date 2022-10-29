@@ -57,7 +57,7 @@
 $sizes: (
     'medium': '576px',
     'large': '852px',
-    'larger': '968px',
+    'larger': '1024px',
 );
 @mixin medium {
     @media (min-width: map-get($sizes, medium)) {
