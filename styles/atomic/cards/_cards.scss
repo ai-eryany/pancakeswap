@@ -36,8 +36,10 @@
         font-size: 1.7rem;
     }
 
-    .buttonIt {
+    &-link {
         margin-top: auto;
         align-self: stretch;
+        display: flex;
+        flex-direction: column;
     }
 }
