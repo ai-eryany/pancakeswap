@@ -46,6 +46,8 @@
         }
 
         &__button {
+            padding: 1rem 2rem;
+            border-radius: 10rem;
         }
     }
 
@@ -101,6 +103,11 @@
             color: root.$tertiary_link_color;
         }
 
+        li > a:hover {
+            text-decoration: underline
+                root.$secondary_link_decoration_hover_color;
+        }
+
         li:nth-child(2) > a {
             color: root.$quaternary_link_color;
         }
@@ -117,6 +124,11 @@
         li > a {
             color: root.$tertiary_link_color;
         }
+
+        li > a:hover {
+            text-decoration: underline
+                root.$secondary_link_decoration_hover_color;
+        }
     }
 
     &__developers {
@@ -126,20 +138,27 @@
         li:first-child {
             color: root.$primary_title_color;
         }
+
         li > a {
             color: root.$tertiary_link_color;
+        }
+
+        li > a:hover {
+            text-decoration: underline
+                root.$secondary_link_decoration_hover_color;
         }
     }
 
     &-icons {
         display: flex;
-        gap: 1rem;
+        gap: 2.5rem;
 
-        > li > svg {
+        > li > a > svg {
             fill: root.$icons_color;
+            transition-duration: 500ms;
         }
 
-        > li > svg:hover {
+        > li > a > svg:hover {
             fill: root.$icons_hover_color;
         }
     }

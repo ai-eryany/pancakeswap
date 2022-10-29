@@ -5,11 +5,26 @@
 
 @media only screen and (min-width: 700px) {
     .footer-wrapper {
-        // .footer-wrapper-specs {
-        //     order: 10;
-        //     flex-direction: row;
-        // }
+        &-head {
+            display: none;
+        }
+        &-specs {
+            order: 10;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &-b1 {
+            gap: 2rem;
+            order: 2;
+        }
+
+        &-b2 {
+            order: 1;
+        }
+
         &-anchors {
+            justify-content: space-between;
             flex-direction: row;
         }
     }
