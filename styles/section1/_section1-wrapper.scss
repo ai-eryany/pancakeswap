@@ -58,17 +58,15 @@
                         transition: 0.3s;
                     }
                 }
-                &:nth-of-type(2) {
-                    background-color: transparent;
-                    color: root.$primary_buttons_bg_color;
-                    border: 2px solid root.$primary_buttons_bg_color;
-                    padding: 1.25rem 2.18rem;
-                    border-radius: 1.25rem;
-                    &:hover {
-                        color: root.$primary_buttons_bg_hover_color;
-                        border: 2px solid root.$primary_buttons_bg_hover_color;
-                        transition: 0.3s;
-                    }
+            }
+            .linkIt {
+                padding: 1.25rem 2.18rem;
+                border: 2px solid root.$primary_buttons_bg_color;
+                border-radius: 1.25rem;
+                &:hover {
+                    text-decoration: none;
+                    color: root.$primary_buttons_bg_hover_color;
+                    border: 2px solid root.$primary_buttons_bg_hover_color;
                 }
             }
         }
