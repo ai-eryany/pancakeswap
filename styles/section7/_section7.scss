@@ -12,41 +12,6 @@
     background-color: root.$seventh_background_color;
     overflow: hidden;
     .peanut {
-        position: absolute;
-        width: 30rem;
-        height: 30rem;
-        z-index: 2;
-    }
-
-    // ? peanuts left
-    .peanut1-left {
-        animation-delay: 1000ms;
-        left: 0;
-    }
-
-    .peanut2-left {
-        animation-delay: 2000ms;
-        left: 0;
-    }
-
-    .peanut3-left {
-        animation-delay: 3000ms;
-        left: 0;
-    }
-
-    // ? peanuts right
-    .peanut1-right {
-        animation-delay: 1000ms;
-        right: 0;
-    }
-
-    .peanut2-right {
-        animation-delay: 2000ms;
-        right: 0;
-    }
-
-    .peanut3-right {
-        animation-delay: 3000ms;
-        right: 0;
+        display: none;
     }
 }
