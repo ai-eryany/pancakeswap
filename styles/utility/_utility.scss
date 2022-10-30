@@ -11,13 +11,100 @@
     z-index: 99;
 
     .walletModal {
-        max-width: 79rem;
-        width: 20rem;
-        height: 20rem;
-        flex-grow: 1;
-        background-color: white;
-        z-index: 1000;
-        border-radius: 24px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40rem;
+        z-index: 1000000000;
+        border-radius: 2.5rem;
+        &-b1 {
+            display: flex;
+            width: 100%;
+            border-radius: inherit;
+            background-color: root.$modal-bg-2;
+            &-a {
+                padding: 2rem;
+                display: flex;
+                background-color: root.$modal-bg-1;
+                border-radius: inherit;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                &__title {
+                    max-width: fit-content;
+                    font-size: 2rem;
+                    color: root.$swap_full_logo_color;
+                }
+
+                &__description {
+                    max-width: 50rem;
+                    color: root.$primary_description_color;
+                }
+
+                &-imgs {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 5rem;
+                    &__img1 {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+
+                    &__img2 {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+
+                    &__img3 {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+
+                    &__img4 {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+
+                    &__img5 {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                }
+            }
+
+            &-b {
+                width: 50%;
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+
+                &__title {
+                    font-size: 2rem;
+                    color: root.$primary_title_color;
+                }
+
+                &__img {
+                    width: 20rem;
+                    height: 20rem;
+                }
+
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: root.$swap_buttons_bg_color;
+                }
+            }
+        }
     }
 }
 
