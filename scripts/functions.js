@@ -146,14 +146,14 @@ function networkSelection() {
     const bnbLabelDOM = document.querySelector('.bnbLabel');
     const bnbImageDOM = document.querySelector('.bnbImage');
     const networkSelectPopDOM = document.querySelector('.networkSelectPop');
-    selectETH.addEventListener('click', () => {
+    selectETHDOM.addEventListener('click', () => {
         bnbLabelDOM.style.display = 'none';
         bnbImageDOM.style.display = 'none';
         ethLabelDOM.style.display = 'flex';
         ethImageDOM.style.display = 'flex';
         networkSelectPopDOM.style.display = 'none';
     });
-    selectBNB.addEventListener('click', () => {
+    selectBNBDOM.addEventListener('click', () => {
         bnbLabelDOM.style.display = 'flex';
         bnbImageDOM.style.display = 'flex';
         ethLabelDOM.style.display = 'none';
