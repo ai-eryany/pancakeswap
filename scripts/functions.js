@@ -128,7 +128,15 @@ const navMenuDropDownApply = (
     navPointsDOM,
     pointsPopDOM,
     networkSelectDOM,
-    networkSelectPopDOM
+    networkSelectPopDOM,
+    navEarnSubDOM,
+    earnPopSubDOM,
+    navWinSubDOM,
+    winPopSubDOM,
+    navNftSubDOM,
+    nftPopSubDOM,
+    navPointsSubDOM,
+    pointsPopSubDOM
 ) => {
     navMenuDropDown(navTradeDOM, tradePopDOM);
     navMenuDropDown(navEarnDOM, earnPopDOM);
@@ -136,6 +144,10 @@ const navMenuDropDownApply = (
     navMenuDropDown(navNftDOM, nftPopDOM);
     navMenuDropDown(navPointsDOM, pointsPopDOM);
     navMenuDropDown(networkSelectDOM, networkSelectPopDOM);
+    navMenuDropDown(navEarnSubDOM, earnPopSubDOM);
+    navMenuDropDown(navWinSubDOM, winPopSubDOM);
+    navMenuDropDown(navNftSubDOM, nftPopSubDOM);
+    navMenuDropDown(navPointsSubDOM, pointsPopSubDOM);
 };
 
 function networkSelection() {
@@ -162,13 +174,22 @@ function networkSelection() {
     });
 }
 
-async function pancakePriceApi() {
-    const response = await fetch('https://api.pancakeswap.info/api/v2/tokens');
-    const prices = await response.json();
-    const pancakeswap = Object.values(Object.values(prices)[1])[2].price;
-    console.log(pancakeswap);
-    const result = Math.round(pancakeswap * 1000) / 1000 - 0.034;
-    pPrice.innerText = `$${result}`;
+// async function pancakePriceApi() {
+//     const response = await fetch('https://api.pancakeswap.info/api/v2/tokens');
+//     const prices = await response.json();
+//     const pancakeswap = Object.values(Object.values(prices)[1])[2].price;
+//     console.log(pancakeswap);
+//     const result = Math.round(pancakeswap * 1000) / 1000 - 0.034;
+//     pPrice.innerText = `$${result}`;
+// }
+
+function fullScreenPopRun(navSub, fullScreenPopDOM) {
+    navSub.addEventListener('mouseover', () => {
+        fullScreenPopDOM.style.display = 'block';
+    });
+    navSub.addEventListener('mouseout', () => {
+        fullScreenPopDOM.style.display = 'none';
+    });
 }
 
 export {
@@ -176,9 +197,10 @@ export {
     createModal,
     navMenuDropDown,
     navMenuDropDownApply,
-    pancakePriceApi,
+    // pancakePriceApi,
     globeDropDown,
     globeDropDownApply,
     initTheme,
     networkSelection,
+    fullScreenPopRun,
 };
