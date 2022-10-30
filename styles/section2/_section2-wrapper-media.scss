@@ -3,6 +3,12 @@
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
 
+@media only screen and (min-width: 795px) {
+    .section2 {
+        height: 100rem;
+    }
+}
+
 .section2-wrapper {
     .sec2-texts {
         h2 {
