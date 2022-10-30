@@ -126,13 +126,16 @@ const navMenuDropDownApply = (
     navNftDOM,
     nftPopDOM,
     navPointsDOM,
-    pointsPopDOM
+    pointsPopDOM,
+    networkSelectDOM,
+    networkSelectPopDOM
 ) => {
     navMenuDropDown(navTradeDOM, tradePopDOM);
     navMenuDropDown(navEarnDOM, earnPopDOM);
     navMenuDropDown(navWinDOM, winPopDOM);
     navMenuDropDown(navNftDOM, nftPopDOM);
     navMenuDropDown(navPointsDOM, pointsPopDOM);
+    navMenuDropDown(networkSelectDOM, networkSelectPopDOM);
 };
 
 async function pancakePriceApi() {

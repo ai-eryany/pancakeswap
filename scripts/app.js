@@ -21,7 +21,8 @@ const navGlobeDOM = qs('.navGlobe');
 const globePopDOM = qs('.globePop');
 const navGlobe2DOM = qs('.navGlobe2');
 const globePop2DOM = qs('.globePop2');
-
+const networkSelectDOM = qs('.networkSelect');
+const networkSelectPopDOM = qs('.networkSelectPop');
 const modalBtnsDOM = qsa('.buttonModalInit');
 
 const classes = { 'display-flex': 'd--flex' };
@@ -49,7 +50,9 @@ const run = () => {
         navNftDOM,
         nftPopDOM,
         navPointsDOM,
-        pointsPopDOM
+        pointsPopDOM,
+        networkSelectDOM,
+        networkSelectPopDOM
     );
 
     func.globeDropDownApply(navGlobeDOM, globePopDOM);

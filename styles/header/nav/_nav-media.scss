@@ -42,6 +42,11 @@ nav {
                 }
             }
         }
+        .networkSelectPop {
+            @include mixin.large {
+                transform: translate(100px, 37px);
+            }
+        }
         .globePop {
             @include mixin.large {
                 transform: translate(0px, 55.5px);
