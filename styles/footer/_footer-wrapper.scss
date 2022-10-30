@@ -62,9 +62,56 @@
         &-switch {
             padding: 0.5rem;
             display: flex;
-            gap: 0.4rem;
             background-color: root.$primary_description_color;
             border-radius: 2rem;
+            .themeToggle {
+                position: relative;
+                width: 50px;
+                label {
+                    position: absolute;
+                    width: 100%;
+                    height: 25px;
+                    background-color: #28292c;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+
+                input {
+                    position: absolute;
+                    display: none;
+                }
+
+                .slider {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                    transition: 0.3s;
+                }
+
+                input:checked ~ .slider {
+                    background-color: #d8dbe0;
+                }
+
+                .slider::before {
+                    content: '';
+                    position: absolute;
+                    top: 3px;
+                    left: 4px;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    box-shadow: inset 7px -1px 0px 0px #d8dbe0;
+                    background-color: #28292c;
+                    transition: 0.3s;
+                }
+
+                input:checked ~ .slider::before {
+                    transform: translateX(28px);
+                    background-color: #28292c;
+                    box-shadow: none;
+                }
+            }
         }
 
         &__sun {

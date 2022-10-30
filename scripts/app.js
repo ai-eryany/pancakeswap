@@ -6,9 +6,21 @@ const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => document.querySelectorAll(selector);
 
 // DOM -------------------------------------------------------------------
+// THEME DOM-------------------------------
 const htmlElementDOM = qs('html');
+const changeThemeBtnsDOM = qsa('.changeTheme');
+const navGearBtnDOM = qs('.navGearBtn');
+const settingsDOM = qs('.settings');
+const settingsWindowDOM = qs('.settings-window');
+const closeThemeModalDOM = qs('.closeThemeModal');
+// ---------------------------------------
+
+// MODAL DOM --------------------------------
 const walletModelBackgroundDOM = qs('.walletModalBackground');
 const walletModalDOM = qs('.walletModal');
+const modalBtnsDOM = qsa('.buttonModalInit');
+// ---------------------------------------
+// MENU MODAL --------------------------
 const navTradeDOM = qs('.navTrade');
 const tradePopDOM = qs('.tradePop');
 const navEarnDOM = qs('.navEarn');
@@ -34,30 +46,46 @@ const nftPopSubDOM = qs('.nftPopSub');
 const navPointsSubDOM = qs('.navPointsSub');
 const pointsPopSubDOM = qs('.pointsPopSub');
 const fullScreenPopDOM = qs('.fullScreenPop');
-const modalBtnsDOM = qsa('.buttonModalInit');
-const changeThemeBtnsDOM = qsa('.changeTheme');
+// ---------------------------------------------------
 
 const classes = { 'display-flex': 'd--flex' };
 
 // DOM ENDS -------------------------------------------------------------
 
 // MODEL ----------------------------------------------------------------
-let model = func.getStorage('model');
 
 const run = () => {
-    func.setStorage('model', model);
-    func.renderTheme(model, htmlElementDOM);
-    func.initThemeBtns(model, changeThemeBtnsDOM, htmlElementDOM);
+    // THEME init ------------------------------------------------------
+    func.update(htmlElementDOM);
+    func.initThemeBtns(changeThemeBtnsDOM, htmlElementDOM);
+    // -----------------------------------------------------------------
 
+    // WALLET MODAL ----------------------------------------------------
     modalBtnsDOM.forEach((btn) => {
         func.createModal(
-            btn,
-            walletModelBackgroundDOM,
-            walletModelBackgroundDOM,
-            classes['display-flex'],
-            walletModalDOM
+            btn, // to fire event
+            walletModelBackgroundDOM, // to release event
+            walletModelBackgroundDOM, // DOM to be controlled
+            classes['display-flex'], // class to be toggled
+            walletModalDOM // inner HTML
         );
     });
+    // ------------------------------------------------------------------
+
+    // THEME MODAL -------------------------------------------
+    func.createModal(
+        navGearBtnDOM,
+        settingsDOM,
+        settingsDOM,
+        classes['display-flex'],
+        settingsWindowDOM
+    );
+
+    closeThemeModalDOM.addEventListener('click', () => {
+        settingsDOM.classList.toggle(classes['display-flex']);
+    });
+
+    // ------------------------------------------------------
 
     func.navMenuDropDownApply(
         navTradeDOM,
