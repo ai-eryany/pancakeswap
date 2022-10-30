@@ -139,23 +139,26 @@ const navMenuDropDownApply = (
 };
 
 function networkSelection() {
-    const selectETH = document.getElementById('selectETH');
-    const ethLabel = document.querySelector('.ethLabel');
-    const ethImage = document.querySelector('.ethImage');
-    const selectBNB = document.getElementById('selectBNB');
-    const bnbLabel = document.querySelector('.bnbLabel');
-    const bnbImage = document.querySelector('.bnbImage');
+    const selectETHDOM = document.getElementById('selectETH');
+    const ethLabelDOM = document.querySelector('.ethLabel');
+    const ethImageDOM = document.querySelector('.ethImage');
+    const selectBNBDOM = document.getElementById('selectBNB');
+    const bnbLabelDOM = document.querySelector('.bnbLabel');
+    const bnbImageDOM = document.querySelector('.bnbImage');
+    const networkSelectPopDOM = document.querySelector('.networkSelectPop');
     selectETH.addEventListener('click', () => {
-        bnbLabel.style.display = 'none';
-        bnbImage.style.display = 'none';
-        ethLabel.style.display = 'flex';
-        ethImage.style.display = 'flex';
+        bnbLabelDOM.style.display = 'none';
+        bnbImageDOM.style.display = 'none';
+        ethLabelDOM.style.display = 'flex';
+        ethImageDOM.style.display = 'flex';
+        networkSelectPopDOM.style.display = 'none';
     });
     selectBNB.addEventListener('click', () => {
-        bnbLabel.style.display = 'flex';
-        bnbImage.style.display = 'flex';
-        ethLabel.style.display = 'none';
-        ethImage.style.display = 'none';
+        bnbLabelDOM.style.display = 'flex';
+        bnbImageDOM.style.display = 'flex';
+        ethLabelDOM.style.display = 'none';
+        ethImageDOM.style.display = 'none';
+        networkSelectPopDOM.style.display = 'none';
     });
 }
 
