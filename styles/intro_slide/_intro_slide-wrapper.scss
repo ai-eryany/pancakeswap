@@ -5,18 +5,20 @@
 @use '../atomic/root/root_mixins' as mixin;
 
 .intro_slide-wrapper {
+    position: relative;
     flex-grow: 1;
-    @include mixin.flexItCenter();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: root.$intro_slide-wrapperPadding;
     max-width: root.$intro_slide-wrapperMaxWidth;
     height: root.$intro_slide-wrapperHeight;
     gap: 5rem;
-    position: relative;
     &-container1 {
-        position: relative;
-        @include mixin.flexIt();
         // display: none;
+        position: relative;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         flex-grow: 1;
@@ -50,6 +52,7 @@
 
         &__button {
             margin-top: auto;
+            max-width: fit-content;
         }
 
         &__img {
@@ -73,7 +76,6 @@
         height: 100%;
         border-radius: root.$intro_slide-wrapper-containerBorderRadius;
         background-color: root.$intro_slide-wrapper-containerBackgroundColor;
-
         &-text {
             padding: 2rem;
             flex-grow: 1;
@@ -100,13 +102,14 @@
 
         &__button {
             margin-top: auto;
+            max-width: fit-content;
         }
 
         &__img {
             position: absolute;
             bottom: 0;
             right: 0;
-            max-width: 100rem;
+            max-width: 90rem;
             height: 121%;
             z-index: 0;
         }
@@ -114,7 +117,7 @@
 
     &-container3 {
         position: relative;
-        @include mixin.flexIt();
+        display: flex;
         // display: none;
         justify-content: space-between;
         align-items: center;
@@ -149,6 +152,7 @@
         }
 
         &__button {
+            max-width: fit-content;
             margin-top: auto;
         }
 

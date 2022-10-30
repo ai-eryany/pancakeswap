@@ -5,7 +5,7 @@
 @use '../atomic/root/root_mixins' as mixin;
 .section2 {
     // !never delete this position
-    height: 100rem;
+    height: 150rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -14,5 +14,6 @@
         root.$second_background_color_linear,
         root.$second_background_color
     );
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vh));
+    margin-bottom: 10vh;
 }
