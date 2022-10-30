@@ -2,3 +2,41 @@
 @use '../atomic/root/root' as root;
 @use '../atomic/root/root_functions' as func;
 @use '../atomic/root/root_mixins' as mixin;
+
+@media only screen and(min-width: 1080px) {
+    .section4-wrapper {
+        gap: 10rem;
+        &-floating-img {
+            position: absolute;
+            display: flex;
+            justify-content: flex-start;
+            height: 50rem;
+        }
+
+        &__img1 {
+            position: absolute;
+            width: 35rem;
+            height: 35rem;
+            animation-delay: 1000ms;
+        }
+
+        &__img2 {
+            position: absolute;
+            width: 35rem;
+            height: 35rem;
+            animation-delay: 2000ms;
+        }
+
+        &__img3 {
+            position: absolute;
+            width: 35rem;
+            height: 35rem;
+            animation-delay: 5500ms;
+        }
+
+        &-text {
+            width: 40rem;
+            align-self: flex-end;
+        }
+    }
+}
