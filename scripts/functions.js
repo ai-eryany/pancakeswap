@@ -20,6 +20,8 @@ const getStorage = (key) => {
     }
 };
 
+const updateModel = (oldModel, newModel) => (oldModel = newModel);
+
 const initStorage = () => {
     !getStorage('model') ? setStorage('model', INIT_MODEL) : null;
 };
@@ -54,29 +56,28 @@ const createModal = (
 
 // THEME FUNCTIONS ------------------------------------------------
 
-const toggleTheme = (oldModel) => ({
-    ...oldModel,
-    isDarkTheme: !oldModel.isDarkTheme,
-});
-
-const renderTheme = (oldModel, htmlDOM) => {
-    if (oldModel.isDarkTheme === null) htmlDOM.dataset.theme = 'none';
-    else htmlDOM.dataset.theme = oldModel.isDarkTheme ? 'dark' : 'light';
+const renderTheme = (m, htmlDOM) => {
+    if (m.isDarkTheme === null) htmlDOM.dataset.theme = 'none';
+    else htmlDOM.dataset.theme = m.isDarkTheme ? 'dark' : 'light';
 };
+
+const toggleTheme = (m) => ({
+    ...m,
+    isDarkTheme: !m.isDarkTheme,
+});
 
 // ------------------------------------------------------------------
 
 // EVENTS FUNCTIONS-----------------------------------------
 
 // m for model
-// updateM is a function updateModel
-// updateS is a function updateStorage
-const initTheme = (btnsDOM, htmlDOM) => {
+const initThemeBtns = (m, btnsDOM, htmlDOM) => {
     btnsDOM.forEach((btn) => {
         btn.addEventListener('click', () => {
             const newModel = toggleTheme(m);
-            setStorage('model', newModel);
-            renderTheme(newModel, htmlDOM);
+            updateModel(m, newModel);
+            setStorage('model', m);
+            renderTheme(m, htmlDOM);
         });
     });
 };
@@ -194,13 +195,16 @@ function fullScreenPopRun(navSub, fullScreenPopDOM) {
 
 export {
     initStorage,
+    setStorage,
+    getStorage,
     createModal,
     navMenuDropDown,
     navMenuDropDownApply,
     // pancakePriceApi,
     globeDropDown,
     globeDropDownApply,
-    initTheme,
+    initThemeBtns,
+    renderTheme,
     networkSelection,
     fullScreenPopRun,
 };

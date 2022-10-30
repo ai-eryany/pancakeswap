@@ -1,5 +1,7 @@
 import * as func from './functions.js';
 
+func.initStorage();
+
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => document.querySelectorAll(selector);
 
@@ -33,12 +35,20 @@ const navPointsSubDOM = qs('.navPointsSub');
 const pointsPopSubDOM = qs('.pointsPopSub');
 const fullScreenPopDOM = qs('.fullScreenPop');
 const modalBtnsDOM = qsa('.buttonModalInit');
+const changeThemeBtnsDOM = qsa('.changeTheme');
 
 const classes = { 'display-flex': 'd--flex' };
 
 // DOM ENDS -------------------------------------------------------------
 
+// MODEL ----------------------------------------------------------------
+let model = func.getStorage('model');
+
 const run = () => {
+    func.setStorage('model', model);
+    func.renderTheme(model, htmlElementDOM);
+    func.initThemeBtns(model, changeThemeBtnsDOM, htmlElementDOM);
+
     modalBtnsDOM.forEach((btn) => {
         func.createModal(
             btn,
