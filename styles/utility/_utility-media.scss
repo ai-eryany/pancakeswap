@@ -5,7 +5,6 @@
 
 .settings {
     @include mixin.large {
-        display: flex;
         justify-content: center;
         align-items: center;
     }

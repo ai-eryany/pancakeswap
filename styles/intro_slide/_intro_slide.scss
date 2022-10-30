@@ -6,10 +6,10 @@
 .intro_slide {
     // !never delete this position
     width: 100%;
-    height: 80rem;
+    height: 40rem;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background-color: root.$first_background_color;
 }

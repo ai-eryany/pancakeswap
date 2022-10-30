@@ -4,6 +4,9 @@
 @use '../atomic/root/root_mixins' as mixin;
 
 @media only screen and(min-width: 1080px) {
+    .section4 {
+        height: 70rem;
+    }
     .section4-wrapper {
         gap: 10rem;
         &-floating-img {

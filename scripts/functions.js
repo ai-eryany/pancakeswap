@@ -16,7 +16,7 @@ const getStorage = (key) => {
     }
 };
 
-const updateModel = (m, newModel) => (m = newModel);
+const updateModel = (newModel) => (model = newModel);
 
 const initStorage = () => {
     const INIT_MODEL = {
@@ -26,6 +26,10 @@ const initStorage = () => {
 };
 
 // ----------------------------------------------------------------
+
+// MODEL ---------------------------------------------------------
+
+let model = getStorage('model');
 
 // MODAL FUNCTIONS ------------------------------------------------
 // this function is used to toggle a given class on a given element.
@@ -55,8 +59,8 @@ const createModal = (
 
 // THEME FUNCTIONS ------------------------------------------------
 
-const renderTheme = (m, htmlDOM) => {
-    htmlDOM.dataset.theme = m.isDarkTheme ? 'dark' : 'light';
+const renderTheme = (htmlDOM) => {
+    htmlDOM.dataset.theme = model.isDarkTheme ? 'dark' : 'light';
 };
 
 const toggleTheme = (m) => ({
@@ -64,18 +68,23 @@ const toggleTheme = (m) => ({
     isDarkTheme: !m.isDarkTheme,
 });
 
+const update = (htmlDOM) => {
+    model = getStorage('model');
+    setStorage('model', model);
+    renderTheme(htmlDOM);
+};
 // ------------------------------------------------------------------
 
 // EVENTS FUNCTIONS-----------------------------------------
 
 // m for model
-const initThemeBtns = (m, btnsDOM, htmlDOM) => {
+const initThemeBtns = (btnsDOM, htmlDOM) => {
     btnsDOM.forEach((btn) => {
-        btn.addEventListener('click', () => {
-            const newModel = toggleTheme(m);
-            updateModel(m, newModel);
-            setStorage('model', m);
-            renderTheme(m, htmlDOM);
+        btn.addEventListener('change', (evt) => {
+            const newModel = toggleTheme(model);
+            updateModel(newModel);
+            setStorage('model', model);
+            renderTheme(htmlDOM);
         });
     });
 };
@@ -195,14 +204,14 @@ export {
     initStorage,
     setStorage,
     getStorage,
+    update,
     createModal,
+    initThemeBtns,
     navMenuDropDown,
     navMenuDropDownApply,
     // pancakePriceApi,
     globeDropDown,
     globeDropDownApply,
-    initThemeBtns,
-    renderTheme,
     networkSelection,
     fullScreenPopRun,
 };
