@@ -1,7 +1,3 @@
-const INIT_MODEL = {
-    isDarkTheme: null, // Boolean true or false or null
-};
-
 // Local Storage functions
 const setStorage = (key, item) => {
     try {
@@ -20,9 +16,12 @@ const getStorage = (key) => {
     }
 };
 
-const updateModel = (oldModel, newModel) => (oldModel = newModel);
+const updateModel = (m, newModel) => (m = newModel);
 
 const initStorage = () => {
+    const INIT_MODEL = {
+        isDarkTheme: false, // Boolean true or false or null
+    };
     !getStorage('model') ? setStorage('model', INIT_MODEL) : null;
 };
 
@@ -57,8 +56,7 @@ const createModal = (
 // THEME FUNCTIONS ------------------------------------------------
 
 const renderTheme = (m, htmlDOM) => {
-    if (m.isDarkTheme === null) htmlDOM.dataset.theme = 'none';
-    else htmlDOM.dataset.theme = m.isDarkTheme ? 'dark' : 'light';
+    htmlDOM.dataset.theme = m.isDarkTheme ? 'dark' : 'light';
 };
 
 const toggleTheme = (m) => ({
