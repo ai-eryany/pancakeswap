@@ -34,6 +34,8 @@ $parentSpecs: 100%;
 */
 
 [data-theme='light'] {
+    --modal-bg-1: white;
+    --modal-bg-2: rgb(237, 239, 244);
     --fullScreenPop: black;
     --swap-full-logo-color: black;
     --swap-button-link-bg: rgb(238, 233, 244);
@@ -81,6 +83,8 @@ $parentSpecs: 100%;
 }
 
 [data-theme='dark'] {
+    --modal-bg-1: rgb(39, 38, 44);
+    --modal-bg-2: rgb(61, 56, 78);
     --fullScreenPop: white;
     --swap-full-logo-color: white;
     --swap-button-link-bg: rgb(56, 45, 71);
@@ -138,7 +142,12 @@ $primary_navbar_bg_color: var(--primary-navbar-bg-color);
 $fullScreenPop: var(--fullScreenPop);
 $swap_full_logo_color: var(--swap-full-logo-color);
 
+
+$modal-bg-1: var(--modal-bg-1);
+$modal-bg-2: var(--modal-bg-2);
+
 $primary_settings_bg_color: var(--primary-settings-bg-color);
+
 
 
 // * Titles && descriptions:
