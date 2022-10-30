@@ -34,6 +34,7 @@ $parentSpecs: 100%;
 */
 
 [data-theme='light'] {
+    --fullScreenPop: black;
     --swap-full-logo-color: black;
     --swap-button-link-bg: rgb(238, 233, 244);
     --swap-buttons-bg-color: rgb(166, 150, 195);
@@ -79,6 +80,7 @@ $parentSpecs: 100%;
 }
 
 [data-theme='dark'] {
+    --fullScreenPop: white;
     --swap-full-logo-color: white;
     --swap-button-link-bg: rgb(56, 45, 71);
     --swap-buttons-bg-color: rgb(140, 126, 161);
@@ -131,7 +133,9 @@ $primary_red_color: var(--primary-red);
 $primary_green_color: var(--primary-green);
 $primary_blue_color: var(--primary-blue);
 $primary_navbar_bg_color: var(--primary-navbar-bg-color);
+$fullScreenPop: var(--fullScreenPop);
 $swap_full_logo_color: var(--swap-full-logo-color);
+
 
 // * Titles && descriptions:
 $primary_title_color: var(--primary-title-color);

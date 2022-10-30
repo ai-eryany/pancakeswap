@@ -28,7 +28,7 @@ nav {
             }
         }
         .networkSelect {
-            p {
+            .bnbLabel {
                 @include mixin.medium {
                     display: flex;
                 }
