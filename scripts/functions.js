@@ -138,6 +138,27 @@ const navMenuDropDownApply = (
     navMenuDropDown(networkSelectDOM, networkSelectPopDOM);
 };
 
+function networkSelection() {
+    const selectETH = document.getElementById('selectETH');
+    const ethLabel = document.querySelector('.ethLabel');
+    const ethImage = document.querySelector('.ethImage');
+    const selectBNB = document.getElementById('selectBNB');
+    const bnbLabel = document.querySelector('.bnbLabel');
+    const bnbImage = document.querySelector('.bnbImage');
+    selectETH.addEventListener('click', () => {
+        bnbLabel.style.display = 'none';
+        bnbImage.style.display = 'none';
+        ethLabel.style.display = 'flex';
+        ethImage.style.display = 'flex';
+    });
+    selectBNB.addEventListener('click', () => {
+        bnbLabel.style.display = 'flex';
+        bnbImage.style.display = 'flex';
+        ethLabel.style.display = 'none';
+        ethImage.style.display = 'none';
+    });
+}
+
 async function pancakePriceApi() {
     const response = await fetch('https://api.pancakeswap.info/api/v2/tokens');
     const prices = await response.json();
@@ -156,4 +177,5 @@ export {
     globeDropDown,
     globeDropDownApply,
     initTheme,
+    networkSelection,
 };
