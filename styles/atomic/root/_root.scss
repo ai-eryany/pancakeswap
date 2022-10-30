@@ -43,6 +43,7 @@ $parentSpecs: 100%;
     --cards-bg-color: white;
     --primary-main-bg-color: linear-gradient(#e2fcfe, white);
     --primary-navbar-bg-color: white;
+    --primary-settings-bg-color: rgb(0, 0, 0, 0.3);
     --primary-navbar-link-hover: #eff4f5;
     --primary-white: white;
     --primary-red: red;
@@ -91,6 +92,7 @@ $parentSpecs: 100%;
     --cards-bg-color: #27262c;
     --primary-main-bg-color: linear-gradient(#1f1733, black);
     --primary-navbar-bg-color: #27262c;
+    --primary-settings-bg-color: rgb(250, 250, 250, 0.3);
     --primary-navbar-link-hover: #373447;
     --primary-white: white;
     --primary-red: red;
@@ -140,8 +142,13 @@ $primary_navbar_bg_color: var(--primary-navbar-bg-color);
 $fullScreenPop: var(--fullScreenPop);
 $swap_full_logo_color: var(--swap-full-logo-color);
 
+
 $modal-bg-1: var(--modal-bg-1);
 $modal-bg-2: var(--modal-bg-2);
+
+$primary_settings_bg_color: var(--primary-settings-bg-color);
+
+
 
 // * Titles && descriptions:
 $primary_title_color: var(--primary-title-color);
