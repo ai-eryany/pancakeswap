@@ -65,21 +65,21 @@ body {
 
 @media (prefers-color-scheme: dark) {
     html {
-        --swap-full-logo-color: white;
-        --swap-button-link-bg: rgb(56, 45, 71);
-        --swap-buttons-bg-color: rgb(140, 126, 161);
-        --cards-bg-color: #27262c;
-        --primary-main-bg-color: linear-gradient(#1f1733, black);
-        --primary-navbar-bg-color: #27262c;
-        --primary-navbar-link-hover: #373447;
+        --swap-full-logo-color: black;
+        --swap-button-link-bg: rgb(238, 233, 244);
+        --swap-buttons-bg-color: rgb(166, 150, 195);
+        --cards-bg-color: white;
+        --primary-main-bg-color: linear-gradient(#e2fcfe, white);
+        --primary-navbar-bg-color: white;
+        --primary-navbar-link-hover: #eff4f5;
         --primary-white: white;
         --primary-red: red;
         --primary-black: black;
         --primary-green: green;
         --primary-blue: blue;
-        --primary-title-color: #a168fd;
-        --secondary-title-color: #f5eeff;
-        --primary-description-color: #baadd1;
+        --primary-title-color: #7645d9;
+        --secondary-title-color: #280d5f;
+        --primary-description-color: #897db2;
         --secondary-description-color: #ff3a97;
         --tertiary-description-color: #ffb12e;
         --quaternary-description-color: #00cad7;
@@ -93,19 +93,19 @@ body {
         --primary-link-decoration-hover-color: #00cad7;
         --secondary-link-decoration-hover-color: #f5eeff;
         --primary-link-bg-hover-color: #eef4f5;
-        --first-background-color: #1f1733;
-        --second-background-color: #20132f;
-        --second-background-color-linear: black;
-        --third-background-color: #08060b;
-        --fourth-background-color: #3a3b4f;
-        --fifth-background-color: #00375a;
-        --fifth-background-color-inner: rgba(0, 0, 0, 0.2);
-        --sixth-background-color: #08060b;
+        --first-background-color: #e2fcff;
+        --second-background-color: #d8cbec;
+        --second-background-color-linear: white;
+        --third-background-color: #faf9fa;
+        --fourth-background-color: #edeff4;
+        --fifth-background-color: #58bdf2;
+        --fifth-background-color-inner: rgba(197, 232, 250, 0.5);
+        --sixth-background-color: #faf9fa;
         --seventh-background-color: #7009c5;
         --eighth-background-color: #27262c;
         --icons-color: #7c6ea9;
         --icons-hover-color: #aaa1c7;
-        --side-bar-bg-color: #1d142a;
+        --side-bar-bg-color: #eff2fe;
         --colors-textSubtle: #7a6eaa;
     }
 }
