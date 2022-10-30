@@ -1,7 +1,5 @@
 import * as func from './functions.js';
 
-func.initStorage();
-
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => document.querySelectorAll(selector);
 
@@ -55,6 +53,7 @@ const classes = { 'display-flex': 'd--flex' };
 // MODEL ----------------------------------------------------------------
 
 const run = () => {
+    func.initStorage();
     // THEME init ------------------------------------------------------
     func.update(htmlElementDOM);
     func.initThemeBtns(changeThemeBtnsDOM, htmlElementDOM);

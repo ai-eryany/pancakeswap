@@ -69,6 +69,7 @@ const toggleTheme = (m) => ({
 });
 
 const update = (htmlDOM) => {
+    model = getStorage('model');
     setStorage('model', model);
     renderTheme(htmlDOM);
 };
