@@ -59,6 +59,7 @@ const run = () => {
     func.globeDropDownApply(navGlobe2DOM, globePop2DOM);
 
     func.pancakePriceApi();
+    func.networkSelection();
 };
 
 // RUN APP
