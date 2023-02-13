@@ -1,6 +1,6 @@
 # Project Link
 
-https://aiman99aleryany.github.io/pancakeswap_V1.0.0/
+https://aiman99aleryany.github.io/pancakeswap/
 
 # PancakeSwap App
 
